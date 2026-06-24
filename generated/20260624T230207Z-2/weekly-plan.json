@@ -1,0 +1,62 @@
+{
+  "thesis": "Cambio adentro, para cambiar afuera",
+  "week_goal": "Explorar cómo los patrones internos influyen en nuestras relaciones y decisiones, y cómo el cambio comienza desde el autoconocimiento.",
+  "pieces": [
+    {
+      "day": "lunes",
+      "format": "carrusel",
+      "content_type": "problema",
+      "title": "¿Por qué repetimos patrones?",
+      "hook": "A veces nos encontramos repitiendo situaciones que no deseamos, sin entender por qué. ¿Nos pasa a veces que el escenario cambia, pero el resultado es el mismo?",
+      "cta": "Reflexionemos juntos sobre esto."
+    },
+    {
+      "day": "martes",
+      "format": "reel",
+      "content_type": "método",
+      "title": "Identificando patrones",
+      "hook": "Cuando nos detenemos a observar, podemos darnos cuenta de que hay patrones que se repiten en nuestras vidas. ¿Qué pasaría si comenzáramos a reconocerlos?",
+      "cta": "Compartamos nuestras experiencias."
+    },
+    {
+      "day": "miércoles",
+      "format": "clip podcast",
+      "content_type": "conexión",
+      "title": "La historia detrás de nosotros",
+      "hook": "Nos pasa que a menudo nos identificamos con nuestra historia, olvidando que somos más que eso. ¿Cómo podemos empezar a ver nuestra esencia más allá de lo que hemos vivido?",
+      "cta": "Escuchemos juntos y conectemos."
+    },
+    {
+      "day": "jueves",
+      "format": "hilo X",
+      "content_type": "resultado",
+      "title": "De lo interno a lo externo",
+      "hook": "Al mirar hacia adentro y reconocer nuestros patrones, podemos empezar a ver cambios en nuestras relaciones. ¿Les ha pasado que algo cambia en su interior y eso se refleja afuera?",
+      "cta": "Compartamos los cambios que hemos notado."
+    },
+    {
+      "day": "viernes",
+      "format": "stories",
+      "content_type": "problema",
+      "title": "La máscara que usamos",
+      "hook": "A veces nos escondemos detrás de máscaras que hemos creado para encajar. ¿Cuántas veces nos sentimos atrapados en un rol que no nos representa?",
+      "cta": "Hablemos sobre nuestras experiencias."
+    },
+    {
+      "day": "sábado",
+      "format": "post frase",
+      "content_type": "método",
+      "title": "Frase del día",
+      "hook": "",
+      "cta": "Recordemos: 'Mi esencia no es mi historia.' ¿Qué significa para nosotros esta frase?"
+    },
+    {
+      "day": "domingo",
+      "format": "carrusel",
+      "content_type": "conexión",
+      "title": "La llave del autoconocimiento",
+      "hook": "Algunas veces, el primer paso para cambiar algo afuera es mirar adentro. ¿Cómo podemos usar el autoconocimiento como llave para abrir nuevas puertas en nuestras vidas?",
+      "cta": "Reflexionemos juntos sobre este camino."
+    }
+  ]
+}

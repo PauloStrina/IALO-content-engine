@@ -1,0 +1,199 @@
+{
+  "runId": "20260624T230207Z-2",
+  "thesis": "cambio-adentro",
+  "generatedAt": "2026-06-24T23:02:27.105Z",
+  "publicAssetBaseUrl": "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets",
+  "assetRootUrl": "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260624T230207Z-2",
+  "timezone": "America/Argentina/Buenos_Aires",
+  "posts": [
+    {
+      "id": "ialo-20260624T230207Z-2-piece-01-carrusel",
+      "format": "carrusel",
+      "contentType": "problema",
+      "platforms": [
+        "instagram"
+      ],
+      "scheduledAt": "2026-06-29T10:00:00-03:00",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "title": "¿Por qué repetimos patrones?",
+      "cta": "Reflexionemos juntos sobre esto.",
+      "source": "generated",
+      "metadata": {
+        "day": "lunes",
+        "pieceIndex": 1,
+        "thesis": "cambio-adentro",
+        "weekGoal": "Explorar cómo los patrones internos influyen en nuestras relaciones y decisiones, y cómo el cambio comienza desde el autoconocimiento."
+      },
+      "status": "ready",
+      "type": "carousel",
+      "caption": "Reflexionemos sobre cómo lo que llevamos dentro puede influir en nuestro entorno. ¿Qué patrones aún no hemos visto?",
+      "text": "Reflexionemos sobre cómo lo que llevamos dentro puede influir en nuestro entorno. ¿Qué patrones aún no hemos visto?",
+      "mediaUrls": [
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260624T230207Z-2/carousel/slide-01.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260624T230207Z-2/carousel/slide-02.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260624T230207Z-2/carousel/slide-03.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260624T230207Z-2/carousel/slide-04.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260624T230207Z-2/carousel/slide-05.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260624T230207Z-2/carousel/slide-06.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260624T230207Z-2/carousel/slide-07.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260624T230207Z-2/carousel/slide-08.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260624T230207Z-2/carousel/slide-09.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260624T230207Z-2/carousel/slide-10.png"
+      ]
+    },
+    {
+      "id": "ialo-20260624T230207Z-2-piece-02-reel",
+      "format": "reel",
+      "contentType": "método",
+      "platforms": [
+        "instagram_reels",
+        "tiktok",
+        "youtube_shorts"
+      ],
+      "scheduledAt": "2026-06-30T12:00:00-03:00",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "title": "Identificando patrones",
+      "cta": "Compartamos nuestras experiencias.",
+      "source": "generated",
+      "metadata": {
+        "day": "martes",
+        "pieceIndex": 2,
+        "thesis": "cambio-adentro",
+        "weekGoal": "Explorar cómo los patrones internos influyen en nuestras relaciones y decisiones, y cómo el cambio comienza desde el autoconocimiento."
+      },
+      "status": "needs_manual_video",
+      "type": "video",
+      "caption": "Identificando patrones\n\nCuando nos detenemos a observar, podemos darnos cuenta de que hay patrones que se repiten en nuestras vidas. ¿Qué pasaría si comenzáramos a reconocerlos?\n\nCompartamos nuestras experiencias.",
+      "text": "Identificando patrones\n\nCuando nos detenemos a observar, podemos darnos cuenta de que hay patrones que se repiten en nuestras vidas. ¿Qué pasaría si comenzáramos a reconocerlos?\n\nCompartamos nuestras experiencias.",
+      "mediaUrls": []
+    },
+    {
+      "id": "ialo-20260624T230207Z-2-piece-03-clip-podcast",
+      "format": "clip podcast",
+      "contentType": "conexión",
+      "platforms": [
+        "instagram_reels",
+        "tiktok",
+        "youtube_shorts"
+      ],
+      "scheduledAt": "2026-07-01T12:00:00-03:00",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "title": "La historia detrás de nosotros",
+      "cta": "Escuchemos juntos y conectemos.",
+      "source": "generated",
+      "metadata": {
+        "day": "miércoles",
+        "pieceIndex": 3,
+        "thesis": "cambio-adentro",
+        "weekGoal": "Explorar cómo los patrones internos influyen en nuestras relaciones y decisiones, y cómo el cambio comienza desde el autoconocimiento."
+      },
+      "status": "needs_manual_video",
+      "type": "video",
+      "caption": "La historia detrás de nosotros\n\nNos pasa que a menudo nos identificamos con nuestra historia, olvidando que somos más que eso. ¿Cómo podemos empezar a ver nuestra esencia más allá de lo que hemos vivido?\n\nEscuchemos juntos y conectemos.",
+      "text": "La historia detrás de nosotros\n\nNos pasa que a menudo nos identificamos con nuestra historia, olvidando que somos más que eso. ¿Cómo podemos empezar a ver nuestra esencia más allá de lo que hemos vivido?\n\nEscuchemos juntos y conectemos.",
+      "mediaUrls": []
+    },
+    {
+      "id": "ialo-20260624T230207Z-2-piece-04-hilo-x",
+      "format": "hilo X",
+      "contentType": "resultado",
+      "platforms": [
+        "x"
+      ],
+      "scheduledAt": "2026-07-02T18:00:00-03:00",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "title": "De lo interno a lo externo",
+      "cta": "Compartamos los cambios que hemos notado.",
+      "source": "generated",
+      "metadata": {
+        "day": "jueves",
+        "pieceIndex": 4,
+        "thesis": "cambio-adentro",
+        "weekGoal": "Explorar cómo los patrones internos influyen en nuestras relaciones y decisiones, y cómo el cambio comienza desde el autoconocimiento."
+      },
+      "status": "ready",
+      "type": "text",
+      "caption": "De lo interno a lo externo\n\nAl mirar hacia adentro y reconocer nuestros patrones, podemos empezar a ver cambios en nuestras relaciones. ¿Les ha pasado que algo cambia en su interior y eso se refleja afuera?\n\nCompartamos los cambios que hemos notado.",
+      "text": "De lo interno a lo externo\n\nAl mirar hacia adentro y reconocer nuestros patrones, podemos empezar a ver cambios en nuestras relaciones. ¿Les ha pasado que algo cambia en su interior y eso se refleja afuera?\n\nCompartamos los cambios que hemos notado.",
+      "mediaUrls": []
+    },
+    {
+      "id": "ialo-20260624T230207Z-2-piece-05-stories",
+      "format": "stories",
+      "contentType": "problema",
+      "platforms": [
+        "instagram_stories"
+      ],
+      "scheduledAt": "2026-07-03T11:00:00-03:00",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "title": "La máscara que usamos",
+      "cta": "Hablemos sobre nuestras experiencias.",
+      "source": "generated",
+      "metadata": {
+        "day": "viernes",
+        "pieceIndex": 5,
+        "thesis": "cambio-adentro",
+        "weekGoal": "Explorar cómo los patrones internos influyen en nuestras relaciones y decisiones, y cómo el cambio comienza desde el autoconocimiento."
+      },
+      "status": "ready",
+      "type": "image",
+      "caption": "La máscara que usamos\n\nA veces nos escondemos detrás de máscaras que hemos creado para encajar. ¿Cuántas veces nos sentimos atrapados en un rol que no nos representa?\n\nHablemos sobre nuestras experiencias.",
+      "text": "La máscara que usamos\n\nA veces nos escondemos detrás de máscaras que hemos creado para encajar. ¿Cuántas veces nos sentimos atrapados en un rol que no nos representa?\n\nHablemos sobre nuestras experiencias.",
+      "mediaUrls": [
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260624T230207Z-2/static-cards/piece-05-stories.png"
+      ]
+    },
+    {
+      "id": "ialo-20260624T230207Z-2-piece-06-post-frase",
+      "format": "post frase",
+      "contentType": "método",
+      "platforms": [
+        "instagram",
+        "x"
+      ],
+      "scheduledAt": "2026-07-04T10:00:00-03:00",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "title": "Frase del día",
+      "cta": "Recordemos: 'Mi esencia no es mi historia.' ¿Qué significa para nosotros esta frase?",
+      "source": "generated",
+      "metadata": {
+        "day": "sábado",
+        "pieceIndex": 6,
+        "thesis": "cambio-adentro",
+        "weekGoal": "Explorar cómo los patrones internos influyen en nuestras relaciones y decisiones, y cómo el cambio comienza desde el autoconocimiento."
+      },
+      "status": "ready",
+      "type": "image",
+      "caption": "Frase del día\n\nRecordemos: 'Mi esencia no es mi historia.' ¿Qué significa para nosotros esta frase?",
+      "text": "Frase del día\n\nRecordemos: 'Mi esencia no es mi historia.' ¿Qué significa para nosotros esta frase?",
+      "mediaUrls": [
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260624T230207Z-2/static-cards/piece-06-post-frase.png"
+      ]
+    },
+    {
+      "id": "ialo-20260624T230207Z-2-piece-07-carrusel",
+      "format": "carrusel",
+      "contentType": "conexión",
+      "platforms": [
+        "instagram"
+      ],
+      "scheduledAt": "2026-07-05T10:00:00-03:00",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "title": "La llave del autoconocimiento",
+      "cta": "Reflexionemos juntos sobre este camino.",
+      "source": "generated",
+      "metadata": {
+        "day": "domingo",
+        "pieceIndex": 7,
+        "thesis": "cambio-adentro",
+        "weekGoal": "Explorar cómo los patrones internos influyen en nuestras relaciones y decisiones, y cómo el cambio comienza desde el autoconocimiento.",
+        "reason": "Extra carousel kept as draft because this workflow generated one carousel asset package."
+      },
+      "status": "draft",
+      "type": "carousel",
+      "caption": "Reflexionemos sobre cómo lo que llevamos dentro puede influir en nuestro entorno. ¿Qué patrones aún no hemos visto?",
+      "text": "Reflexionemos sobre cómo lo que llevamos dentro puede influir en nuestro entorno. ¿Qué patrones aún no hemos visto?",
+      "mediaUrls": []
+    }
+  ]
+}
