@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1350" />
+    <title>IALO Carousel</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="slide" data-slide-type="body">
+      <header class="brand">
+        <span>Invisible a los Ojos</span>
+      </header>
+
+      <section class="content">
+        <p id="slideText"></p>
+      </section>
+
+      <footer class="footer">
+        <span id="slideNumber"></span>
+      </footer>
+    </main>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const text = params.get("text") || "";
+      const number = params.get("number") || "";
+      const type = params.get("type") || "body";
+
+      document.querySelector(".slide").dataset.slideType = type;
+      document.getElementById("slideText").innerText = text;
+      document.getElementById("slideNumber").innerText = number;
+    </script>
+  </body>
+</html>

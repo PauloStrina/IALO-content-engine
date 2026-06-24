@@ -1,0 +1,8 @@
+{
+  "template_key": "carousel-base",
+  "name": "IALO Base Carousel",
+  "format": "1080x1350",
+  "best_for": ["journaling", "reflexiones profundas", "tesis personales"],
+  "slide_types": ["cover", "body", "question", "closing"],
+  "status": "draft"
+}

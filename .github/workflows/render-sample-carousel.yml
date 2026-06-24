@@ -1,0 +1,53 @@
+name: Render Sample Carousel
+
+on:
+  pull_request:
+    paths:
+      - "design/**"
+      - "examples/**"
+      - "src/**"
+      - "package.json"
+      - "tsconfig.json"
+      - ".github/workflows/render-sample-carousel.yml"
+  workflow_dispatch:
+    inputs:
+      template_key:
+        description: "Template visual"
+        required: true
+        default: carousel-base
+        type: string
+
+jobs:
+  render-sample:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Install Playwright Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Prepare sample input
+        run: |
+          mkdir -p output
+          cp examples/carousel-copy.sample.json output/carousel-copy.json
+
+      - name: Render carousel
+        run: npm run render:carousel
+        env:
+          TEMPLATE_KEY: ${{ inputs.template_key || 'carousel-base' }}
+
+      - name: Upload generated carousel
+        uses: actions/upload-artifact@v4
+        with:
+          name: sample-carousel-output
+          path: output/

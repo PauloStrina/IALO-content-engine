@@ -1,0 +1,16 @@
+{
+  "weekly_cadence": "una tesis por semana",
+  "content_types": ["problema", "método", "resultado", "conexión"],
+  "primary_formats": ["carrusel", "reel", "clip podcast", "stories", "hilo X", "post frase"],
+  "approval_policy": {
+    "first_60_days": "revisión humana obligatoria antes de publicar",
+    "future": "autopublicación parcial solo para formatos seguros"
+  },
+  "quality_checklist": [
+    "¿La pieza representa claramente la tesis semanal?",
+    "¿Tiene una tensión humana concreta?",
+    "¿Suena a IALO y no a autoayuda genérica?",
+    "¿Hay una frase recordable?",
+    "¿Invita a conversación o introspección?"
+  ]
+}

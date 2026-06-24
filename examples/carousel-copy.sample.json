@@ -1,0 +1,17 @@
+{
+  "title": "A veces cambia la escena, pero se repite el patrón",
+  "caption": "Capaz no necesitás cambiar todo afuera. Capaz primero necesitás mirar qué patrón se está repitiendo adentro.",
+  "slides": [
+    { "number": 1, "type": "cover", "text": "A veces cambia la escena, pero se repite el patrón." },
+    { "number": 2, "type": "body", "text": "Cambiás de trabajo. Cambiás de vínculo. Cambiás de ciudad." },
+    { "number": 3, "type": "body", "text": "Pero algo adentro vuelve a armar el mismo escenario." },
+    { "number": 4, "type": "body", "text": "No porque estés fallando. Porque todavía no viste el patrón." },
+    { "number": 5, "type": "body", "text": "Tu historia te explica, pero no tiene por qué encerrarte." },
+    { "number": 6, "type": "question", "text": "¿Qué se repite en tu vida aunque cambien las personas?" },
+    { "number": 7, "type": "body", "text": "Ahí donde se repite, hay una puerta." },
+    { "number": 8, "type": "body", "text": "El autoconocimiento no es mirarte para juzgarte. Es mirarte para elegir." },
+    { "number": 9, "type": "body", "text": "Cuando ves el patrón, recuperás margen de acción." },
+    { "number": 10, "type": "closing", "text": "Cambio adentro, para cambiar afuera." }
+  ],
+  "cta": "Guardalo para volver a esta pregunta cuando sientas que algo se repite."
+}
