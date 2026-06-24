@@ -1,0 +1,30 @@
+{
+  "good_examples": [
+    {
+      "text": "A veces cambiamos todo afuera, pero no vemos lo que se repite adentro.",
+      "why": "Usa primera persona plural, nombra una tensión compartida y no asume intención consciente."
+    },
+    {
+      "text": "No siempre repetimos porque queremos. Muchas veces repetimos porque todavía no lo vimos.",
+      "why": "Diferencia repetición de intención y pone el foco en el automatismo inconsciente."
+    },
+    {
+      "text": "A veces creemos que el problema es el escenario, hasta que vemos que algo del patrón viaja con nosotros.",
+      "why": "Trabaja la tesis de cambio interno sin culpabilizar ni dar una lección."
+    }
+  ],
+  "bad_examples": [
+    {
+      "text": "A veces cambiás todo afuera para no mirar adentro.",
+      "why": "Usa segunda persona aleccionadora y asume evasión intencional."
+    },
+    {
+      "text": "¿Estás listo para mirar en tu interior?",
+      "why": "Suena a autoayuda genérica y usa español neutro/motivacional."
+    },
+    {
+      "text": "Transformá tu vida desde adentro hacia afuera.",
+      "why": "Promete transformación total y cae en tono de fórmula."
+    }
+  ]
+}

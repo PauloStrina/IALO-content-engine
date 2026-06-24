@@ -1,14 +1,27 @@
 {
   "language": "es-AR",
-  "person": "vos",
+  "primary_person": "primera persona del plural inclusiva",
+  "secondary_person": "voseo solo para preguntas o invitaciones suaves, nunca para dar lecciones",
   "voice": ["profunda", "humana", "simbólica", "inspiracional", "inquietante", "encendedora", "precisa"],
-  "avoid": ["autoayuda genérica", "tono gurú", "promesas garantizadas", "venta directa", "frases vacías", "exceso de abstracción"],
+  "avoid": [
+    "autoayuda genérica",
+    "tono gurú",
+    "promesas garantizadas",
+    "venta directa",
+    "frases vacías",
+    "exceso de abstracción",
+    "español neutro",
+    "segunda persona aleccionadora",
+    "asumir intencionalidad consciente donde puede haber automatismo inconsciente"
+  ],
   "principles": [
     "Abrir conversaciones, no cerrar respuestas.",
+    "Hablar desde un nosotros que también está implicado en lo que nombra.",
     "Nombrar tensiones invisibles con escenas concretas.",
     "Usar símbolos para hacer recordables las ideas.",
     "Combinar profundidad con aplicabilidad.",
-    "No hablar como protagonista; facilitar la reflexión."
+    "No hablar como protagonista ni como maestro; facilitar una conversación compartida.",
+    "Mostrar la posibilidad de que estemos actuando en automático, sin darnos cuenta."
   ],
-  "signature_closing": "IALO no viene a darte una respuesta. Viene a abrir una conversación que quizás ya estaba adentro tuyo."
+  "signature_closing": "IALO no viene a darte una respuesta. Viene a abrir una conversación que quizás ya estaba adentro nuestro."
 }
