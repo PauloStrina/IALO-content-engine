@@ -11,6 +11,7 @@ const outputPath = process.env.OUTPUT_PATH || "output/weekly-plan.json";
 
 const theses = await readJson<Theses>("brand/theses.json");
 const contentRules = await fs.readFile("brand/content-rules.json", "utf-8");
+const editorialExamples = await fs.readFile("brand/editorial-examples.json", "utf-8");
 const basePrompt = await fs.readFile("src/prompts/weekly-plan.prompt.md", "utf-8");
 const thesis = theses[thesisKey];
 
@@ -29,16 +30,20 @@ const prompt = `${basePrompt}
 ## Reglas editoriales
 ${contentRules}
 
+## Ejemplos editoriales
+${editorialExamples}
+
 ## Tesis semanal
 ${JSON.stringify(thesis, null, 2)}
 
 Generá 7 piezas para una semana completa, manteniendo una sola tesis como foco.
+Antes de responder, verificá internamente que los hooks usen un nosotros implicado y no diagnostiquen al lector desde afuera.
 `;
 
 const response = await openai.chat.completions.create({
   model: process.env.OPENAI_MODEL || "gpt-4o-mini",
   messages: [{ role: "user", content: prompt }],
-  temperature: 0.8,
+  temperature: 0.65,
   response_format: { type: "json_object" }
 });
 
