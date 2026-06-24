@@ -6,9 +6,38 @@
     "first_60_days": "revisión humana obligatoria antes de publicar",
     "future": "autopublicación parcial solo para formatos seguros"
   },
+  "mandatory_conceptual_rules": [
+    "No hablarle al otro como si se le estuviera dando una lección.",
+    "Usar primera persona del plural inclusiva para nombrar patrones humanos: cambiamos, repetimos, no vemos, nos pasa, aprendimos.",
+    "No asumir intención consciente. Cuando un patrón se repite, tratarlo como posibilidad de automatismo o inconsciencia, no como evasión deliberada.",
+    "No usar fórmulas tipo 'para no mirar adentro', porque presuponen intención. Preferir 'sin ver lo que se repite adentro', 'sin darnos cuenta', 'en automático'.",
+    "La tensión debe aparecer como descubrimiento compartido, no como diagnóstico sobre el otro."
+  ],
+  "banned_phrases": [
+    "te sientes",
+    "ti mismo",
+    "estás listo",
+    "¿estás listo?",
+    "transformar tu vida",
+    "mirar en tu interior",
+    "para no mirar adentro",
+    "para evitar mirar adentro",
+    "lienzo en blanco",
+    "nuevo comienzo",
+    "paleta de posibilidades"
+  ],
+  "preferred_examples": [
+    "A veces cambiamos todo afuera, pero no vemos lo que se repite adentro.",
+    "A veces creemos que el problema es el escenario, hasta que vemos que algo del patrón viaja con nosotros.",
+    "No siempre repetimos porque queremos. Muchas veces repetimos porque todavía no lo vimos.",
+    "Hay cosas que aprendimos para sobrevivir a un contexto, y que después seguimos repitiendo en piloto automático."
+  ],
   "quality_checklist": [
     "¿La pieza representa claramente la tesis semanal?",
+    "¿Está escrita desde un nosotros implicado y no desde una segunda persona aleccionadora?",
     "¿Tiene una tensión humana concreta?",
+    "¿Evita asumir que la persona actúa intencionalmente?",
+    "¿Muestra la posibilidad de un patrón inconsciente o automático?",
     "¿Suena a IALO y no a autoayuda genérica?",
     "¿Hay una frase recordable?",
     "¿Invita a conversación o introspección?"
