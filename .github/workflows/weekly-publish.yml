@@ -93,6 +93,13 @@ jobs:
           PUBLISH_START_DATE: ${{ env.PUBLISH_START_DATE }}
           PUBLIC_ASSET_BASE_URL: ${{ env.PUBLIC_ASSET_BASE_URL }}
 
+      - name: Fix publish manifest
+        run: npm run fix:publish-manifest
+        env:
+          PUBLISH_RUN_ID: ${{ env.PUBLISH_RUN_ID }}
+          PUBLISH_START_DATE: ${{ env.PUBLISH_START_DATE }}
+          PUBLIC_BUILD_DIR: public-assets/generated/${{ env.PUBLISH_RUN_ID }}
+
       - name: Publish assets to public branch
         uses: peaceiris/actions-gh-pages@v3
         with:
