@@ -1,0 +1,52 @@
+{
+  "cambio-adentro": {
+    "title": "Cambio adentro, para cambiar afuera",
+    "subtitle": "El cambio que buscás afuera empieza cuando mirás adentro el patrón que te condiciona, recordando que tu esencia no es tu historia.",
+    "symbols": ["espejo", "máscara", "llave", "patrón", "esencia"],
+    "content_focus": ["autoconocimiento", "patrones repetidos", "historia personal", "identidad", "responsabilidad sin culpa"],
+    "phrases": [
+      "Cambio adentro, para cambiar afuera.",
+      "Mi exterior es mi reflejo.",
+      "Mi esencia no es mi historia.",
+      "El cambio empieza cuando ves el patrón.",
+      "No sos tu piloto automático."
+    ]
+  },
+  "segui-tu-entusiasmo": {
+    "title": "Seguí tu entusiasmo",
+    "subtitle": "El entusiasmo es una brújula interna que señala aquello que resuena con tu esencia, incluso antes de que puedas nombrarlo como propósito.",
+    "symbols": ["fuego interno", "brújula", "motorcito", "curiosidad", "esencia"],
+    "content_focus": ["entusiasmo genuino", "curiosidad", "propósito no trillado", "fuego interno", "señales internas"],
+    "phrases": [
+      "Seguí tu entusiasmo.",
+      "El entusiasmo es brújula.",
+      "La curiosidad es motorcito.",
+      "Donde hay entusiasmo genuino, hay una pista de tu esencia.",
+      "No siempre necesitás encontrar tu propósito; a veces necesitás escuchar qué te enciende."
+    ]
+  },
+  "acepto-lo-que-es": {
+    "title": "Acepto lo que es",
+    "subtitle": "La cantidad de sufrimiento que experimentamos está profundamente vinculada al grado de resistencia que tenemos frente a lo que es.",
+    "symbols": ["racha", "presencia", "resistencia", "paciencia", "sabiduría"],
+    "content_focus": ["aceptación", "resistencia", "control", "ansiedad", "rachas"],
+    "phrases": [
+      "Acepto lo que es.",
+      "Lo que resistís también te muestra.",
+      "Hay rachas en esta vida.",
+      "La aceptación no es resignación; es presencia.",
+      "Lo que es, primero se mira. Después se transforma."
+    ]
+  },
+  "cultura-inconsciente": {
+    "title": "La cultura es el inconsciente colectivo de una organización",
+    "subtitle": "La cultura no es lo que una organización declara, sino lo que las personas aprenden que conviene callar, mostrar, ocultar o repetir para pertenecer.",
+    "symbols": ["inconsciente colectivo", "silencios", "máscara", "vulnerabilidad", "confianza"],
+    "content_focus": ["cultura real", "silencios", "seguridad psicológica", "liderazgo", "reglas no escritas"],
+    "phrases": [
+      "La cultura es el inconsciente colectivo de una organización.",
+      "La cultura real aparece en lo que la gente aprende a callar.",
+      "Lo que una organización no puede conversar, muchas veces lo actúa en silencio."
+    ]
+  }
+}
