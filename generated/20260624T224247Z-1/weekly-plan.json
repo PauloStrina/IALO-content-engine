@@ -1,0 +1,62 @@
+{
+  "thesis": "Cambio adentro, para cambiar afuera",
+  "week_goal": "Reflexionar sobre cómo nuestros patrones internos impactan en el cambio que buscamos en el exterior.",
+  "pieces": [
+    {
+      "day": "lunes",
+      "format": "carrusel",
+      "content_type": "problema",
+      "title": "Espejos de nuestra historia",
+      "hook": "A veces nos encontramos buscando cambios externos sin darnos cuenta de que nuestros patrones internos nos condicionan.",
+      "cta": "¿Qué patrones vemos reflejados en nuestras vidas?"
+    },
+    {
+      "day": "martes",
+      "format": "reel",
+      "content_type": "método",
+      "title": "La llave del autoconocimiento",
+      "hook": "A veces creemos que la solución está afuera, pero el primer paso es mirar hacia adentro y reconocer lo que repetimos sin querer.",
+      "cta": "Exploramos cómo empezar a abrir esa puerta."
+    },
+    {
+      "day": "miércoles",
+      "format": "clip podcast",
+      "content_type": "conexión",
+      "title": "Identidad y patrones",
+      "hook": "Nos pasa que, al mirar nuestra historia, encontramos patrones que nos definen más de lo que creemos. ¿Cómo podemos desafiarlos?",
+      "cta": "Escuchamos nuestras experiencias y reflexionamos juntos."
+    },
+    {
+      "day": "jueves",
+      "format": "hilo X",
+      "content_type": "resultado",
+      "title": "Transformaciones internas",
+      "hook": "A veces, el cambio que buscamos afuera es solo un reflejo de lo que aún no hemos visto dentro. ¿Qué descubrimos en nuestro camino?",
+      "cta": "Compartimos nuestros aprendizajes."
+    },
+    {
+      "day": "viernes",
+      "format": "stories",
+      "content_type": "problema",
+      "title": "La máscara que usamos",
+      "hook": "Nos sucede que, en ocasiones, ocultamos nuestra esencia detrás de una máscara que creemos necesaria. ¿Qué patrones nos llevan a esto?",
+      "cta": "Reflexionemos sobre lo que escondemos."
+    },
+    {
+      "day": "sábado",
+      "format": "post frase",
+      "content_type": "resultado",
+      "title": "Reflejos de cambio",
+      "hook": "\"Mi esencia no es mi historia.\" A veces, recordamos que el cambio que buscamos empieza por entendemos a nosotros mismos.",
+      "cta": "¿Qué significa esta frase para nosotros?"
+    },
+    {
+      "day": "domingo",
+      "format": "carrusel",
+      "content_type": "conexión",
+      "title": "Cerrando la semana",
+      "hook": "Al mirar atrás, a veces nos damos cuenta de que el cambio que anhelamos empieza por reconocer nuestros patrones. ¿Qué aprendimos esta semana?",
+      "cta": "Cerramos con una reflexión colectiva."
+    }
+  ]
+}

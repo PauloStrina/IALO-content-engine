@@ -1,0 +1,119 @@
+{
+  "source": "ialo-content-engine",
+  "runId": "20260624T224247Z-1",
+  "generatedAt": "2026-06-24T22:43:06.819Z",
+  "posts": [
+    {
+      "externalId": "ialo-20260624T224247Z-1-piece-01-carrusel",
+      "platforms": [
+        "instagram"
+      ],
+      "type": "carousel",
+      "scheduledAt": "2026-06-28T10:00:00-03:00",
+      "text": "Exploramos cómo los patrones que llevamos dentro influyen en lo que vemos afuera. ¿Qué descubrimos en nuestro espejo interior?",
+      "caption": "Exploramos cómo los patrones que llevamos dentro influyen en lo que vemos afuera. ¿Qué descubrimos en nuestro espejo interior?",
+      "mediaUrls": [
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260624T224247Z-1/carousel/slide-01.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260624T224247Z-1/carousel/slide-02.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260624T224247Z-1/carousel/slide-03.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260624T224247Z-1/carousel/slide-04.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260624T224247Z-1/carousel/slide-05.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260624T224247Z-1/carousel/slide-06.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260624T224247Z-1/carousel/slide-07.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260624T224247Z-1/carousel/slide-08.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260624T224247Z-1/carousel/slide-09.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260624T224247Z-1/carousel/slide-10.png"
+      ],
+      "metadata": {
+        "day": "lunes",
+        "pieceIndex": 1,
+        "thesis": "cambio-adentro",
+        "weekGoal": "Reflexionar sobre cómo nuestros patrones internos impactan en el cambio que buscamos en el exterior."
+      }
+    },
+    {
+      "externalId": "ialo-20260624T224247Z-1-piece-04-hilo-x",
+      "platforms": [
+        "x"
+      ],
+      "type": "text",
+      "scheduledAt": "2026-07-03T18:00:00-03:00",
+      "text": "Transformaciones internas\n\nA veces, el cambio que buscamos afuera es solo un reflejo de lo que aún no hemos visto dentro. ¿Qué descubrimos en nuestro camino?\n\nCompartimos nuestros aprendizajes.",
+      "caption": "Transformaciones internas\n\nA veces, el cambio que buscamos afuera es solo un reflejo de lo que aún no hemos visto dentro. ¿Qué descubrimos en nuestro camino?\n\nCompartimos nuestros aprendizajes.",
+      "mediaUrls": [],
+      "metadata": {
+        "day": "jueves",
+        "pieceIndex": 4,
+        "thesis": "cambio-adentro",
+        "weekGoal": "Reflexionar sobre cómo nuestros patrones internos impactan en el cambio que buscamos en el exterior."
+      }
+    },
+    {
+      "externalId": "ialo-20260624T224247Z-1-piece-05-stories",
+      "platforms": [
+        "instagram_stories"
+      ],
+      "type": "image",
+      "scheduledAt": "2026-06-30T11:00:00-03:00",
+      "text": "La máscara que usamos\n\nNos sucede que, en ocasiones, ocultamos nuestra esencia detrás de una máscara que creemos necesaria. ¿Qué patrones nos llevan a esto?\n\nReflexionemos sobre lo que escondemos.",
+      "caption": "La máscara que usamos\n\nNos sucede que, en ocasiones, ocultamos nuestra esencia detrás de una máscara que creemos necesaria. ¿Qué patrones nos llevan a esto?\n\nReflexionemos sobre lo que escondemos.",
+      "mediaUrls": [
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260624T224247Z-1/static-cards/piece-05-stories.png"
+      ],
+      "metadata": {
+        "day": "viernes",
+        "pieceIndex": 5,
+        "thesis": "cambio-adentro",
+        "weekGoal": "Reflexionar sobre cómo nuestros patrones internos impactan en el cambio que buscamos en el exterior."
+      }
+    },
+    {
+      "externalId": "ialo-20260624T224247Z-1-piece-06-post-frase",
+      "platforms": [
+        "instagram",
+        "x"
+      ],
+      "type": "image",
+      "scheduledAt": "2026-07-02T10:00:00-03:00",
+      "text": "Reflejos de cambio\n\n\"Mi esencia no es mi historia.\" A veces, recordamos que el cambio que buscamos empieza por entendemos a nosotros mismos.\n\n¿Qué significa esta frase para nosotros?",
+      "caption": "Reflejos de cambio\n\n\"Mi esencia no es mi historia.\" A veces, recordamos que el cambio que buscamos empieza por entendemos a nosotros mismos.\n\n¿Qué significa esta frase para nosotros?",
+      "mediaUrls": [
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260624T224247Z-1/static-cards/piece-06-post-frase.png"
+      ],
+      "metadata": {
+        "day": "sábado",
+        "pieceIndex": 6,
+        "thesis": "cambio-adentro",
+        "weekGoal": "Reflexionar sobre cómo nuestros patrones internos impactan en el cambio que buscamos en el exterior."
+      }
+    },
+    {
+      "externalId": "ialo-20260624T224247Z-1-piece-07-carrusel",
+      "platforms": [
+        "instagram"
+      ],
+      "type": "carousel",
+      "scheduledAt": "2026-06-28T10:00:00-03:00",
+      "text": "Exploramos cómo los patrones que llevamos dentro influyen en lo que vemos afuera. ¿Qué descubrimos en nuestro espejo interior?",
+      "caption": "Exploramos cómo los patrones que llevamos dentro influyen en lo que vemos afuera. ¿Qué descubrimos en nuestro espejo interior?",
+      "mediaUrls": [
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260624T224247Z-1/carousel/slide-01.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260624T224247Z-1/carousel/slide-02.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260624T224247Z-1/carousel/slide-03.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260624T224247Z-1/carousel/slide-04.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260624T224247Z-1/carousel/slide-05.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260624T224247Z-1/carousel/slide-06.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260624T224247Z-1/carousel/slide-07.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260624T224247Z-1/carousel/slide-08.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260624T224247Z-1/carousel/slide-09.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260624T224247Z-1/carousel/slide-10.png"
+      ],
+      "metadata": {
+        "day": "domingo",
+        "pieceIndex": 7,
+        "thesis": "cambio-adentro",
+        "weekGoal": "Reflexionar sobre cómo nuestros patrones internos impactan en el cambio que buscamos en el exterior."
+      }
+    }
+  ]
+}
