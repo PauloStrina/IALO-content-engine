@@ -1,0 +1,134 @@
+name: Weekly IALO Publish
+
+on:
+  workflow_dispatch:
+    inputs:
+      thesis:
+        description: "Tesis semanal"
+        required: true
+        type: choice
+        options:
+          - cambio-adentro
+          - segui-tu-entusiasmo
+          - acepto-lo-que-es
+          - cultura-inconsciente
+      template_key:
+        description: "Template visual"
+        required: true
+        default: carousel-base
+        type: string
+      publish_start_date:
+        description: "Fecha base de publicación, formato YYYY-MM-DD. Vacío = hoy UTC."
+        required: false
+        type: string
+      dry_run:
+        description: "true genera assets/payload; false también envía a Blotato"
+        required: true
+        default: "true"
+        type: choice
+        options:
+          - "true"
+          - "false"
+
+permissions:
+  contents: write
+
+jobs:
+  publish-package:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Install Playwright Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Set publish variables
+        shell: bash
+        run: |
+          RUN_ID="$(date -u +'%Y%m%dT%H%M%SZ')-${GITHUB_RUN_NUMBER}"
+          if [ -z "${{ inputs.publish_start_date }}" ]; then
+            START_DATE="$(date -u +'%Y-%m-%d')"
+          else
+            START_DATE="${{ inputs.publish_start_date }}"
+          fi
+          echo "PUBLISH_RUN_ID=${RUN_ID}" >> "$GITHUB_ENV"
+          echo "PUBLISH_START_DATE=${START_DATE}" >> "$GITHUB_ENV"
+          echo "PUBLIC_ASSET_BASE_URL=https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/published-assets" >> "$GITHUB_ENV"
+
+      - name: Generate weekly plan
+        run: npm run generate:weekly-plan
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          THESIS: ${{ inputs.thesis }}
+
+      - name: Generate carousel copy
+        run: npm run generate:carousel
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          THESIS: ${{ inputs.thesis }}
+
+      - name: Render carousel
+        run: npm run render:carousel
+        env:
+          TEMPLATE_KEY: ${{ inputs.template_key }}
+
+      - name: Render weekly static assets
+        run: npm run render:weekly-assets
+
+      - name: Build publish manifest
+        run: npm run build:publish-manifest
+        env:
+          THESIS: ${{ inputs.thesis }}
+          PUBLISH_RUN_ID: ${{ env.PUBLISH_RUN_ID }}
+          PUBLISH_START_DATE: ${{ env.PUBLISH_START_DATE }}
+          PUBLIC_ASSET_BASE_URL: ${{ env.PUBLIC_ASSET_BASE_URL }}
+
+      - name: Publish assets to public branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: published-assets
+          publish_dir: ./public-assets
+          keep_files: true
+
+      - name: Upload publish package artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ialo-publish-package
+          path: |
+            output/
+            public-assets/
+
+      - name: Wait for public raw URLs
+        if: ${{ inputs.dry_run == 'false' }}
+        run: sleep 8
+
+      - name: Send scheduled payload to Blotato
+        if: ${{ inputs.dry_run == 'false' }}
+        run: npm run publish:blotato
+        env:
+          BLOTATO_API_KEY: ${{ secrets.BLOTATO_API_KEY }}
+          BLOTATO_API_URL: ${{ secrets.BLOTATO_API_URL }}
+          BLOTATO_SEND_MODE: batch
+          BLOTATO_PAYLOAD_PATH: output/blotato-payload.json
+          BLOTATO_RESPONSE_PATH: output/blotato-response.json
+
+      - name: Upload Blotato response artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ialo-publish-response
+          path: |
+            output/blotato-response.json
+            output/blotato-payload.json
+            output/publish-manifest.json
