@@ -1,6 +1,6 @@
 {
   "name": "ialo-content-engine",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
   "type": "module",
   "scripts": {
@@ -9,8 +9,9 @@
     "render:carousel": "tsx src/scripts/render-carousel.ts",
     "render:weekly-assets": "tsx src/scripts/render-weekly-assets.ts",
     "build:publish-manifest": "tsx src/scripts/build-publish-manifest.ts",
+    "fix:publish-manifest": "tsx src/scripts/fix-publish-manifest.ts",
     "publish:blotato": "tsx src/scripts/publish-blotato.ts",
-    "pipeline:local": "npm run generate:weekly-plan && npm run generate:carousel && npm run render:carousel && npm run render:weekly-assets && npm run build:publish-manifest"
+    "pipeline:local": "npm run generate:weekly-plan && npm run generate:carousel && npm run render:carousel && npm run render:weekly-assets && npm run build:publish-manifest && npm run fix:publish-manifest"
   },
   "dependencies": {
     "dotenv": "^16.4.7",
