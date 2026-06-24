@@ -1,0 +1,14 @@
+{
+  "language": "es-AR",
+  "person": "vos",
+  "voice": ["profunda", "humana", "simbólica", "inspiracional", "inquietante", "encendedora", "precisa"],
+  "avoid": ["autoayuda genérica", "tono gurú", "promesas garantizadas", "venta directa", "frases vacías", "exceso de abstracción"],
+  "principles": [
+    "Abrir conversaciones, no cerrar respuestas.",
+    "Nombrar tensiones invisibles con escenas concretas.",
+    "Usar símbolos para hacer recordables las ideas.",
+    "Combinar profundidad con aplicabilidad.",
+    "No hablar como protagonista; facilitar la reflexión."
+  ],
+  "signature_closing": "IALO no viene a darte una respuesta. Viene a abrir una conversación que quizás ya estaba adentro tuyo."
+}
