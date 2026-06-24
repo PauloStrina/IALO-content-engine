@@ -1,0 +1,24 @@
+{
+  "timezone": "America/Argentina/Buenos_Aires",
+  "utcOffset": "-03:00",
+  "defaultPlatformsByFormat": {
+    "carrusel": ["instagram"],
+    "post frase": ["instagram", "x"],
+    "stories": ["instagram_stories"],
+    "hilo x": ["x"],
+    "hilo X": ["x"],
+    "reel": ["instagram_reels", "tiktok", "youtube_shorts"],
+    "clip podcast": ["instagram_reels", "tiktok", "youtube_shorts"]
+  },
+  "scheduleByFormat": {
+    "carrusel": { "dayOffset": 0, "time": "10:00" },
+    "reel": { "dayOffset": 1, "time": "12:00" },
+    "stories": { "dayOffset": 2, "time": "11:00" },
+    "clip podcast": { "dayOffset": 3, "time": "12:00" },
+    "post frase": { "dayOffset": 4, "time": "10:00" },
+    "hilo x": { "dayOffset": 5, "time": "18:00" },
+    "hilo X": { "dayOffset": 5, "time": "18:00" }
+  },
+  "videoFormats": ["reel", "clip podcast"],
+  "staticImageFormats": ["post frase", "stories"]
+}

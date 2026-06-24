@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "pieceIndex": 2,
+      "format": "reel",
+      "mediaUrl": "https://example.com/reel-final.mp4",
+      "platforms": ["instagram_reels", "tiktok", "youtube_shorts"],
+      "caption": "Caption final del reel."
+    },
+    {
+      "pieceIndex": 4,
+      "format": "clip podcast",
+      "mediaUrl": "https://example.com/clip-podcast-final.mp4",
+      "platforms": ["instagram_reels", "tiktok", "youtube_shorts"],
+      "caption": "Caption final del clip de podcast."
+    }
+  ]
+}

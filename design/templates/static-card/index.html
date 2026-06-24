@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1350" />
+    <title>IALO Static Card</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="card">
+      <header class="brand">
+        <span>Invisible a los Ojos</span>
+        <span id="format"></span>
+      </header>
+
+      <section class="content">
+        <p class="eyebrow" id="contentType"></p>
+        <h1 id="title"></h1>
+        <p class="hook" id="hook"></p>
+      </section>
+
+      <footer class="footer">
+        <span id="cta"></span>
+      </footer>
+    </main>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      document.getElementById("format").innerText = params.get("format") || "";
+      document.getElementById("contentType").innerText = params.get("contentType") || "";
+      document.getElementById("title").innerText = params.get("title") || "";
+      document.getElementById("hook").innerText = params.get("hook") || "";
+      document.getElementById("cta").innerText = params.get("cta") || "";
+    </script>
+  </body>
+</html>

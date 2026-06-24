@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  width: 1080px;
+  height: 1350px;
+  overflow: hidden;
+}
+
+body {
+  font-family: Inter, Arial, sans-serif;
+  background: #f4efe7;
+  color: #191919;
+}
+
+.card {
+  width: 1080px;
+  height: 1350px;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background:
+    radial-gradient(circle at 18% 18%, rgba(25, 25, 25, 0.06), transparent 24%),
+    linear-gradient(180deg, #f4efe7 0%, #eee5da 100%);
+}
+
+.brand,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  font-size: 28px;
+  letter-spacing: -0.02em;
+  opacity: 0.62;
+}
+
+.content {
+  min-height: 850px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.eyebrow {
+  margin: 0 0 34px;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.48;
+}
+
+h1 {
+  margin: 0;
+  max-width: 900px;
+  font-size: 76px;
+  line-height: 1.02;
+  letter-spacing: -0.055em;
+  font-weight: 650;
+}
+
+.hook {
+  margin: 46px 0 0;
+  max-width: 860px;
+  font-size: 42px;
+  line-height: 1.14;
+  letter-spacing: -0.035em;
+  opacity: 0.74;
+}
+
+.footer {
+  justify-content: flex-end;
+  font-size: 30px;
+  line-height: 1.16;
+}
