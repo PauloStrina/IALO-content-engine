@@ -1,0 +1,62 @@
+{
+  "thesis": "Cambio adentro, para cambiar afuera",
+  "week_goal": "Explorar cómo nuestros patrones internos influyen en nuestra realidad externa.",
+  "pieces": [
+    {
+      "day": "lunes",
+      "format": "carrusel",
+      "content_type": "problema",
+      "title": "El reflejo de nuestro exterior",
+      "hook": "A veces creemos que el cambio que buscamos afuera se logra solo con acciones externas, sin darnos cuenta de que muchas veces nuestro patrón interno sigue intacto.",
+      "cta": "Reflexionemos juntos sobre cómo nuestros patrones internos pueden estar condicionando nuestra realidad."
+    },
+    {
+      "day": "martes",
+      "format": "reel",
+      "content_type": "método",
+      "title": "Descubriendo patrones",
+      "hook": "Nos pasa que, al querer cambiar algo en nuestras vidas, nos encontramos repitiendo situaciones que no nos gustan. ¿Qué pasaría si comenzamos a mirar esos patrones con curiosidad?",
+      "cta": "Acompañanos en este proceso de descubrimiento."
+    },
+    {
+      "day": "miércoles",
+      "format": "clip podcast",
+      "content_type": "conexión",
+      "title": "Historias que nos marcan",
+      "hook": "A veces, nuestras experiencias pasadas nos definen más de lo que creemos, y sin darnos cuenta, dejamos que nuestra historia condicione nuestro presente.",
+      "cta": "Escuchá cómo compartimos nuestras historias y las lecciones que nos dejaron."
+    },
+    {
+      "day": "jueves",
+      "format": "hilo X",
+      "content_type": "resultado",
+      "title": "El cambio interno",
+      "hook": "Cuando comenzamos a reconocer nuestros patrones, algo cambia. Nos damos cuenta de que la esencia de quienes somos no es solo el resultado de lo que hemos vivido.",
+      "cta": "Te invitamos a reflexionar sobre tus propios cambios internos."
+    },
+    {
+      "day": "viernes",
+      "format": "stories",
+      "content_type": "problema",
+      "title": "La máscara que usamos",
+      "hook": "A veces, sin darnos cuenta, usamos máscaras que ocultan nuestra esencia, y esas máscaras nos limitan en cómo nos relacionamos con el mundo.",
+      "cta": "Compartamos experiencias sobre las máscaras que usamos y cómo podemos quitarlas."
+    },
+    {
+      "day": "sábado",
+      "format": "post frase",
+      "content_type": "conexión",
+      "title": "Espejos y reflexiones",
+      "hook": "Mi exterior es mi reflejo. Lo que vemos afuera a menudo es solo un eco de lo que llevamos dentro.",
+      "cta": "Pensemos en cómo nuestras percepciones pueden cambiar al mirar hacia adentro."
+    },
+    {
+      "day": "domingo",
+      "format": "carrusel",
+      "content_type": "método",
+      "title": "Claves para el cambio",
+      "hook": "El cambio empieza cuando vemos el patrón. Nos damos cuenta de que no somos nuestro piloto automático, y eso nos da la llave para abrir nuevas puertas.",
+      "cta": "Hagamos un repaso de las claves que nos ayudan a generar cambios desde adentro."
+    }
+  ]
+}

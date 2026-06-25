@@ -1,0 +1,199 @@
+{
+  "runId": "20260625T185514Z-4",
+  "thesis": "cambio-adentro",
+  "generatedAt": "2026-06-25T18:55:45.641Z",
+  "publicAssetBaseUrl": "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets",
+  "assetRootUrl": "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260625T185514Z-4",
+  "timezone": "America/Argentina/Buenos_Aires",
+  "posts": [
+    {
+      "id": "ialo-20260625T185514Z-4-piece-01-carrusel",
+      "format": "carrusel",
+      "contentType": "problema",
+      "platforms": [
+        "instagram"
+      ],
+      "scheduledAt": "2026-06-29T10:00:00-03:00",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "title": "El reflejo de nuestro exterior",
+      "cta": "Reflexionemos juntos sobre cómo nuestros patrones internos pueden estar condicionando nuestra realidad.",
+      "source": "generated",
+      "metadata": {
+        "day": "lunes",
+        "pieceIndex": 1,
+        "thesis": "cambio-adentro",
+        "weekGoal": "Explorar cómo nuestros patrones internos influyen en nuestra realidad externa."
+      },
+      "status": "ready",
+      "type": "carousel",
+      "caption": "Reflexionemos sobre cómo nuestros patrones internos moldean nuestra realidad. 🌱",
+      "text": "Reflexionemos sobre cómo nuestros patrones internos moldean nuestra realidad. 🌱",
+      "mediaUrls": [
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260625T185514Z-4/carousel/slide-01.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260625T185514Z-4/carousel/slide-02.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260625T185514Z-4/carousel/slide-03.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260625T185514Z-4/carousel/slide-04.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260625T185514Z-4/carousel/slide-05.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260625T185514Z-4/carousel/slide-06.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260625T185514Z-4/carousel/slide-07.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260625T185514Z-4/carousel/slide-08.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260625T185514Z-4/carousel/slide-09.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260625T185514Z-4/carousel/slide-10.png"
+      ]
+    },
+    {
+      "id": "ialo-20260625T185514Z-4-piece-02-reel",
+      "format": "reel",
+      "contentType": "método",
+      "platforms": [
+        "instagram_reels",
+        "tiktok",
+        "youtube_shorts"
+      ],
+      "scheduledAt": "2026-06-30T12:00:00-03:00",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "title": "Descubriendo patrones",
+      "cta": "Acompañanos en este proceso de descubrimiento.",
+      "source": "generated",
+      "metadata": {
+        "day": "martes",
+        "pieceIndex": 2,
+        "thesis": "cambio-adentro",
+        "weekGoal": "Explorar cómo nuestros patrones internos influyen en nuestra realidad externa."
+      },
+      "status": "needs_manual_video",
+      "type": "video",
+      "caption": "Descubriendo patrones\n\nNos pasa que, al querer cambiar algo en nuestras vidas, nos encontramos repitiendo situaciones que no nos gustan. ¿Qué pasaría si comenzamos a mirar esos patrones con curiosidad?\n\nAcompañanos en este proceso de descubrimiento.",
+      "text": "Descubriendo patrones\n\nNos pasa que, al querer cambiar algo en nuestras vidas, nos encontramos repitiendo situaciones que no nos gustan. ¿Qué pasaría si comenzamos a mirar esos patrones con curiosidad?\n\nAcompañanos en este proceso de descubrimiento.",
+      "mediaUrls": []
+    },
+    {
+      "id": "ialo-20260625T185514Z-4-piece-03-clip-podcast",
+      "format": "clip podcast",
+      "contentType": "conexión",
+      "platforms": [
+        "instagram_reels",
+        "tiktok",
+        "youtube_shorts"
+      ],
+      "scheduledAt": "2026-07-01T12:00:00-03:00",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "title": "Historias que nos marcan",
+      "cta": "Escuchá cómo compartimos nuestras historias y las lecciones que nos dejaron.",
+      "source": "generated",
+      "metadata": {
+        "day": "miércoles",
+        "pieceIndex": 3,
+        "thesis": "cambio-adentro",
+        "weekGoal": "Explorar cómo nuestros patrones internos influyen en nuestra realidad externa."
+      },
+      "status": "needs_manual_video",
+      "type": "video",
+      "caption": "Historias que nos marcan\n\nA veces, nuestras experiencias pasadas nos definen más de lo que creemos, y sin darnos cuenta, dejamos que nuestra historia condicione nuestro presente.\n\nEscuchá cómo compartimos nuestras historias y las lecciones que nos dejaron.",
+      "text": "Historias que nos marcan\n\nA veces, nuestras experiencias pasadas nos definen más de lo que creemos, y sin darnos cuenta, dejamos que nuestra historia condicione nuestro presente.\n\nEscuchá cómo compartimos nuestras historias y las lecciones que nos dejaron.",
+      "mediaUrls": []
+    },
+    {
+      "id": "ialo-20260625T185514Z-4-piece-04-hilo-x",
+      "format": "hilo X",
+      "contentType": "resultado",
+      "platforms": [
+        "x"
+      ],
+      "scheduledAt": "2026-07-02T18:00:00-03:00",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "title": "El cambio interno",
+      "cta": "Te invitamos a reflexionar sobre tus propios cambios internos.",
+      "source": "generated",
+      "metadata": {
+        "day": "jueves",
+        "pieceIndex": 4,
+        "thesis": "cambio-adentro",
+        "weekGoal": "Explorar cómo nuestros patrones internos influyen en nuestra realidad externa."
+      },
+      "status": "ready",
+      "type": "text",
+      "caption": "El cambio interno\n\nCuando comenzamos a reconocer nuestros patrones, algo cambia. Nos damos cuenta de que la esencia de quienes somos no es solo el resultado de lo que hemos vivido.\n\nTe invitamos a reflexionar sobre tus propios cambios internos.",
+      "text": "El cambio interno\n\nCuando comenzamos a reconocer nuestros patrones, algo cambia. Nos damos cuenta de que la esencia de quienes somos no es solo el resultado de lo que hemos vivido.\n\nTe invitamos a reflexionar sobre tus propios cambios internos.",
+      "mediaUrls": []
+    },
+    {
+      "id": "ialo-20260625T185514Z-4-piece-05-stories",
+      "format": "stories",
+      "contentType": "problema",
+      "platforms": [
+        "instagram_stories"
+      ],
+      "scheduledAt": "2026-07-03T11:00:00-03:00",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "title": "La máscara que usamos",
+      "cta": "Compartamos experiencias sobre las máscaras que usamos y cómo podemos quitarlas.",
+      "source": "generated",
+      "metadata": {
+        "day": "viernes",
+        "pieceIndex": 5,
+        "thesis": "cambio-adentro",
+        "weekGoal": "Explorar cómo nuestros patrones internos influyen en nuestra realidad externa."
+      },
+      "status": "ready",
+      "type": "image",
+      "caption": "La máscara que usamos\n\nA veces, sin darnos cuenta, usamos máscaras que ocultan nuestra esencia, y esas máscaras nos limitan en cómo nos relacionamos con el mundo.\n\nCompartamos experiencias sobre las máscaras que usamos y cómo podemos quitarlas.",
+      "text": "La máscara que usamos\n\nA veces, sin darnos cuenta, usamos máscaras que ocultan nuestra esencia, y esas máscaras nos limitan en cómo nos relacionamos con el mundo.\n\nCompartamos experiencias sobre las máscaras que usamos y cómo podemos quitarlas.",
+      "mediaUrls": [
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260625T185514Z-4/static-cards/piece-05-stories.png"
+      ]
+    },
+    {
+      "id": "ialo-20260625T185514Z-4-piece-06-post-frase",
+      "format": "post frase",
+      "contentType": "conexión",
+      "platforms": [
+        "instagram",
+        "x"
+      ],
+      "scheduledAt": "2026-07-04T10:00:00-03:00",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "title": "Espejos y reflexiones",
+      "cta": "Pensemos en cómo nuestras percepciones pueden cambiar al mirar hacia adentro.",
+      "source": "generated",
+      "metadata": {
+        "day": "sábado",
+        "pieceIndex": 6,
+        "thesis": "cambio-adentro",
+        "weekGoal": "Explorar cómo nuestros patrones internos influyen en nuestra realidad externa."
+      },
+      "status": "ready",
+      "type": "image",
+      "caption": "Espejos y reflexiones\n\nMi exterior es mi reflejo. Lo que vemos afuera a menudo es solo un eco de lo que llevamos dentro.\n\nPensemos en cómo nuestras percepciones pueden cambiar al mirar hacia adentro.",
+      "text": "Espejos y reflexiones\n\nMi exterior es mi reflejo. Lo que vemos afuera a menudo es solo un eco de lo que llevamos dentro.\n\nPensemos en cómo nuestras percepciones pueden cambiar al mirar hacia adentro.",
+      "mediaUrls": [
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260625T185514Z-4/static-cards/piece-06-post-frase.png"
+      ]
+    },
+    {
+      "id": "ialo-20260625T185514Z-4-piece-07-carrusel",
+      "format": "carrusel",
+      "contentType": "método",
+      "platforms": [
+        "instagram"
+      ],
+      "scheduledAt": "2026-07-05T10:00:00-03:00",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "title": "Claves para el cambio",
+      "cta": "Hagamos un repaso de las claves que nos ayudan a generar cambios desde adentro.",
+      "source": "generated",
+      "metadata": {
+        "day": "domingo",
+        "pieceIndex": 7,
+        "thesis": "cambio-adentro",
+        "weekGoal": "Explorar cómo nuestros patrones internos influyen en nuestra realidad externa.",
+        "reason": "Extra carousel kept as draft because this workflow generated one carousel asset package."
+      },
+      "status": "draft",
+      "type": "carousel",
+      "caption": "Reflexionemos sobre cómo nuestros patrones internos moldean nuestra realidad. 🌱",
+      "text": "Reflexionemos sobre cómo nuestros patrones internos moldean nuestra realidad. 🌱",
+      "mediaUrls": []
+    }
+  ]
+}

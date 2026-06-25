@@ -1,0 +1,91 @@
+{
+  "source": "ialo-content-engine",
+  "runId": "20260625T185514Z-4",
+  "generatedAt": "2026-06-25T18:55:45.641Z",
+  "posts": [
+    {
+      "externalId": "ialo-20260625T185514Z-4-piece-01-carrusel",
+      "platforms": [
+        "instagram"
+      ],
+      "type": "carousel",
+      "scheduledAt": "2026-06-29T10:00:00-03:00",
+      "text": "Reflexionemos sobre cómo nuestros patrones internos moldean nuestra realidad. 🌱",
+      "caption": "Reflexionemos sobre cómo nuestros patrones internos moldean nuestra realidad. 🌱",
+      "mediaUrls": [
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260625T185514Z-4/carousel/slide-01.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260625T185514Z-4/carousel/slide-02.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260625T185514Z-4/carousel/slide-03.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260625T185514Z-4/carousel/slide-04.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260625T185514Z-4/carousel/slide-05.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260625T185514Z-4/carousel/slide-06.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260625T185514Z-4/carousel/slide-07.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260625T185514Z-4/carousel/slide-08.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260625T185514Z-4/carousel/slide-09.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260625T185514Z-4/carousel/slide-10.png"
+      ],
+      "metadata": {
+        "day": "lunes",
+        "pieceIndex": 1,
+        "thesis": "cambio-adentro",
+        "weekGoal": "Explorar cómo nuestros patrones internos influyen en nuestra realidad externa."
+      }
+    },
+    {
+      "externalId": "ialo-20260625T185514Z-4-piece-04-hilo-x",
+      "platforms": [
+        "x"
+      ],
+      "type": "text",
+      "scheduledAt": "2026-07-02T18:00:00-03:00",
+      "text": "El cambio interno\n\nCuando comenzamos a reconocer nuestros patrones, algo cambia. Nos damos cuenta de que la esencia de quienes somos no es solo el resultado de lo que hemos vivido.\n\nTe invitamos a reflexionar sobre tus propios cambios internos.",
+      "caption": "El cambio interno\n\nCuando comenzamos a reconocer nuestros patrones, algo cambia. Nos damos cuenta de que la esencia de quienes somos no es solo el resultado de lo que hemos vivido.\n\nTe invitamos a reflexionar sobre tus propios cambios internos.",
+      "mediaUrls": [],
+      "metadata": {
+        "day": "jueves",
+        "pieceIndex": 4,
+        "thesis": "cambio-adentro",
+        "weekGoal": "Explorar cómo nuestros patrones internos influyen en nuestra realidad externa."
+      }
+    },
+    {
+      "externalId": "ialo-20260625T185514Z-4-piece-05-stories",
+      "platforms": [
+        "instagram_stories"
+      ],
+      "type": "image",
+      "scheduledAt": "2026-07-03T11:00:00-03:00",
+      "text": "La máscara que usamos\n\nA veces, sin darnos cuenta, usamos máscaras que ocultan nuestra esencia, y esas máscaras nos limitan en cómo nos relacionamos con el mundo.\n\nCompartamos experiencias sobre las máscaras que usamos y cómo podemos quitarlas.",
+      "caption": "La máscara que usamos\n\nA veces, sin darnos cuenta, usamos máscaras que ocultan nuestra esencia, y esas máscaras nos limitan en cómo nos relacionamos con el mundo.\n\nCompartamos experiencias sobre las máscaras que usamos y cómo podemos quitarlas.",
+      "mediaUrls": [
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260625T185514Z-4/static-cards/piece-05-stories.png"
+      ],
+      "metadata": {
+        "day": "viernes",
+        "pieceIndex": 5,
+        "thesis": "cambio-adentro",
+        "weekGoal": "Explorar cómo nuestros patrones internos influyen en nuestra realidad externa."
+      }
+    },
+    {
+      "externalId": "ialo-20260625T185514Z-4-piece-06-post-frase",
+      "platforms": [
+        "instagram",
+        "x"
+      ],
+      "type": "image",
+      "scheduledAt": "2026-07-04T10:00:00-03:00",
+      "text": "Espejos y reflexiones\n\nMi exterior es mi reflejo. Lo que vemos afuera a menudo es solo un eco de lo que llevamos dentro.\n\nPensemos en cómo nuestras percepciones pueden cambiar al mirar hacia adentro.",
+      "caption": "Espejos y reflexiones\n\nMi exterior es mi reflejo. Lo que vemos afuera a menudo es solo un eco de lo que llevamos dentro.\n\nPensemos en cómo nuestras percepciones pueden cambiar al mirar hacia adentro.",
+      "mediaUrls": [
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260625T185514Z-4/static-cards/piece-06-post-frase.png"
+      ],
+      "metadata": {
+        "day": "sábado",
+        "pieceIndex": 6,
+        "thesis": "cambio-adentro",
+        "weekGoal": "Explorar cómo nuestros patrones internos influyen en nuestra realidad externa."
+      }
+    }
+  ]
+}
