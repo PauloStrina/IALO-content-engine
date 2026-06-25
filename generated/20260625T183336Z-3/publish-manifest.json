@@ -1,0 +1,199 @@
+{
+  "runId": "20260625T183336Z-3",
+  "thesis": "cambio-adentro",
+  "generatedAt": "2026-06-25T18:33:59.153Z",
+  "publicAssetBaseUrl": "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets",
+  "assetRootUrl": "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260625T183336Z-3",
+  "timezone": "America/Argentina/Buenos_Aires",
+  "posts": [
+    {
+      "id": "ialo-20260625T183336Z-3-piece-01-carrusel",
+      "format": "carrusel",
+      "contentType": "problema",
+      "platforms": [
+        "instagram"
+      ],
+      "scheduledAt": "2026-06-29T10:00:00-03:00",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "title": "Patrones que nos marcan",
+      "cta": "Reflexionemos sobre qué patrones estamos repitiendo sin darnos cuenta.",
+      "source": "generated",
+      "metadata": {
+        "day": "lunes",
+        "pieceIndex": 1,
+        "thesis": "cambio-adentro",
+        "weekGoal": "Explorar cómo los patrones internos influyen en nuestra realidad externa."
+      },
+      "status": "ready",
+      "type": "carousel",
+      "caption": "El cambio que buscamos afuera empieza en nuestro interior. Reflexionemos juntos sobre los patrones que nos condicionan y cómo nuestra esencia se conecta con nuestra historia.",
+      "text": "El cambio que buscamos afuera empieza en nuestro interior. Reflexionemos juntos sobre los patrones que nos condicionan y cómo nuestra esencia se conecta con nuestra historia.",
+      "mediaUrls": [
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260625T183336Z-3/carousel/slide-01.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260625T183336Z-3/carousel/slide-02.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260625T183336Z-3/carousel/slide-03.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260625T183336Z-3/carousel/slide-04.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260625T183336Z-3/carousel/slide-05.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260625T183336Z-3/carousel/slide-06.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260625T183336Z-3/carousel/slide-07.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260625T183336Z-3/carousel/slide-08.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260625T183336Z-3/carousel/slide-09.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260625T183336Z-3/carousel/slide-10.png"
+      ]
+    },
+    {
+      "id": "ialo-20260625T183336Z-3-piece-02-reel",
+      "format": "reel",
+      "contentType": "método",
+      "platforms": [
+        "instagram_reels",
+        "tiktok",
+        "youtube_shorts"
+      ],
+      "scheduledAt": "2026-06-30T12:00:00-03:00",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "title": "Mirar adentro",
+      "cta": "Hagamos un ejercicio juntos de autoconocimiento.",
+      "source": "generated",
+      "metadata": {
+        "day": "martes",
+        "pieceIndex": 2,
+        "thesis": "cambio-adentro",
+        "weekGoal": "Explorar cómo los patrones internos influyen en nuestra realidad externa."
+      },
+      "status": "needs_manual_video",
+      "type": "video",
+      "caption": "Mirar adentro\n\nCuando miramos hacia adentro, a menudo encontramos la clave de nuestras reacciones automáticas.\n\nHagamos un ejercicio juntos de autoconocimiento.",
+      "text": "Mirar adentro\n\nCuando miramos hacia adentro, a menudo encontramos la clave de nuestras reacciones automáticas.\n\nHagamos un ejercicio juntos de autoconocimiento.",
+      "mediaUrls": []
+    },
+    {
+      "id": "ialo-20260625T183336Z-3-piece-03-clip-podcast",
+      "format": "clip podcast",
+      "contentType": "conexión",
+      "platforms": [
+        "instagram_reels",
+        "tiktok",
+        "youtube_shorts"
+      ],
+      "scheduledAt": "2026-07-01T12:00:00-03:00",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "title": "Historias compartidas",
+      "cta": "Escuchemos y aprendamos de las experiencias de otros.",
+      "source": "generated",
+      "metadata": {
+        "day": "miércoles",
+        "pieceIndex": 3,
+        "thesis": "cambio-adentro",
+        "weekGoal": "Explorar cómo los patrones internos influyen en nuestra realidad externa."
+      },
+      "status": "needs_manual_video",
+      "type": "video",
+      "caption": "Historias compartidas\n\nConversamos sobre cómo nuestras historias personales moldean nuestra identidad y nuestras relaciones.\n\nEscuchemos y aprendamos de las experiencias de otros.",
+      "text": "Historias compartidas\n\nConversamos sobre cómo nuestras historias personales moldean nuestra identidad y nuestras relaciones.\n\nEscuchemos y aprendamos de las experiencias de otros.",
+      "mediaUrls": []
+    },
+    {
+      "id": "ialo-20260625T183336Z-3-piece-04-hilo-x",
+      "format": "hilo X",
+      "contentType": "resultado",
+      "platforms": [
+        "x"
+      ],
+      "scheduledAt": "2026-07-02T18:00:00-03:00",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "title": "Identificando el patrón",
+      "cta": "Compartamos ejemplos de patrones que hemos reconocido en nuestras vidas.",
+      "source": "generated",
+      "metadata": {
+        "day": "jueves",
+        "pieceIndex": 4,
+        "thesis": "cambio-adentro",
+        "weekGoal": "Explorar cómo los patrones internos influyen en nuestra realidad externa."
+      },
+      "status": "ready",
+      "type": "text",
+      "caption": "Identificando el patrón\n\nA veces, al identificar un patrón, podemos empezar a transformar nuestra realidad.\n\nCompartamos ejemplos de patrones que hemos reconocido en nuestras vidas.",
+      "text": "Identificando el patrón\n\nA veces, al identificar un patrón, podemos empezar a transformar nuestra realidad.\n\nCompartamos ejemplos de patrones que hemos reconocido en nuestras vidas.",
+      "mediaUrls": []
+    },
+    {
+      "id": "ialo-20260625T183336Z-3-piece-05-stories",
+      "format": "stories",
+      "contentType": "problema",
+      "platforms": [
+        "instagram_stories"
+      ],
+      "scheduledAt": "2026-07-03T11:00:00-03:00",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "title": "El espejo de nuestra realidad",
+      "cta": "Hagamos una pausa y observemos qué nos dice nuestro entorno.",
+      "source": "generated",
+      "metadata": {
+        "day": "viernes",
+        "pieceIndex": 5,
+        "thesis": "cambio-adentro",
+        "weekGoal": "Explorar cómo los patrones internos influyen en nuestra realidad externa."
+      },
+      "status": "ready",
+      "type": "image",
+      "caption": "El espejo de nuestra realidad\n\nNos pasa que, al mirar nuestro exterior, vemos reflejados conflictos internos que aún no hemos resuelto.\n\nHagamos una pausa y observemos qué nos dice nuestro entorno.",
+      "text": "El espejo de nuestra realidad\n\nNos pasa que, al mirar nuestro exterior, vemos reflejados conflictos internos que aún no hemos resuelto.\n\nHagamos una pausa y observemos qué nos dice nuestro entorno.",
+      "mediaUrls": [
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260625T183336Z-3/static-cards/piece-05-stories.png"
+      ]
+    },
+    {
+      "id": "ialo-20260625T183336Z-3-piece-06-post-frase",
+      "format": "post frase",
+      "contentType": "conexión",
+      "platforms": [
+        "instagram",
+        "x"
+      ],
+      "scheduledAt": "2026-07-04T10:00:00-03:00",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "title": "Frase de reflexión",
+      "cta": "Recordemos que siempre hay espacio para el cambio.",
+      "source": "generated",
+      "metadata": {
+        "day": "sábado",
+        "pieceIndex": 6,
+        "thesis": "cambio-adentro",
+        "weekGoal": "Explorar cómo los patrones internos influyen en nuestra realidad externa."
+      },
+      "status": "ready",
+      "type": "image",
+      "caption": "Frase de reflexión\n\nMi esencia no es mi historia.\n\nRecordemos que siempre hay espacio para el cambio.",
+      "text": "Frase de reflexión\n\nMi esencia no es mi historia.\n\nRecordemos que siempre hay espacio para el cambio.",
+      "mediaUrls": [
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260625T183336Z-3/static-cards/piece-06-post-frase.png"
+      ]
+    },
+    {
+      "id": "ialo-20260625T183336Z-3-piece-07-carrusel",
+      "format": "carrusel",
+      "contentType": "método",
+      "platforms": [
+        "instagram"
+      ],
+      "scheduledAt": "2026-07-05T10:00:00-03:00",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "title": "Claves para el cambio",
+      "cta": "Compartamos estrategias para empezar a cambiar desde adentro.",
+      "source": "generated",
+      "metadata": {
+        "day": "domingo",
+        "pieceIndex": 7,
+        "thesis": "cambio-adentro",
+        "weekGoal": "Explorar cómo los patrones internos influyen en nuestra realidad externa.",
+        "reason": "Extra carousel kept as draft because this workflow generated one carousel asset package."
+      },
+      "status": "draft",
+      "type": "carousel",
+      "caption": "El cambio que buscamos afuera empieza en nuestro interior. Reflexionemos juntos sobre los patrones que nos condicionan y cómo nuestra esencia se conecta con nuestra historia.",
+      "text": "El cambio que buscamos afuera empieza en nuestro interior. Reflexionemos juntos sobre los patrones que nos condicionan y cómo nuestra esencia se conecta con nuestra historia.",
+      "mediaUrls": []
+    }
+  ]
+}

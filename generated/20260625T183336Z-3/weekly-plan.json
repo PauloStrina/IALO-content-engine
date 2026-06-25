@@ -1,0 +1,62 @@
+{
+  "thesis": "Cambio adentro, para cambiar afuera",
+  "week_goal": "Explorar cómo los patrones internos influyen en nuestra realidad externa.",
+  "pieces": [
+    {
+      "day": "lunes",
+      "format": "carrusel",
+      "content_type": "problema",
+      "title": "Patrones que nos marcan",
+      "hook": "A veces no nos damos cuenta de cómo nuestro pasado influye en nuestras decisiones presentes.",
+      "cta": "Reflexionemos sobre qué patrones estamos repitiendo sin darnos cuenta."
+    },
+    {
+      "day": "martes",
+      "format": "reel",
+      "content_type": "método",
+      "title": "Mirar adentro",
+      "hook": "Cuando miramos hacia adentro, a menudo encontramos la clave de nuestras reacciones automáticas.",
+      "cta": "Hagamos un ejercicio juntos de autoconocimiento."
+    },
+    {
+      "day": "miércoles",
+      "format": "clip podcast",
+      "content_type": "conexión",
+      "title": "Historias compartidas",
+      "hook": "Conversamos sobre cómo nuestras historias personales moldean nuestra identidad y nuestras relaciones.",
+      "cta": "Escuchemos y aprendamos de las experiencias de otros."
+    },
+    {
+      "day": "jueves",
+      "format": "hilo X",
+      "content_type": "resultado",
+      "title": "Identificando el patrón",
+      "hook": "A veces, al identificar un patrón, podemos empezar a transformar nuestra realidad.",
+      "cta": "Compartamos ejemplos de patrones que hemos reconocido en nuestras vidas."
+    },
+    {
+      "day": "viernes",
+      "format": "stories",
+      "content_type": "problema",
+      "title": "El espejo de nuestra realidad",
+      "hook": "Nos pasa que, al mirar nuestro exterior, vemos reflejados conflictos internos que aún no hemos resuelto.",
+      "cta": "Hagamos una pausa y observemos qué nos dice nuestro entorno."
+    },
+    {
+      "day": "sábado",
+      "format": "post frase",
+      "content_type": "conexión",
+      "title": "Frase de reflexión",
+      "hook": "Mi esencia no es mi historia.",
+      "cta": "Recordemos que siempre hay espacio para el cambio."
+    },
+    {
+      "day": "domingo",
+      "format": "carrusel",
+      "content_type": "método",
+      "title": "Claves para el cambio",
+      "hook": "A veces, el primer paso hacia el cambio es reconocer que no somos solo nuestro piloto automático.",
+      "cta": "Compartamos estrategias para empezar a cambiar desde adentro."
+    }
+  ]
+}
