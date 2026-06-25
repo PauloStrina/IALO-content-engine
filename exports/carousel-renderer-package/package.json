@@ -1,0 +1,18 @@
+{
+  "name": "ialo-carousel-renderer-package",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "render:carousel": "tsx src/scripts/render-carousel.ts"
+  },
+  "dependencies": {
+    "playwright": "^1.49.1",
+    "tsx": "^4.19.2",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  }
+}
