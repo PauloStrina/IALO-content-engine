@@ -1,0 +1,15 @@
+{
+  "instagram": {
+    "accountId": "REPLACE_ME",
+    "platform": "instagram"
+  },
+  "instagram_stories": {
+    "accountId": "REPLACE_ME",
+    "platform": "instagram",
+    "targetType": "instagram"
+  },
+  "x": {
+    "accountId": "REPLACE_ME",
+    "platform": "x"
+  }
+}
