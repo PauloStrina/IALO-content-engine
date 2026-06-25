@@ -125,8 +125,9 @@ jobs:
         run: npm run publish:blotato
         env:
           BLOTATO_API_KEY: ${{ secrets.BLOTATO_API_KEY }}
-          BLOTATO_API_URL: ${{ secrets.BLOTATO_API_URL }}
-          BLOTATO_SEND_MODE: batch
+          BLOTATO_BASE_URL: https://backend.blotato.com/v2
+          BLOTATO_TARGETS_JSON: ${{ secrets.BLOTATO_TARGETS_JSON }}
+          BLOTATO_UPLOAD_MEDIA: false
           BLOTATO_PAYLOAD_PATH: output/blotato-payload.json
           BLOTATO_RESPONSE_PATH: output/blotato-response.json
 

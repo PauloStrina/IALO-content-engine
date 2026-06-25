@@ -1,6 +1,6 @@
 # E2E Publishing Pipeline
 
-Este documento describe el flujo punta a punta para generar assets, publicarlos como URLs públicas y enviar el paquete de programación a Blotato.
+Este documento describe el flujo punta a punta para generar assets, publicarlos como URLs públicas y programar contenido en Blotato.
 
 ## Workflow
 
@@ -27,11 +27,11 @@ dry_run: true o false
 3. Renderiza carrusel PNG
 4. Renderiza assets estáticos para stories/post frase/hilo
 5. Construye public-assets/generated/<runId>
-6. Publica los assets en la branch published-assets
-7. Genera URLs públicas vía raw.githubusercontent.com
-8. Construye publish-manifest.json
-9. Construye blotato-payload.json
-10. Si dry_run=false, envía blotato-payload.json a BLOTATO_API_URL
+6. Construye publish-manifest.json
+7. Construye blotato-payload.json
+8. Publica los assets en la branch published-assets
+9. Genera URLs públicas vía raw.githubusercontent.com
+10. Si dry_run=false, programa cada post en Blotato usando POST /v2/posts
 ```
 
 ## Secrets requeridos
@@ -45,11 +45,66 @@ OPENAI_API_KEY
 Para envío real a Blotato:
 
 ```txt
-BLOTATO_API_URL
 BLOTATO_API_KEY
+BLOTATO_TARGETS_JSON
 ```
 
-`BLOTATO_API_KEY` puede quedar vacío si el endpoint de Blotato funciona como webhook sin bearer token.
+## Blotato API
+
+El publisher usa la REST API nativa de Blotato:
+
+```txt
+Base URL: https://backend.blotato.com/v2
+Endpoint: POST /posts
+Header: blotato-api-key
+```
+
+El body por post sigue esta estructura:
+
+```json
+{
+  "post": {
+    "accountId": "...",
+    "name": "...",
+    "content": {
+      "text": "...",
+      "mediaUrls": ["https://..."],
+      "platform": "instagram"
+    },
+    "target": {
+      "targetType": "instagram",
+      "pageId": "..."
+    }
+  },
+  "scheduledTime": "2026-06-29T13:00:00Z"
+}
+```
+
+## BLOTATO_TARGETS_JSON
+
+Este secret mapea las plataformas internas del payload con los `accountId` y `platform` reales de Blotato.
+
+Ejemplo:
+
+```json
+{
+  "instagram": {
+    "accountId": "REPLACE_ME",
+    "platform": "instagram"
+  },
+  "instagram_stories": {
+    "accountId": "REPLACE_ME",
+    "platform": "instagram",
+    "targetType": "instagram"
+  },
+  "x": {
+    "accountId": "REPLACE_ME",
+    "platform": "x"
+  }
+}
+```
+
+Usar los mismos valores que ya funcionan en el `config.yaml` del publicador Motion.
 
 ## Modo dry run
 
@@ -69,30 +124,34 @@ Sirve para validar URLs, manifest y assets sin programar nada.
 Con `dry_run=false` el sistema además hace:
 
 ```txt
-POST BLOTATO_API_URL
+POST https://backend.blotato.com/v2/posts
 ```
 
-Payload enviado:
+y deja la respuesta en:
 
-```json
-{
-  "source": "ialo-content-engine",
-  "runId": "...",
-  "generatedAt": "...",
-  "posts": [
-    {
-      "externalId": "...",
-      "platforms": ["instagram"],
-      "type": "carousel",
-      "scheduledAt": "2026-06-24T10:00:00-03:00",
-      "text": "...",
-      "caption": "...",
-      "mediaUrls": ["https://raw.githubusercontent.com/.../slide-01.png"],
-      "metadata": {}
-    }
-  ]
-}
+```txt
+output/blotato-response.json
 ```
+
+## Media upload
+
+Por defecto, el publisher envía a Blotato las URLs públicas generadas por GitHub.
+
+Opcionalmente se puede activar:
+
+```txt
+BLOTATO_UPLOAD_MEDIA=true
+```
+
+En ese caso, antes de programar cada post, el script sube cada URL a:
+
+```txt
+POST /media
+```
+
+y reemplaza la URL original por la URL validada devuelta por Blotato.
+
+Como Blotato limita los media uploads, este modo usa delay entre requests.
 
 ## Videos
 
@@ -131,9 +190,3 @@ Las URLs públicas quedan bajo:
 ```txt
 https://raw.githubusercontent.com/<owner>/<repo>/published-assets/generated/<runId>/...
 ```
-
-## Limitación actual
-
-El contrato exacto de Blotato no está hardcodeado. El sistema manda un payload JSON estándar a `BLOTATO_API_URL`.
-
-Si Blotato exige otro formato, se ajusta solo `src/scripts/publish-blotato.ts` o se configura un webhook intermedio que transforme el payload.
