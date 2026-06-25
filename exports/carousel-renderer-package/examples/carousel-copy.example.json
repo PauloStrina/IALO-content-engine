@@ -1,0 +1,47 @@
+{
+  "title": "Ejemplo de carrusel",
+  "caption": "Caption de ejemplo para validar el render del carrusel.",
+  "cta": "Abramos esta conversación.",
+  "slides": [
+    {
+      "number": 1,
+      "type": "cover",
+      "text": "A veces cambiamos todo afuera, pero no vemos lo que se repite adentro."
+    },
+    {
+      "number": 2,
+      "type": "body",
+      "text": "Cambiamos de trabajo. Cambiamos de vínculo. Cambiamos de rutina."
+    },
+    {
+      "number": 3,
+      "type": "body",
+      "text": "Durante un tiempo, todo parece nuevo."
+    },
+    {
+      "number": 4,
+      "type": "body",
+      "text": "Hasta que algo parecido vuelve a aparecer."
+    },
+    {
+      "number": 5,
+      "type": "question",
+      "text": "¿Qué patrón todavía no estamos viendo?"
+    },
+    {
+      "number": 6,
+      "type": "body",
+      "text": "No siempre repetimos porque queremos. Muchas veces repetimos porque todavía no lo vimos."
+    },
+    {
+      "number": 7,
+      "type": "body",
+      "text": "Ver el patrón no es culparnos. Es recuperar margen de elección."
+    },
+    {
+      "number": 8,
+      "type": "closing",
+      "text": "Cambio adentro, para cambiar afuera."
+    }
+  ]
+}
