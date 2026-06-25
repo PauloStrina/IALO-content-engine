@@ -126,8 +126,11 @@ jobs:
         env:
           BLOTATO_API_KEY: ${{ secrets.BLOTATO_API_KEY }}
           BLOTATO_BASE_URL: https://backend.blotato.com/v2
-          BLOTATO_TARGETS_JSON: ${{ secrets.BLOTATO_TARGETS_JSON }}
-          BLOTATO_UPLOAD_MEDIA: false
+          BLOTATO_TARGETS_JSON: >-
+            {"instagram":{"accountId":"55427","platform":"instagram"},"instagram_stories":{"accountId":"55427","platform":"instagram","targetType":"instagram"},"instagram_reels":{"accountId":"55427","platform":"instagram","targetType":"instagram"},"x":{"accountId":"20492","platform":"x"},"twitter":{"accountId":"20492","platform":"x"}}
+          BLOTATO_UPLOAD_MEDIA: "true"
+          BLOTATO_DELAY_SECONDS: "7"
+          BLOTATO_MAX_ATTEMPTS: "3"
           BLOTATO_PAYLOAD_PATH: output/blotato-payload.json
           BLOTATO_RESPONSE_PATH: output/blotato-response.json
 
