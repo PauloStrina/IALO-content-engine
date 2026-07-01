@@ -1,0 +1,62 @@
+{
+  "thesis": "Cambio adentro, para cambiar afuera",
+  "week_goal": "Reflexionar sobre cómo los patrones internos impactan nuestro entorno y cómo el autoconocimiento puede generar cambios significativos.",
+  "pieces": [
+    {
+      "day": "lunes",
+      "format": "carrusel",
+      "content_type": "problema",
+      "title": "El patrón que no vemos",
+      "hook": "A veces nos vemos atrapades en situaciones que parecen repetirse sin fin, sin darnos cuenta de que hay un patrón que nos condiciona.",
+      "cta": "¿Te ha pasado alguna vez?"
+    },
+    {
+      "day": "martes",
+      "format": "reel",
+      "content_type": "método",
+      "title": "Identificando el patrón",
+      "hook": "En ocasiones, para cambiar lo que nos rodea, necesitamos primero mirar hacia adentro y reconocer lo que se repite en nuestra historia.",
+      "cta": "Exploramos juntas cómo hacerlo."
+    },
+    {
+      "day": "miércoles",
+      "format": "clip podcast",
+      "content_type": "resultado",
+      "title": "Historias de cambio",
+      "hook": "Nos compartimos experiencias sobre cómo al ver nuestros patrones, logramos cambios significativos en nuestra vida cotidiana.",
+      "cta": "Escuchanos y reflexionemos juntes."
+    },
+    {
+      "day": "jueves",
+      "format": "hilo X",
+      "content_type": "conexión",
+      "title": "Conexiones entre pasado y presente",
+      "hook": "A veces creemos que somos solo el resultado de lo que nos ha pasado, hasta que nos damos cuenta de que nuestra esencia va más allá de nuestra historia.",
+      "cta": "¿Qué parte de nuestra historia creemos que nos define?"
+    },
+    {
+      "day": "viernes",
+      "format": "stories",
+      "content_type": "problema",
+      "title": "La máscara que usamos",
+      "hook": "Nos pasa que, en el intento de adaptarnos, empezamos a usar máscaras que ocultan nuestra esencia, sin darnos cuenta de que nos alejan de quienes somos.",
+      "cta": "¿Qué máscara crees que usas?"
+    },
+    {
+      "day": "sábado",
+      "format": "post frase",
+      "content_type": "resultado",
+      "title": "Reflejos del cambio",
+      "hook": "Mi exterior es mi reflejo. Al ver lo que hay afuera, también vemos lo que hay adentro.",
+      "cta": "Reflexionemos sobre esta frase."
+    },
+    {
+      "day": "domingo",
+      "format": "carrusel",
+      "content_type": "método",
+      "title": "Pasos hacia el cambio",
+      "hook": "Para cambiar, a veces necesitamos una guía. Aquí compartimos pasos que nos ayudaron a mirar nuestros patrones y empezar a transformar nuestro entorno.",
+      "cta": "¿Te sumas a este camino?"
+    }
+  ]
+}

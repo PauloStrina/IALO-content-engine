@@ -1,0 +1,91 @@
+{
+  "source": "ialo-content-engine",
+  "runId": "20260701T183011Z-5",
+  "generatedAt": "2026-07-01T18:30:36.188Z",
+  "posts": [
+    {
+      "externalId": "ialo-20260701T183011Z-5-piece-01-carrusel",
+      "platforms": [
+        "instagram"
+      ],
+      "type": "carousel",
+      "scheduledAt": "2026-07-06T10:00:00-03:00",
+      "text": "El cambio que buscamos afuera comienza cuando miramos adentro el patrón que nos condiciona. ¿Qué descubrimos en nuestra esencia?",
+      "caption": "El cambio que buscamos afuera comienza cuando miramos adentro el patrón que nos condiciona. ¿Qué descubrimos en nuestra esencia?",
+      "mediaUrls": [
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260701T183011Z-5/carousel/slide-01.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260701T183011Z-5/carousel/slide-02.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260701T183011Z-5/carousel/slide-03.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260701T183011Z-5/carousel/slide-04.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260701T183011Z-5/carousel/slide-05.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260701T183011Z-5/carousel/slide-06.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260701T183011Z-5/carousel/slide-07.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260701T183011Z-5/carousel/slide-08.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260701T183011Z-5/carousel/slide-09.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260701T183011Z-5/carousel/slide-10.png"
+      ],
+      "metadata": {
+        "day": "lunes",
+        "pieceIndex": 1,
+        "thesis": "cambio-adentro",
+        "weekGoal": "Reflexionar sobre cómo los patrones internos impactan nuestro entorno y cómo el autoconocimiento puede generar cambios significativos."
+      }
+    },
+    {
+      "externalId": "ialo-20260701T183011Z-5-piece-04-hilo-x",
+      "platforms": [
+        "x"
+      ],
+      "type": "text",
+      "scheduledAt": "2026-07-09T18:00:00-03:00",
+      "text": "Conexiones entre pasado y presente\n\nA veces creemos que somos solo el resultado de lo que nos ha pasado, hasta que nos damos cuenta de que nuestra esencia va más allá de nuestra historia.\n\n¿Qué parte de nuestra historia creemos que nos define?",
+      "caption": "Conexiones entre pasado y presente\n\nA veces creemos que somos solo el resultado de lo que nos ha pasado, hasta que nos damos cuenta de que nuestra esencia va más allá de nuestra historia.\n\n¿Qué parte de nuestra historia creemos que nos define?",
+      "mediaUrls": [],
+      "metadata": {
+        "day": "jueves",
+        "pieceIndex": 4,
+        "thesis": "cambio-adentro",
+        "weekGoal": "Reflexionar sobre cómo los patrones internos impactan nuestro entorno y cómo el autoconocimiento puede generar cambios significativos."
+      }
+    },
+    {
+      "externalId": "ialo-20260701T183011Z-5-piece-05-stories",
+      "platforms": [
+        "instagram_stories"
+      ],
+      "type": "image",
+      "scheduledAt": "2026-07-10T11:00:00-03:00",
+      "text": "La máscara que usamos\n\nNos pasa que, en el intento de adaptarnos, empezamos a usar máscaras que ocultan nuestra esencia, sin darnos cuenta de que nos alejan de quienes somos.\n\n¿Qué máscara crees que usas?",
+      "caption": "La máscara que usamos\n\nNos pasa que, en el intento de adaptarnos, empezamos a usar máscaras que ocultan nuestra esencia, sin darnos cuenta de que nos alejan de quienes somos.\n\n¿Qué máscara crees que usas?",
+      "mediaUrls": [
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260701T183011Z-5/static-cards/piece-05-stories.png"
+      ],
+      "metadata": {
+        "day": "viernes",
+        "pieceIndex": 5,
+        "thesis": "cambio-adentro",
+        "weekGoal": "Reflexionar sobre cómo los patrones internos impactan nuestro entorno y cómo el autoconocimiento puede generar cambios significativos."
+      }
+    },
+    {
+      "externalId": "ialo-20260701T183011Z-5-piece-06-post-frase",
+      "platforms": [
+        "instagram",
+        "x"
+      ],
+      "type": "image",
+      "scheduledAt": "2026-07-11T10:00:00-03:00",
+      "text": "Reflejos del cambio\n\nMi exterior es mi reflejo. Al ver lo que hay afuera, también vemos lo que hay adentro.\n\nReflexionemos sobre esta frase.",
+      "caption": "Reflejos del cambio\n\nMi exterior es mi reflejo. Al ver lo que hay afuera, también vemos lo que hay adentro.\n\nReflexionemos sobre esta frase.",
+      "mediaUrls": [
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/generated/20260701T183011Z-5/static-cards/piece-06-post-frase.png"
+      ],
+      "metadata": {
+        "day": "sábado",
+        "pieceIndex": 6,
+        "thesis": "cambio-adentro",
+        "weekGoal": "Reflexionar sobre cómo los patrones internos impactan nuestro entorno y cómo el autoconocimiento puede generar cambios significativos."
+      }
+    }
+  ]
+}

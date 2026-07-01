@@ -1,0 +1,19 @@
+{
+  "rendered": [
+    {
+      "index": 4,
+      "format": "hilo X",
+      "file": "piece-04-hilo-x.png"
+    },
+    {
+      "index": 5,
+      "format": "stories",
+      "file": "piece-05-stories.png"
+    },
+    {
+      "index": 6,
+      "format": "post frase",
+      "file": "piece-06-post-frase.png"
+    }
+  ]
+}
