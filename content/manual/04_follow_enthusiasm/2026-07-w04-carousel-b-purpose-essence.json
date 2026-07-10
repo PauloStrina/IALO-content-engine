@@ -1,0 +1,79 @@
+{
+  "content_id": "2026-07-w04-carousel-b-purpose-essence",
+  "content_origin": "manual_chat_cocreation",
+  "thesis_id": "04_follow_enthusiasm",
+  "variant_id": "metodo_brujula_interna",
+  "format": "instagram_carousel",
+  "channel": "instagram",
+  "title": "¿Y si no necesitás encontrar un propósito?",
+  "notes": "Carrusel co-creado manualmente en ChatGPT Proyecto. Foco: cuestionar la presión social del propósito y mover la pregunta hacia esencia, entusiasmo, sentido y curiosidad.",
+  "objective": "Que el lector pueda soltar la presión de tener que encontrar un propósito y empiece a mirar qué tiene sentido para sí mismo.",
+  "symbol": "camino / brújula interna / esencia",
+  "emotion": "alivio, claridad, permiso interno",
+  "cta": "Guardalo para volver a esta pregunta cuando sientas que tenés que justificar tu vida con un propósito.",
+  "approval": {
+    "status": "pending_human_approval",
+    "approved_version": null,
+    "approved_by": null,
+    "approved_at": null
+  },
+  "slides": [
+    {
+      "role": "cold_open",
+      "layout": "cover",
+      "background": "Camino 1.jpg",
+      "text": "¿Y SI NO\nNECESITÁS\nENCONTRAR\nUN PROPÓSITO?"
+    },
+    {
+      "role": "context",
+      "layout": "poetic",
+      "background": "Camino 2.jpg",
+      "text": "Se habla todo el tiempo de descubrir para qué viniste.\n\nQué vas a aportar.\nQué huella vas a dejar."
+    },
+    {
+      "role": "distinction",
+      "layout": "distinction",
+      "background": "Camino 3.jpg",
+      "text": "El problema no es tener un propósito.",
+      "supporting_text": "El problema es sentir que deberías tener uno."
+    },
+    {
+      "role": "tension",
+      "layout": "split",
+      "background": "Camino 4.jpg",
+      "text": "Porque entonces empezás a mirar todo hacia afuera:",
+      "supporting_text": "qué valor generás, qué impacto tenés, qué van a reconocer los demás en vos."
+    },
+    {
+      "role": "question",
+      "layout": "question",
+      "background": "Camino 5.jpg",
+      "text": "¿Y si antes de preguntarte qué viniste a aportar, te preguntaras qué tiene sentido para vos?"
+    },
+    {
+      "role": "reframe",
+      "layout": "reframe",
+      "background": "Camino 6.jpg",
+      "text": "Eso sería mirar un poco más tu esencia.",
+      "supporting_text": "No es algo místico.\nEs lo que te entusiasma, te conmueve o te da curiosidad."
+    },
+    {
+      "role": "question",
+      "layout": "center",
+      "background": "Camino 7.jpg",
+      "text": "¿Y si abrís lugar para eso en tu agenda?"
+    },
+    {
+      "role": "integration",
+      "layout": "poetic",
+      "background": "Camino 8.jpg",
+      "text": "Quizás el propósito no se encuentra buscándolo de frente.\n\nQuizás aparece como consecuencia de vivir más cerca de lo que tiene sentido para vos."
+    },
+    {
+      "role": "closing_question",
+      "layout": "closing",
+      "background": "Camino 1.jpg",
+      "text": "¿Qué pasa si en vez de buscar un propósito te enfocás en encontrar tu esencia?"
+    }
+  ]
+}
