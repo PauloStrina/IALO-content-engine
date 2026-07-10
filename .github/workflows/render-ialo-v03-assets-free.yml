@@ -1,4 +1,4 @@
-name: Render IALO V03 Assets Free
+name: Render IALO V03 Real Assets
 
 on:
   workflow_dispatch:
@@ -8,13 +8,14 @@ on:
       - ialo-v03-assets-free
     paths:
       - 'templates/01_acceptance_inner_dialogue/v03/**'
+      - 'assets/ialo/**'
       - '.github/workflows/render-ialo-v03-assets-free.yml'
 
 permissions:
   contents: read
 
 concurrency:
-  group: render-ialo-v03-assets-free-${{ github.ref }}
+  group: render-ialo-v03-real-assets-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -36,15 +37,15 @@ jobs:
           npx playwright install --with-deps chromium
 
       - name: Render carousel PNGs
-        run: node templates/01_acceptance_inner_dialogue/v03/render-assets-free.mjs
+        run: node templates/01_acceptance_inner_dialogue/v03/render-real-assets.mjs
 
       - name: Zip output
         run: |
           cd dist
-          zip -r ialo_acceptance_test_v03_assets_free_pngs.zip ialo_acceptance_test_v03_assets_free
+          zip -r ialo_acceptance_test_v03_real_assets_pngs.zip ialo_acceptance_test_v03_real_assets
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: ialo_acceptance_test_v03_assets_free_pngs
-          path: dist/ialo_acceptance_test_v03_assets_free_pngs.zip
+          name: ialo_acceptance_test_v03_real_assets_pngs
+          path: dist/ialo_acceptance_test_v03_real_assets_pngs.zip
