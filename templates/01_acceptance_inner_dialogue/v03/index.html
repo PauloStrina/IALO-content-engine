@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>IALO · Acepto lo que es · V03 hybrid_main</title>
+<style>
+:root{
+  --cream:#EEE9E0;
+  --black:#1A1A1A;
+  --orange:#FF5000;
+  --violet:#50235A;
+  --muted:#8b8175;
+  --w:1080px;
+  --h:1350px;
+}
+*{box-sizing:border-box}
+body{margin:0;background:#111;color:var(--cream);font-family:Arial,Helvetica,sans-serif}
+main{display:grid;grid-template-columns:repeat(2,minmax(320px,540px));gap:32px;padding:32px;justify-content:center}
+.slide{width:var(--w);height:var(--h);position:relative;overflow:hidden;background:#333;transform-origin:top left;box-shadow:0 18px 70px rgba(0,0,0,.42)}
+.stage{width:540px;height:675px;overflow:hidden;position:relative}.stage .slide{transform:scale(.5)}
+.serif{font-family:Georgia,'Times New Roman',serif}.futura{font-family:'Arial Narrow','Helvetica Neue Condensed',Impact,sans-serif;font-stretch:condensed;font-weight:900;letter-spacing:-.025em}.counter{position:absolute;right:76px;top:68px;background:rgba(26,26,26,.72);color:var(--cream);border-radius:36px;padding:13px 23px 10px;font:900 32px/1 'Arial Narrow',Impact,sans-serif;z-index:20}.counter.light{background:rgba(238,233,224,.9);color:var(--black)}.logo{position:absolute;left:76px;bottom:70px;width:74px;height:40px;z-index:20}.logo:before,.logo:after{content:"";position:absolute;border:3px solid currentColor;border-radius:50%;transform:rotate(-18deg)}.logo:before{width:70px;height:34px;left:0;top:0}.logo:after{width:12px;height:12px;left:30px;top:11px;background:currentColor}.logo.white{color:var(--cream)}.logo.black{color:var(--black)}.accent{position:absolute;width:88px;height:9px;background:var(--orange);z-index:10}.shadow{text-shadow:4px 5px 0 rgba(0,0,0,.38)}
+/* procedural backgrounds until original photo assets are available */
+.bg-rain-chair{background:linear-gradient(90deg,rgba(8,14,18,.42),rgba(8,14,18,.05) 45%,rgba(8,14,18,.24)),radial-gradient(circle at 70% 22%,rgba(209,218,214,.68) 0 14%,rgba(120,128,122,.36) 15% 30%,transparent 31%),linear-gradient(180deg,#5d6969 0%,#313b3e 45%,#161b1d 100%)}.bg-rain-chair:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(100deg,rgba(255,255,255,.11) 0 1px,transparent 1px 15px);opacity:.32}.bg-rain-chair:after{content:"";position:absolute;left:610px;top:800px;width:260px;height:220px;border:22px solid rgba(20,20,20,.42);border-bottom:0;border-radius:120px 120px 0 0;filter:blur(.2px)}
+.bg-rain-window{background:linear-gradient(90deg,rgba(0,0,0,.55),rgba(0,0,0,.06) 60%,rgba(0,0,0,.24)),radial-gradient(circle at 30% 25%,rgba(230,230,218,.55),rgba(103,121,120,.35) 28%,transparent 55%),linear-gradient(180deg,#7b8985 0%,#455256 50%,#181c1f 100%)}.bg-rain-window:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(92deg,rgba(255,255,255,.12) 0 1px,transparent 1px 20px);opacity:.34}
+.bg-bedroom-warm{background:radial-gradient(circle at 76% 18%,rgba(255,231,178,.86),rgba(199,151,86,.42) 27%,transparent 45%),linear-gradient(180deg,#c3a071 0%,#896b4e 45%,#2c211d 100%)}.bg-bedroom-warm:before{content:"";position:absolute;left:0;right:0;bottom:0;height:410px;background:linear-gradient(10deg,#c4b29d,#7d6858 56%,#3a2c27)}.bg-bedroom-warm:after{content:"";position:absolute;left:640px;top:95px;width:330px;height:420px;background:rgba(238,233,224,.32);filter:blur(2px)}
+.bg-bedroom-card{background:radial-gradient(circle at 72% 18%,rgba(255,228,166,.9),rgba(184,134,73,.35) 30%,transparent 48%),linear-gradient(180deg,#b28b5f 0%,#6d5140 46%,#211917 100%)}.bg-bedroom-card:before{content:"";position:absolute;left:0;right:0;bottom:0;height:460px;background:linear-gradient(12deg,#d9cab8,#7f6a5a 55%,#30251f)}
+.bg-bedroom-soft{background:radial-gradient(circle at 24% 16%,rgba(255,238,202,.72),rgba(174,143,104,.34) 30%,transparent 53%),linear-gradient(180deg,#a98968,#6f5946 44%,#231c18)}.bg-bedroom-soft:before{content:"";position:absolute;inset:auto 0 0 0;height:410px;background:linear-gradient(14deg,#d4c1aa,#796a5c 62%,#2c211e)}
+.bg-cream{background:var(--cream);color:var(--black)}
+/* slide-specific */
+.s1 .title{position:absolute;left:72px;top:240px;font:900 106px/.77 'Arial Narrow',Impact,sans-serif;color:var(--cream);max-width:875px;text-transform:uppercase}.s1 .accent{left:76px;top:980px}
+.s2 .t1{position:absolute;left:86px;top:315px;width:820px;font:64px/1.02 Georgia,serif}.s2 .t2{position:absolute;left:86px;top:650px;width:790px;font:50px/1.1 Georgia,serif}.s2 .accent{left:86px;top:555px;width:55px}
+.s3 .card{position:absolute;left:92px;top:200px;width:788px;height:815px;background:rgba(238,233,224,.96);border-radius:18px;color:var(--black);padding:105px 54px}.s3 .bar{position:absolute;left:92px;top:200px;width:20px;height:815px;background:var(--orange)}.s3 .quote{font:58px/1.08 Georgia,serif;white-space:pre-line}
+.s4 .panel{position:absolute;left:0;top:0;width:530px;height:100%;background:var(--black)}.s4 .title{position:absolute;left:70px;top:255px;width:425px;font:74px/1 Georgia,serif}.s4 .body{position:absolute;left:70px;top:700px;width:395px;font:42px/1.12 Georgia,serif}.s4 .accent{left:70px;top:610px;width:80px}
+.s5 .title{position:absolute;left:76px;top:390px;width:860px;font:76px/1 Georgia,serif;white-space:pre-line}.s5 .line{position:absolute;left:76px;top:1085px;width:394px;height:2px;background:rgba(238,233,224,.8)}
+.s6 .card{position:absolute;left:72px;top:270px;width:868px;height:545px;border-radius:22px;background:rgba(238,233,224,.94);color:var(--black);padding:110px 36px}.s6 .accent{left:108px;top:320px}.s6 .title{font:78px/1 Georgia,serif;margin:0 0 62px}.s6 .body{font:46px/1.11 Georgia,serif;margin:0;max-width:760px}
+.s7 .top{position:absolute;left:0;top:0;width:100%;height:355px;background:var(--cream);color:var(--black)}.s7 .title{position:absolute;left:76px;top:92px;width:860px;font:76px/.98 Georgia,serif;white-space:pre-line}.s7 .mini{position:absolute;left:76px;top:785px;width:664px;height:225px;border-radius:18px;background:rgba(26,26,26,.92);padding:90px 34px 0}.s7 .accent{left:110px;top:835px;width:62px}.s7 .body{font:48px/1.1 Georgia,serif;white-space:pre-line}
+.s8 .title{position:absolute;left:145px;top:360px;width:790px;text-align:center;font:82px/1 Georgia,serif;white-space:pre-line}
+.s9:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.58),rgba(0,0,0,.10) 68%,transparent)}.s9 .accent{left:76px;top:260px;width:72px}.s9 .title{position:absolute;left:76px;top:340px;width:830px;font:70px/1.02 Georgia,serif}
+.s10{background:var(--cream);color:var(--black)}.s10 .strip{position:absolute;left:0;right:0;bottom:0;height:530px}.s10 .title{position:absolute;left:76px;top:270px;width:870px;font:78px/1.02 Georgia,serif;white-space:pre-line}.s10 .body{position:absolute;left:76px;top:635px;width:780px;font:40px/1.12 Georgia,serif}.s10 .accent{left:76px;top:570px;width:76px}
+@media(max-width:1200px){main{grid-template-columns:1fr}.stage{margin:auto}}
+</style>
+</head>
+<body>
+<main id="contact-sheet">
+  <section class="stage"><article class="slide s1 bg-rain-chair" data-slide="1"><div class="counter">1/10</div><div class="title shadow">¿CUÁNTA ENERGÍA<br>ESTÁS GASTANDO<br>EN PELEAR<br>CON LO QUE<br>YA ES?</div><div class="accent"></div><div class="logo white"></div></article></section>
+  <section class="stage"><article class="slide s2 bg-rain-window" data-slide="2"><div class="counter">2/10</div><div class="t1 serif shadow">A veces no duele solamente lo que pasa.</div><div class="accent"></div><div class="t2 serif shadow">Duele la pelea interna<br>contra lo que pasa.</div><div class="logo white"></div></article></section>
+  <section class="stage"><article class="slide s3 bg-bedroom-card" data-slide="3"><div class="counter">3/10</div><div class="bar"></div><div class="card"><div class="quote">“Esto no debería estar pasando.”
+
+“Yo ya tendría que estar en otro lugar.”
+
+“No debería sentir esto.”</div></div><div class="logo black"></div></article></section>
+  <section class="stage"><article class="slide s4 bg-rain-chair" data-slide="4"><div class="counter">4/10</div><div class="panel"></div><div class="title serif">Esa pelea interna también cansa.</div><div class="accent"></div><div class="body serif">A veces la confundimos con acción.<br>Pero muchas veces es resistencia usando otro nombre.</div><div class="logo white"></div></article></section>
+  <section class="stage"><article class="slide s5 bg-rain-window" data-slide="5"><div class="counter">5/10</div><div class="title serif shadow">Lo que no podés mirar
+suele empezar a manejarte
+en silencio.</div><div class="line"></div><div class="logo white"></div></article></section>
+  <section class="stage"><article class="slide s6 bg-bedroom-soft" data-slide="6"><div class="counter light">6/10</div><div class="accent"></div><div class="card"><p class="title">Aceptar no es rendirse.</p><p class="body">Es dejar de discutir con la realidad<br>para poder responder mejor.</p></div><div class="logo white"></div></article></section>
+  <section class="stage"><article class="slide s7 bg-bedroom-warm" data-slide="7"><div class="counter">7/10</div><div class="top"></div><div class="title">No es resignación.
+Es presencia.</div><div class="mini"><div class="body">Resignarse apaga.
+Aceptar ordena.</div></div><div class="accent"></div><div class="logo white"></div></article></section>
+  <section class="stage"><article class="slide s8 bg-rain-chair" data-slide="8"><div class="counter">8/10</div><div class="title serif shadow">Porque lo que es,
+primero se mira.
+
+Después se transforma.</div><div class="logo white"></div></article></section>
+  <section class="stage"><article class="slide s9 bg-rain-window" data-slide="9"><div class="counter">9/10</div><div class="accent"></div><div class="title serif shadow">¿Qué estás resistiendo que, si pudieras mirar de frente, empezaría a transformarse?</div><div class="logo white"></div></article></section>
+  <section class="stage"><article class="slide s10" data-slide="10"><div class="counter">10/10</div><div class="strip bg-rain-chair"></div><div class="title serif">Lo visible es consecuencia.
+Lo invisible es causa.</div><div class="accent"></div><div class="body serif">Guardalo para volver a esta pregunta cuando vuelvas a pelear con lo que es.</div><div class="logo white"></div></article></section>
+</main>
+</body>
+</html>
