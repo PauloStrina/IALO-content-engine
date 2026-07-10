@@ -9,6 +9,9 @@ on:
       - 'templates/01_acceptance_inner_dialogue/v03/**'
       - '.github/workflows/render-ialo-v03-assets-free.yml'
 
+permissions:
+  contents: write
+
 jobs:
   render:
     runs-on: ubuntu-latest
@@ -34,6 +37,14 @@ jobs:
         run: |
           cd dist
           zip -r ialo_acceptance_test_v03_assets_free_pngs.zip ialo_acceptance_test_v03_assets_free
+
+      - name: Commit rendered output to branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist/ialo_acceptance_test_v03_assets_free dist/ialo_acceptance_test_v03_assets_free_pngs.zip
+          git commit -m "Render IALO V03 assets-free PNG outputs" || echo "No rendered changes to commit"
+          git push
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
