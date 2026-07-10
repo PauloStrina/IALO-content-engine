@@ -150,7 +150,7 @@ body.render{width:var(--w);height:var(--h);overflow:hidden;}
 
 function slideHtml(slide, version) {
   const bgPath = path.join(bgRoot, slide.bg);
-  const logoClass = slide.layout === 'quote' || slide.layout === 'closing' ? 'black' : 'white';
+  const logoClass = 'white';
   const counterClass = slide.layout === 'reframe' ? 'counter light' : 'counter';
   const extraPauseCard = version.id === 'v02_editorial_disruptive' && slide.layout === 'pause' ? '<div class="card-lite"></div>' : '';
   return `
