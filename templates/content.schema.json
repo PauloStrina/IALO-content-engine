@@ -1,21 +1,26 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/PauloStrina/IALO-content-engine/templates/content.schema.json",
-  "title": "IALO Carousel Content Brief",
+  "title": "IALO Manual Carousel Input",
+  "description": "Contrato de entrada para carruseles creados por co-creación humana en ChatGPT Proyecto. GitHub no crea el contenido: recibe el texto final y lo renderiza en V01/V02.",
   "type": "object",
   "required": [
     "content_id",
     "thesis_id",
-    "variant_id",
     "format",
     "channel",
-    "objective",
     "slides"
   ],
   "properties": {
     "content_id": {
       "type": "string",
-      "description": "Stable unique id for the content piece. Example: 2026-07-w01-carousel-a"
+      "description": "ID estable del contenido. Ejemplo: 2026-07-w01-carousel-a"
+    },
+    "content_origin": {
+      "type": "string",
+      "enum": ["manual_chat_cocreation"],
+      "default": "manual_chat_cocreation",
+      "description": "El contenido nace de co-creación humana en este chat de proyecto. No lo genera GitHub."
     },
     "thesis_id": {
       "type": "string",
@@ -28,7 +33,7 @@
     },
     "variant_id": {
       "type": "string",
-      "description": "Narrative variant. Example: problema_conexion, metodo_pregunta_practica."
+      "description": "Variante narrativa opcional. Ejemplo: problema_conexion, metodo_pregunta_practica."
     },
     "format": {
       "type": "string",
@@ -38,8 +43,13 @@
       "type": "string",
       "enum": ["instagram"]
     },
-    "raw_idea": {
-      "type": "string"
+    "title": {
+      "type": "string",
+      "description": "Nombre humano del carrusel."
+    },
+    "notes": {
+      "type": "string",
+      "description": "Notas editoriales internas opcionales."
     },
     "objective": {
       "type": "string"
@@ -58,49 +68,53 @@
       "properties": {
         "status": {
           "type": "string",
-          "enum": ["pending_human_approval", "approved", "rejected"]
+          "enum": ["pending_human_approval", "approved", "rejected"],
+          "default": "pending_human_approval"
         },
         "approved_version": {
-          "type": "string",
-          "enum": ["v01_cinematic_sober", "v02_minimal_constant_text"]
+          "type": ["string", "null"],
+          "enum": ["v01_cinematic_sober", "v02_minimal_constant_text", null]
         },
         "approved_by": {
-          "type": "string"
+          "type": ["string", "null"]
         },
         "approved_at": {
-          "type": "string"
+          "type": ["string", "null"]
         }
       }
     },
     "slides": {
       "type": "array",
-      "minItems": 6,
-      "maxItems": 15,
+      "minItems": 1,
+      "description": "Cantidad variable. El orden del array define el orden del carrusel. El renderer calcula automáticamente X/N.",
       "items": {
         "type": "object",
-        "required": ["number", "role", "text"],
+        "required": ["text"],
         "properties": {
           "number": {
             "type": "integer",
-            "minimum": 1
+            "minimum": 1,
+            "description": "Opcional. Si no está, el renderer usa la posición en el array."
           },
           "role": {
             "type": "string",
-            "description": "Narrative role: hook, tension, cost, reframe, question, closing, etc."
+            "description": "Rol narrativo opcional: hook, tension, cost, reframe, question, closing, etc."
           },
           "layout": {
             "type": "string",
-            "description": "Preferred layout token. Renderer may map this to V01/V02 visual rules."
+            "description": "Layout opcional para V01. Si falta, el renderer lo infiere por posición/role. V02 ignora layouts y mantiene texto fijo."
           },
           "background": {
             "type": "string",
-            "description": "Optional preferred background file name from the selected thesis folder."
+            "description": "Fondo opcional desde la carpeta de la tesis. Si falta, el renderer rota los fondos disponibles."
           },
           "text": {
-            "type": "string"
+            "type": "string",
+            "description": "Texto principal del slide, escrito por humanos. Soporta saltos de línea con \\n."
           },
           "supporting_text": {
-            "type": "string"
+            "type": "string",
+            "description": "Texto secundario opcional."
           }
         }
       }
