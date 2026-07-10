@@ -1,4 +1,5 @@
 import { chromium } from 'playwright';
+import sharp from 'sharp';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
@@ -11,8 +12,12 @@ const thesisId = '01_acceptance_inner_dialogue';
 const thesis = registry.backgrounds_by_thesis[thesisId];
 const bgRoot = thesis.folder;
 const outRoot = path.join(repoRoot, 'dist/ialo_acceptance_approval_pack');
+const tempRoot = path.join(repoRoot, 'dist/_ialo_tmp_normalized_assets');
+
 fs.rmSync(outRoot, { recursive: true, force: true });
+fs.rmSync(tempRoot, { recursive: true, force: true });
 fs.mkdirSync(outRoot, { recursive: true });
+fs.mkdirSync(tempRoot, { recursive: true });
 
 const versions = [
   {
@@ -48,13 +53,14 @@ const slideData = [
   { n: 10, role: 'closing', layout: 'closing', bg: 'Lluvia 1.jpg', pos: 'center center', text: 'Lo visible es consecuencia.\nLo invisible es causa.', supporting: 'Guardalo para volver a esta pregunta cuando vuelvas a pelear con lo que es.' }
 ];
 
+const bgPaths = slideData.map((slide) => path.join(bgRoot, slide.bg));
 const requiredAssets = [
   registry.logo,
   registry.fonts.futura_condensed_extra_bold,
   registry.fonts.gotham_narrow_medium,
   registry.fonts.lyon_text_regular,
   registry.fonts.lyon_display_regular,
-  ...slideData.map((slide) => path.join(bgRoot, slide.bg))
+  ...bgPaths
 ];
 
 const missing = requiredAssets.filter((assetPath) => !fs.existsSync(path.join(repoRoot, assetPath)));
@@ -64,17 +70,9 @@ if (missing.length) {
   process.exit(1);
 }
 
-console.log('Rendering IALO approval pack with REAL assets:');
+console.log('Rendering IALO approval pack with normalized REAL assets:');
 for (const slide of slideData) console.log(`slide ${slide.n}: ${path.join(bgRoot, slide.bg)}`);
 console.log(`logo: ${registry.logo}`);
-
-function fileUrl(repoRelativePath) {
-  return pathToFileURL(path.join(repoRoot, repoRelativePath)).href;
-}
-
-function outputFileUrl(...parts) {
-  return pathToFileURL(path.join(...parts)).href;
-}
 
 function esc(value = '') {
   return String(value)
@@ -89,11 +87,55 @@ function br(value = '') {
   return esc(value).replaceAll('\n', '<br>');
 }
 
+function abs(repoRelativePath) {
+  return path.join(repoRoot, repoRelativePath);
+}
+
+function fileHref(filePath) {
+  return pathToFileURL(filePath).href;
+}
+
+function fontDataUri(repoRelativePath) {
+  const base64 = fs.readFileSync(abs(repoRelativePath)).toString('base64');
+  return `data:font/woff;base64,${base64}`;
+}
+
+async function normalizeBackground(repoRelativePath, outputName) {
+  const outputPath = path.join(tempRoot, outputName);
+  await sharp(abs(repoRelativePath), { failOn: 'none', limitInputPixels: false })
+    .rotate()
+    .resize({ height: 1800, withoutEnlargement: true })
+    .toColorspace('srgb')
+    .jpeg({ quality: 94, mozjpeg: true })
+    .toFile(outputPath);
+  return outputPath;
+}
+
+async function normalizeLogo(repoRelativePath) {
+  const outputPath = path.join(tempRoot, 'logo.png');
+  await sharp(abs(repoRelativePath), { failOn: 'none', limitInputPixels: false })
+    .rotate()
+    .resize({ width: 520, withoutEnlargement: true })
+    .png()
+    .toFile(outputPath);
+  return outputPath;
+}
+
+const uniqueBgPaths = [...new Set(bgPaths)];
+const normalizedImages = new Map();
+for (const [index, repoRelativePath] of uniqueBgPaths.entries()) {
+  const outputPath = await normalizeBackground(repoRelativePath, `bg_${String(index + 1).padStart(2, '0')}.jpg`);
+  normalizedImages.set(repoRelativePath, fileHref(outputPath));
+  console.log(`normalized bg: ${repoRelativePath} -> ${outputPath}`);
+}
+const normalizedLogoHref = fileHref(await normalizeLogo(registry.logo));
+console.log(`normalized logo -> ${path.join(tempRoot, 'logo.png')}`);
+
 const fontCss = `
-@font-face{font-family:IALOFutura;src:url("${fileUrl(registry.fonts.futura_condensed_extra_bold)}") format('woff');font-weight:900;font-style:normal;font-display:block;}
-@font-face{font-family:IALOGothamNarrow;src:url("${fileUrl(registry.fonts.gotham_narrow_medium)}") format('woff');font-weight:500;font-style:normal;font-display:block;}
-@font-face{font-family:IALOLyonText;src:url("${fileUrl(registry.fonts.lyon_text_regular)}") format('woff');font-weight:400;font-style:normal;font-display:block;}
-@font-face{font-family:IALOLyonDisplay;src:url("${fileUrl(registry.fonts.lyon_display_regular)}") format('woff');font-weight:400;font-style:normal;font-display:block;}
+@font-face{font-family:IALOFutura;src:url("${fontDataUri(registry.fonts.futura_condensed_extra_bold)}") format('woff');font-weight:900;font-style:normal;font-display:block;}
+@font-face{font-family:IALOGothamNarrow;src:url("${fontDataUri(registry.fonts.gotham_narrow_medium)}") format('woff');font-weight:500;font-style:normal;font-display:block;}
+@font-face{font-family:IALOLyonText;src:url("${fontDataUri(registry.fonts.lyon_text_regular)}") format('woff');font-weight:400;font-style:normal;font-display:block;}
+@font-face{font-family:IALOLyonDisplay;src:url("${fontDataUri(registry.fonts.lyon_display_regular)}") format('woff');font-weight:400;font-style:normal;font-display:block;}
 `;
 
 const baseCss = `
@@ -110,8 +152,6 @@ body.render{width:var(--w);height:var(--h);overflow:hidden;}
 .logo-img.white{filter:brightness(0) invert(1);opacity:.95}.logo-img.black{filter:brightness(0);opacity:.92}
 .accent{position:absolute;z-index:35;background:var(--orange);width:88px;height:9px}.shadow{text-shadow:4px 5px 0 rgba(0,0,0,.30)}
 .text,.support,.quote{position:absolute;z-index:34}.text{font-family:IALOLyonDisplay,Georgia,serif}.support{font-family:IALOLyonText,Georgia,serif}.futura{font-family:IALOFutura,Impact,'Arial Narrow',sans-serif;text-transform:uppercase;letter-spacing:-.025em}.card{position:absolute;z-index:28}.panel{position:absolute;z-index:27}
-
-/* Base layouts: V03/hybrid geometry */
 .layout-cover .text{left:72px;top:240px;width:875px;font:900 106px/.77 IALOFutura,Impact,sans-serif}.layout-cover .accent{left:76px;top:980px}
 .layout-pause .text{left:86px;top:315px;width:820px;font:64px/1.02 IALOLyonDisplay,Georgia,serif}.layout-pause .support{left:86px;top:650px;width:790px;font:50px/1.1 IALOLyonText,Georgia,serif}.layout-pause .accent{left:86px;top:555px;width:55px}
 .layout-quote .card{left:92px;top:200px;width:788px;min-height:815px;border-radius:18px;background:rgba(238,233,224,.96);color:var(--black);padding:105px 54px}.layout-quote .bar{position:absolute;z-index:36;left:92px;top:200px;width:20px;height:815px;background:var(--orange)}.layout-quote .quote{position:relative;font:58px/1.08 IALOLyonDisplay,Georgia,serif;white-space:pre-line;color:var(--black)}
@@ -120,23 +160,16 @@ body.render{width:var(--w);height:var(--h);overflow:hidden;}
 .layout-reframe .card{left:72px;top:270px;width:868px;height:545px;border-radius:22px;background:rgba(238,233,224,.94);color:var(--black);padding:110px 36px}.layout-reframe .accent{left:108px;top:320px}.layout-reframe .text{position:relative;left:auto;top:auto;width:auto;font:78px/1 IALOLyonDisplay,Georgia,serif;color:var(--black);margin:0 0 62px}.layout-reframe .support{position:relative;left:auto;top:auto;width:760px;font:46px/1.11 IALOLyonText,Georgia,serif;color:var(--black)}
 .layout-distinction .top{position:absolute;z-index:27;left:0;top:0;width:100%;height:355px;background:var(--cream);color:var(--black)}.layout-distinction .text{left:76px;top:92px;width:860px;font:76px/.98 IALOLyonDisplay,Georgia,serif;color:var(--black)}.layout-distinction .mini{position:absolute;z-index:28;left:76px;top:785px;width:664px;height:225px;border-radius:18px;background:rgba(26,26,26,.92);padding:90px 34px 0}.layout-distinction .support{position:relative;left:auto;top:auto;width:auto;font:48px/1.1 IALOLyonText,Georgia,serif}.layout-distinction .accent{left:110px;top:835px;width:62px}
 .layout-center .text{left:145px;top:360px;width:790px;text-align:center;font:82px/1 IALOLyonDisplay,Georgia,serif}.layout-question .accent{left:76px;top:260px;width:72px}.layout-question .text{left:76px;top:340px;width:830px;font:70px/1.02 IALOLyonDisplay,Georgia,serif}.layout-closing{background:var(--cream);color:var(--black)}.layout-closing .bg-img{top:auto;height:530px;bottom:0}.layout-closing .text{left:76px;top:270px;width:870px;font:78px/1.02 IALOLyonDisplay,Georgia,serif;color:var(--black)}.layout-closing .support{left:76px;top:635px;width:780px;font:40px/1.12 IALOLyonText,Georgia,serif;color:var(--black)}.layout-closing .accent{left:76px;top:570px;width:76px}
-
-/* V01 — cinematic sober: closer to first test */
 .v01 .bg-img{filter:saturate(.70) contrast(1.12) brightness(.78)}
 .v01 .veil{background:linear-gradient(90deg,rgba(0,0,0,.72),rgba(0,0,0,.38) 68%,rgba(0,0,0,.62)),linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.54))}
 .v01 .counter{left:76px;right:auto;background:transparent;border:1px solid rgba(238,233,224,.42);font-size:28px;color:var(--cream)}
 .v01 .layout-cover .text{top:310px;width:840px;font-family:IALOLyonDisplay,Georgia,serif;font-size:78px;line-height:1.02;text-transform:none;letter-spacing:-.02em}.v01 .layout-cover .accent{top:910px;width:58px;height:7px}
 .v01 .layout-pause .text,.v01 .layout-poetic .text,.v01 .layout-center .text,.v01 .layout-question .text{left:98px;width:820px;font-size:66px;line-height:1.04}.v01 .layout-pause .support{font-size:44px;top:620px}.v01 .layout-quote .card{background:rgba(26,26,26,.70);border:1px solid rgba(238,233,224,.28);color:var(--cream);left:98px;width:780px}.v01 .layout-quote .quote{color:var(--cream);font-size:54px}.v01 .layout-quote .bar{left:98px;width:8px}
 .v01 .layout-split .panel{background:rgba(26,26,26,.72);width:100%}.v01 .layout-split .text{width:780px;font-size:66px}.v01 .layout-split .support{width:760px;font-size:42px}.v01 .layout-reframe .card,.v01 .layout-distinction .mini{background:rgba(26,26,26,.72);border:1px solid rgba(238,233,224,.26);color:var(--cream)}.v01 .layout-reframe .text,.v01 .layout-reframe .support{color:var(--cream)}.v01 .layout-distinction .top{background:rgba(26,26,26,.72);border-bottom:1px solid rgba(238,233,224,.2)}.v01 .layout-distinction .text{color:var(--cream)}.v01.layout-closing{background:#111}.v01.layout-closing .bg-img{height:100%;top:0}.v01.layout-closing .text,.v01.layout-closing .support{color:var(--cream)}
-
-/* V02 — editorial disruptive: closer to second test */
 .v02 .bg-img{filter:saturate(.96) contrast(1.10) brightness(1.0)}.v02 .veil{background:linear-gradient(90deg,rgba(0,0,0,.20),rgba(0,0,0,.02) 58%,rgba(0,0,0,.16))}
 .v02 .layout-cover .text{font-size:112px;line-height:.74}.v02 .layout-pause .card-lite{position:absolute;z-index:25;left:0;top:0;width:100%;height:410px;background:rgba(238,233,224,.95)}.v02 .layout-pause .text{color:var(--black);text-shadow:none;top:92px}.v02 .layout-pause .support{top:825px;background:rgba(26,26,26,.82);padding:36px;border-radius:18px}.v02 .layout-quote .card{left:112px;top:235px;width:760px;transform:rotate(-1deg);box-shadow:0 30px 90px rgba(0,0,0,.28)}.v02 .layout-split .panel{width:560px}.v02 .layout-poetic .text{font-size:82px}.v02 .layout-reframe .card{box-shadow:0 30px 100px rgba(0,0,0,.28)}.v02 .layout-question .text{background:rgba(26,26,26,.86);padding:54px;border-radius:24px;width:870px;left:70px;top:310px}.v02 .layout-closing .bg-img{height:520px}.v02 .counter{border-radius:0;padding:13px 18px 8px}
-
-/* V03 — hybrid */
 .v03 .bg-img{filter:saturate(.84) contrast(1.05) brightness(.95)}.v03 .veil{background:linear-gradient(90deg,rgba(0,0,0,.38),rgba(0,0,0,.10) 62%,rgba(0,0,0,.28))}
 .v03.layout-question .veil{background:linear-gradient(90deg,rgba(0,0,0,.58),rgba(0,0,0,.10) 68%,transparent)}
-
 .contact{background:#EEE9E0;color:#1A1A1A;padding:36px;font-family:IALOGothamNarrow,Arial,sans-serif;}
 .contact h1{font:500 38px/1 IALOGothamNarrow,Arial,sans-serif;text-transform:uppercase;letter-spacing:.02em;margin:0 0 12px;}
 .contact p{font:500 22px/1.2 IALOGothamNarrow,Arial,sans-serif;margin:0 0 28px;color:#555;}
@@ -148,14 +181,18 @@ body.render{width:var(--w);height:var(--h);overflow:hidden;}
 .master-thumb{width:172px;height:215px;object-fit:cover;box-shadow:0 6px 18px rgba(0,0,0,.16);background:#111;display:block;}
 `;
 
-function slideHtml(slide, version) {
+function bgHrefFor(slide) {
   const bgPath = path.join(bgRoot, slide.bg);
+  return normalizedImages.get(bgPath);
+}
+
+function slideHtml(slide, version) {
   const logoClass = 'white';
   const counterClass = slide.layout === 'reframe' ? 'counter light' : 'counter';
   const extraPauseCard = version.id === 'v02_editorial_disruptive' && slide.layout === 'pause' ? '<div class="card-lite"></div>' : '';
   return `
     <article class="slide ${version.className} layout-${slide.layout}" data-slide="${slide.n}" style="--pos:${esc(slide.pos)}">
-      <img class="bg-img" src="${fileUrl(bgPath)}" alt="${esc(bgPath)}" />
+      <img class="bg-img" src="${bgHrefFor(slide)}" alt="${esc(slide.bg)}" />
       <div class="veil"></div>
       ${extraPauseCard}
       <div class="${counterClass}">${slide.n}/10</div>
@@ -170,12 +207,16 @@ function slideHtml(slide, version) {
       ${slide.supporting && !['reframe', 'distinction'].includes(slide.layout) ? `<div class="support">${br(slide.supporting)}</div>` : ''}
       ${slide.layout === 'poetic' ? '<div class="line"></div>' : ''}
       <div class="accent"></div>
-      <img class="logo-img ${logoClass}" src="${fileUrl(registry.logo)}" alt="IALO" />
+      <img class="logo-img ${logoClass}" src="${normalizedLogoHref}" alt="IALO" />
     </article>`;
 }
 
 function slideDocument(version, slide) {
   return `<!doctype html><html><head><meta charset="utf-8"><style>${fontCss}${baseCss}</style></head><body class="render">${slideHtml(slide, version)}</body></html>`;
+}
+
+function outputFileUrl(...parts) {
+  return pathToFileURL(path.join(...parts)).href;
 }
 
 function contactSheetHtml(version, versionDir) {
@@ -192,7 +233,7 @@ function masterHtml() {
     const thumbs = slideData.map((slide) => `<img class="master-thumb" src="${outputFileUrl(versionDir, `slide_${String(slide.n).padStart(2, '0')}.png`)}" />`).join('\n');
     return `<div class="master-label">${esc(version.label)}</div>${thumbs}`;
   }).join('\n');
-  return `<!doctype html><html><head><meta charset="utf-8"><style>${fontCss}${baseCss}</style></head><body class="contact"><h1>IALO · approval pack · real assets · 3 visual versions</h1><p>Elegir una sola versión para publicar en Blotato. Las tres usan las fotos reales, logo real y fuentes reales.</p><main class="master-grid">${rows}</main></body></html>`;
+  return `<!doctype html><html><head><meta charset="utf-8"><style>${fontCss}${baseCss}</style></head><body class="contact"><h1>IALO · approval pack · real assets · 3 visual versions</h1><p>Elegir una sola versión para publicar en Blotato. Las tres usan fotos normalizadas desde los assets reales, logo real y fuentes reales.</p><main class="master-grid">${rows}</main></body></html>`;
 }
 
 async function waitForAssets(page) {
@@ -204,7 +245,7 @@ async function waitForAssets(page) {
       img.addEventListener('error', resolve, { once: true });
     })));
     const broken = images.filter((img) => !img.naturalWidth || !img.naturalHeight).map((img) => img.getAttribute('src'));
-    if (broken.length) throw new Error(`Broken image assets: ${broken.join(', ')}`);
+    if (broken.length) throw new Error(`Broken image assets after normalization: ${broken.join(', ')}`);
   });
 }
 
@@ -215,7 +256,8 @@ const manifest = {
   output_status: 'pending_human_approval',
   publication_target: 'blotato',
   publication_rule: 'Render all versions. Human chooses exactly one approved version. Only the approved version should be sent to Blotato.',
-  render_quality: 'real_assets_high_fidelity',
+  render_quality: 'real_assets_high_fidelity_normalized',
+  asset_strategy: 'Original uploaded backgrounds are normalized to safe sRGB JPEGs before Chromium renders them. This avoids broken file URLs, CMYK JPEG issues, accents/spaces in paths, and browser decode differences.',
   logo: registry.logo,
   fonts: registry.fonts,
   versions: versions.map((version) => ({
@@ -238,7 +280,10 @@ const manifest = {
 };
 fs.writeFileSync(path.join(outRoot, 'approval_manifest.json'), JSON.stringify(manifest, null, 2));
 
-const browser = await chromium.launch({ headless: true });
+const browser = await chromium.launch({
+  headless: true,
+  args: ['--allow-file-access-from-files', '--disable-web-security']
+});
 
 for (const version of versions) {
   const versionDir = path.join(outRoot, version.id);
