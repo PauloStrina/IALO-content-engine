@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/PauloStrina/IALO-content-engine/templates/content.schema.json",
+  "title": "IALO Carousel Content Brief",
+  "type": "object",
+  "required": [
+    "content_id",
+    "thesis_id",
+    "variant_id",
+    "format",
+    "channel",
+    "objective",
+    "slides"
+  ],
+  "properties": {
+    "content_id": {
+      "type": "string",
+      "description": "Stable unique id for the content piece. Example: 2026-07-w01-carousel-a"
+    },
+    "thesis_id": {
+      "type": "string",
+      "enum": [
+        "01_acceptance_inner_dialogue",
+        "02_inner_change_outer_change",
+        "03_invisible_culture",
+        "04_follow_enthusiasm"
+      ]
+    },
+    "variant_id": {
+      "type": "string",
+      "description": "Narrative variant. Example: problema_conexion, metodo_pregunta_practica."
+    },
+    "format": {
+      "type": "string",
+      "enum": ["instagram_carousel"]
+    },
+    "channel": {
+      "type": "string",
+      "enum": ["instagram"]
+    },
+    "raw_idea": {
+      "type": "string"
+    },
+    "objective": {
+      "type": "string"
+    },
+    "symbol": {
+      "type": "string"
+    },
+    "emotion": {
+      "type": "string"
+    },
+    "cta": {
+      "type": "string"
+    },
+    "approval": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["pending_human_approval", "approved", "rejected"]
+        },
+        "approved_version": {
+          "type": "string",
+          "enum": ["v01_cinematic_sober", "v02_minimal_constant_text"]
+        },
+        "approved_by": {
+          "type": "string"
+        },
+        "approved_at": {
+          "type": "string"
+        }
+      }
+    },
+    "slides": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 15,
+      "items": {
+        "type": "object",
+        "required": ["number", "role", "text"],
+        "properties": {
+          "number": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "role": {
+            "type": "string",
+            "description": "Narrative role: hook, tension, cost, reframe, question, closing, etc."
+          },
+          "layout": {
+            "type": "string",
+            "description": "Preferred layout token. Renderer may map this to V01/V02 visual rules."
+          },
+          "background": {
+            "type": "string",
+            "description": "Optional preferred background file name from the selected thesis folder."
+          },
+          "text": {
+            "type": "string"
+          },
+          "supporting_text": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
