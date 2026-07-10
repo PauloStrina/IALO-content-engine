@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches:
+      - main
       - ialo-v03-assets-free
     paths:
       - 'templates/01_acceptance_inner_dialogue/v03/**'
@@ -38,7 +39,7 @@ jobs:
           cd dist
           zip -r ialo_acceptance_test_v03_assets_free_pngs.zip ialo_acceptance_test_v03_assets_free
 
-      - name: Commit rendered output to branch
+      - name: Commit rendered output
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
