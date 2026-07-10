@@ -1,0 +1,73 @@
+{
+  "content_id": "2026-07-w04-carousel-a-project-hail-mary",
+  "content_origin": "manual_chat_cocreation",
+  "thesis_id": "04_follow_enthusiasm",
+  "variant_id": "conexion_manifiesto",
+  "format": "instagram_carousel",
+  "channel": "instagram",
+  "title": "¿Qué harías si no tuvieras que salvar el mundo?",
+  "notes": "Texto provisto manualmente desde el chat de proyecto. Carrusel de 8 slides. La máquina solo renderiza V01/V02 para aprobación humana.",
+  "objective": "Aliviar la presión de tener que justificar cada decisión con propósito, impacto o grandeza.",
+  "symbol": "alejar la cámara / el planeta que sigue girando / dejar de sostener",
+  "emotion": "alivio, escala, pausa, liviandad",
+  "cta": "Volver a esta pregunta cuando sientas que tenés que justificar toda tu vida.",
+  "approval": {
+    "status": "pending_human_approval",
+    "approved_version": null,
+    "approved_by": null,
+    "approved_at": null
+  },
+  "slides": [
+    {
+      "role": "cold_open",
+      "layout": "cover",
+      "background": "Camino 1.jpg",
+      "text": "¿Qué harías si no tuvieras que salvar el mundo?"
+    },
+    {
+      "role": "scene",
+      "layout": "poetic",
+      "background": "Camino 2.jpg",
+      "text": "La pregunta apareció después de ver Project Hail Mary.",
+      "supporting_text": "En la película, salvar el mundo es una necesidad.\nEn nuestra vida, no. Aunque a veces vivamos como si sí."
+    },
+    {
+      "role": "pressure",
+      "layout": "poetic",
+      "background": "Camino 3.jpg",
+      "text": "Cada trabajo tiene que tener un propósito.\nCada proyecto un impacto.\nCada año un logro nuevo.\nY cada descanso, una explicación."
+    },
+    {
+      "role": "tension",
+      "layout": "split",
+      "background": "Camino 4.jpg",
+      "text": "No alcanza con hacer bien tu trabajo.",
+      "supporting_text": "También tiene que representarte, apasionarte, cambiar algo y demostrar que estás aprovechando tu vida.\n\nBastante presión, ¿no?"
+    },
+    {
+      "role": "scale_shift",
+      "layout": "center",
+      "background": "Camino 5.jpg",
+      "text": "Ahora alejemos un poco la cámara.\nSomos una persona viviendo algunos años.\nEn un planeta que va a seguir girando con o sin nuestro próximo logro."
+    },
+    {
+      "role": "permission",
+      "layout": "poetic",
+      "background": "Camino 6.jpg",
+      "text": "Capaz no tenemos que justificar cada decisión.\nNi demostrar todo el tiempo que nuestra vida está siendo bien aprovechada."
+    },
+    {
+      "role": "reframe",
+      "layout": "reframe",
+      "background": "Camino 7.jpg",
+      "text": "Algo puede importarte mucho a vos",
+      "supporting_text": "sin tener que ser relevante para los demás."
+    },
+    {
+      "role": "question",
+      "layout": "question",
+      "background": "Camino 8.jpg",
+      "text": "Si no tuvieras que salvar el mundo,\n¿qué dejarías de sostener?"
+    }
+  ]
+}
