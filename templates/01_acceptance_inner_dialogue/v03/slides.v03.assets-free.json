@@ -1,0 +1,100 @@
+{
+  "template_id": "01_acceptance_inner_dialogue",
+  "visual_variant": "hybrid_main_assets_free",
+  "thesis": "Acepto lo que es",
+  "content_type": "problema_conexion",
+  "format": {
+    "width": 1080,
+    "height": 1350,
+    "ratio": "4:5"
+  },
+  "colors": {
+    "cream": "#EEE9E0",
+    "black": "#1A1A1A",
+    "orange": "#FF5000",
+    "violet": "#50235A"
+  },
+  "fonts": {
+    "title_cover": "Futura Std Condensed Extra Bold fallback: Arial Narrow / Impact",
+    "body": "Lyon Text fallback: Georgia",
+    "display": "Lyon Display fallback: Georgia"
+  },
+  "note": "Assets-free implementation. It does not depend on external images, fonts or logo binaries. Original photographic backgrounds can be reconnected later by replacing procedural CSS backgrounds with image assets.",
+  "slides": [
+    {
+      "number": 1,
+      "role": "cold_open",
+      "layout": "cover_futura",
+      "background_strategy": "procedural_rain_chair",
+      "text": "¿CUÁNTA ENERGÍA ESTÁS GASTANDO EN PELEAR CON LO QUE YA ES?"
+    },
+    {
+      "number": 2,
+      "role": "pause",
+      "layout": "pause_minimal",
+      "background_strategy": "procedural_rain_window",
+      "text": "A veces no duele solamente lo que pasa.",
+      "supporting_text": "Duele la pelea interna contra lo que pasa."
+    },
+    {
+      "number": 3,
+      "role": "resistance",
+      "layout": "quote_card",
+      "background_strategy": "procedural_bedroom_card",
+      "text": "“Esto no debería estar pasando.”\n\n“Yo ya tendría que estar en otro lugar.”\n\n“No debería sentir esto.”"
+    },
+    {
+      "number": 4,
+      "role": "cost",
+      "layout": "split_image_text",
+      "background_strategy": "procedural_rain_chair",
+      "text": "Esa pelea interna también cansa.",
+      "supporting_text": "A veces la confundimos con acción. Pero muchas veces es resistencia usando otro nombre."
+    },
+    {
+      "number": 5,
+      "role": "invisible_cost",
+      "layout": "full_bleed_poetic",
+      "background_strategy": "procedural_rain_window",
+      "text": "Lo que no podés mirar suele empezar a manejarte en silencio."
+    },
+    {
+      "number": 6,
+      "role": "reframe",
+      "layout": "reframe_card",
+      "background_strategy": "procedural_bedroom_soft",
+      "text": "Aceptar no es rendirse.",
+      "supporting_text": "Es dejar de discutir con la realidad para poder responder mejor."
+    },
+    {
+      "number": 7,
+      "role": "distinction",
+      "layout": "distinction_clean",
+      "background_strategy": "procedural_bedroom_warm",
+      "text": "No es resignación. Es presencia.",
+      "supporting_text": "Resignarse apaga. Aceptar ordena."
+    },
+    {
+      "number": 8,
+      "role": "integration",
+      "layout": "center_clear",
+      "background_strategy": "procedural_rain_chair",
+      "text": "Porque lo que es, primero se mira. Después se transforma."
+    },
+    {
+      "number": 9,
+      "role": "question",
+      "layout": "question_elegant",
+      "background_strategy": "procedural_rain_window",
+      "text": "¿Qué estás resistiendo que, si pudieras mirar de frente, empezaría a transformarse?"
+    },
+    {
+      "number": 10,
+      "role": "closing",
+      "layout": "closing_minimal",
+      "background_strategy": "cream_plus_procedural_strip",
+      "text": "Lo visible es consecuencia. Lo invisible es causa.",
+      "supporting_text": "Guardalo para volver a esta pregunta cuando vuelvas a pelear con lo que es."
+    }
+  ]
+}
