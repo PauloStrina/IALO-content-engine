@@ -8,10 +8,25 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(__dirname, '../../..');
 const registry = JSON.parse(fs.readFileSync(path.join(repoRoot, 'templates/ialo.assets.json'), 'utf8'));
 
-const thesisId = '01_acceptance_inner_dialogue';
+const contentFile = process.env.CONTENT_FILE || 'content/examples/01_acceptance_inner_dialogue/problema_conexion.acceptance.json';
+const contentPath = path.resolve(repoRoot, contentFile);
+
+if (!fs.existsSync(contentPath)) {
+  console.error(`CONTENT_FILE not found: ${contentFile}`);
+  process.exit(1);
+}
+
+const content = JSON.parse(fs.readFileSync(contentPath, 'utf8'));
+const thesisId = content.thesis_id;
 const thesis = registry.backgrounds_by_thesis[thesisId];
+
+if (!thesis) {
+  console.error(`Unknown thesis_id: ${thesisId}`);
+  process.exit(1);
+}
+
 const bgRoot = thesis.folder;
-const outRoot = path.join(repoRoot, 'dist/ialo_acceptance_approval_pack');
+const outRoot = path.join(repoRoot, 'dist/ialo_content_approval_pack');
 const tmpRoot = path.join(repoRoot, 'dist/_ialo_tmp_normalized_assets');
 
 fs.rmSync(outRoot, { recursive: true, force: true });
@@ -29,23 +44,64 @@ const versions = [
   {
     id: 'v02_minimal_constant_text',
     label: 'V02 · Minimal constant text',
-    description: 'Nueva versión minimalista: fondos reales más oscuros, velo constante y texto siempre en el mismo lugar.',
+    description: 'Versión minimalista: fondos reales más oscuros, velo constante y texto siempre en el mismo lugar.',
     className: 'v02'
   }
 ];
 
-const slideData = [
-  { n: 1, role: 'cold_open', layout: 'cover', bg: 'Lluvia 1.jpg', pos: 'center center', text: '¿CUÁNTA ENERGÍA\nESTÁS GASTANDO\nEN PELEAR\nCON LO QUE\nYA ES?' },
-  { n: 2, role: 'pause', layout: 'pause', bg: 'Ventana 1.jpg', pos: 'center center', text: 'A veces no duele solamente lo que pasa.', supporting: 'Duele la pelea interna\ncontra lo que pasa.' },
-  { n: 3, role: 'resistance', layout: 'quote', bg: 'Pieza 2.jpg', pos: 'center center', text: '“Esto no debería estar pasando.”\n\n“Yo ya tendría que estar en otro lugar.”\n\n“No debería sentir esto.”' },
-  { n: 4, role: 'cost', layout: 'split', bg: 'Silla Libro 1.jpg', pos: 'center center', text: 'Esa pelea interna también cansa.', supporting: 'A veces la confundimos con acción.\nPero muchas veces es resistencia usando otro nombre.' },
-  { n: 5, role: 'invisible_cost', layout: 'poetic', bg: 'Lluvia 2.jpg', pos: 'center center', text: 'Lo que no podés mirar\nsuele empezar a manejarte\nen silencio.' },
-  { n: 6, role: 'reframe', layout: 'reframe', bg: 'Pieza 1.jpg', pos: 'center center', text: 'Aceptar no es rendirse.', supporting: 'Es dejar de discutir con la realidad\npara poder responder mejor.' },
-  { n: 7, role: 'distinction', layout: 'distinction', bg: 'Pieza 4.jpg', pos: 'center center', text: 'No es resignación.\nEs presencia.', supporting: 'Resignarse apaga.\nAceptar ordena.' },
-  { n: 8, role: 'integration', layout: 'center', bg: 'Silla Libro 2.jpg', pos: 'center center', text: 'Porque lo que es,\nprimero se mira.\n\nDespués se transforma.' },
-  { n: 9, role: 'question', layout: 'question', bg: 'Ventana 1.jpg', pos: 'center center', text: '¿Qué estás resistiendo que, si pudieras mirar de frente, empezaría a transformarse?' },
-  { n: 10, role: 'closing', layout: 'closing', bg: 'Lluvia 1.jpg', pos: 'center center', text: 'Lo visible es consecuencia.\nLo invisible es causa.', supporting: 'Guardalo para volver a esta pregunta cuando vuelvas a pelear con lo que es.' }
-];
+function sanitizeFileName(value = 'ialo-content') {
+  return String(value)
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-zA-Z0-9-_]+/g, '_')
+    .replace(/^_+|_+$/g, '')
+    .toLowerCase();
+}
+
+function inferLayout(slide, index, total) {
+  if (slide.layout) return slide.layout;
+  const role = String(slide.role || '').toLowerCase();
+  if (index === 0) return 'cover';
+  if (index === total - 1) return 'closing';
+  if (role.includes('quote') || role.includes('resistance')) return 'quote';
+  if (role.includes('distinction')) return 'distinction';
+  if (role.includes('reframe')) return 'reframe';
+  if (role.includes('question')) return 'question';
+  if (role.includes('integration') || role.includes('center')) return 'center';
+  if (role.includes('cost') && slide.supporting_text) return 'split';
+  return 'poetic';
+}
+
+function normalizeSlides(rawSlides = []) {
+  if (!Array.isArray(rawSlides) || rawSlides.length === 0) {
+    console.error('Content file must include at least one slide in slides[].');
+    process.exit(1);
+  }
+
+  const total = rawSlides.length;
+  return rawSlides.map((slide, index) => {
+    const text = slide.text;
+    if (!text || typeof text !== 'string') {
+      console.error(`Slide ${index + 1} is missing required text.`);
+      process.exit(1);
+    }
+
+    const background = slide.background || thesis.images[index % thesis.images.length];
+    return {
+      n: index + 1,
+      originalNumber: slide.number || index + 1,
+      role: slide.role || (index === 0 ? 'hook' : index === total - 1 ? 'closing' : 'body'),
+      layout: inferLayout(slide, index, total),
+      bg: background,
+      pos: slide.position || 'center center',
+      text,
+      supporting: slide.supporting_text || slide.supporting || ''
+    };
+  });
+}
+
+const slideData = normalizeSlides(content.slides);
+const totalSlides = slideData.length;
 
 const requiredAssets = [
   registry.logo,
@@ -63,8 +119,12 @@ if (missing.length) {
   process.exit(1);
 }
 
-console.log('Rendering IALO approval pack: V01 locked + V02 minimal darker');
-for (const slide of slideData) console.log(`slide ${slide.n}: ${path.join(bgRoot, slide.bg)}`);
+console.log('Rendering IALO approval pack from manual content input');
+console.log(`content_file: ${contentFile}`);
+console.log(`content_id: ${content.content_id}`);
+console.log(`thesis: ${thesisId} · ${thesis.label}`);
+console.log(`slides: ${totalSlides}`);
+for (const slide of slideData) console.log(`slide ${slide.n}/${totalSlides}: ${path.join(bgRoot, slide.bg)} · ${slide.layout}`);
 console.log(`logo: ${registry.logo}`);
 
 function esc(value = '') {
@@ -101,11 +161,10 @@ async function normalizeBackground(srcRepoPath, key) {
   const out = path.join(tmpRoot, `${key}.jpg`);
   await sharp(src, { failOn: 'none' })
     .rotate()
-    .resize({ width: 2160, height: 2700, fit: 'cover', position: 'center' })
+    .resize({ width: 1080, height: 1350, fit: 'cover', position: 'center' })
     .toColorspace('srgb')
     .jpeg({ quality: 94, mozjpeg: true })
     .toFile(out);
-  console.log(`normalized bg: ${srcRepoPath} -> ${out}`);
   return jpgDataUri(out);
 }
 
@@ -118,7 +177,6 @@ async function normalizeLogo(srcRepoPath) {
     .toColorspace('srgb')
     .png()
     .toFile(out);
-  console.log(`normalized logo -> ${out}`);
   return pngDataUri(out);
 }
 
@@ -154,7 +212,7 @@ body.render{width:var(--w);height:var(--h);overflow:hidden;}
 .accent{position:absolute;z-index:35;background:var(--orange);width:88px;height:9px}.shadow{text-shadow:4px 5px 0 rgba(0,0,0,.30)}
 .text,.support,.quote{position:absolute;z-index:34}.text{font-family:IALOLyonDisplay,Georgia,serif}.support{font-family:IALOLyonText,Georgia,serif}.futura{font-family:IALOFutura,Impact,'Arial Narrow',sans-serif;text-transform:uppercase;letter-spacing:-.025em}.card{position:absolute;z-index:28}.panel{position:absolute;z-index:27}
 
-/* V01 locked: original cinematic approval styling */
+/* V01 locked: cinematic approved layout family */
 .layout-cover .text{left:72px;top:240px;width:875px;font:900 106px/.77 IALOFutura,Impact,sans-serif}.layout-cover .accent{left:76px;top:980px}
 .layout-pause .text{left:86px;top:315px;width:820px;font:64px/1.02 IALOLyonDisplay,Georgia,serif}.layout-pause .support{left:86px;top:650px;width:790px;font:50px/1.1 IALOLyonText,Georgia,serif}.layout-pause .accent{left:86px;top:555px;width:55px}
 .layout-quote .card{left:92px;top:200px;width:788px;min-height:815px;border-radius:18px;background:rgba(238,233,224,.96);color:var(--black);padding:105px 54px}.layout-quote .bar{position:absolute;z-index:36;left:92px;top:200px;width:20px;height:815px;background:var(--orange)}.layout-quote .quote{position:relative;font:58px/1.08 IALOLyonDisplay,Georgia,serif;white-space:pre-line;color:var(--black)}
@@ -165,10 +223,6 @@ body.render{width:var(--w);height:var(--h);overflow:hidden;}
 .layout-center .text{left:145px;top:360px;width:790px;text-align:center;font:82px/1 IALOLyonDisplay,Georgia,serif}.layout-question .accent{left:76px;top:260px;width:72px}.layout-question .text{left:76px;top:340px;width:830px;font:70px/1.02 IALOLyonDisplay,Georgia,serif}.layout-closing{background:var(--cream);color:var(--black)}.layout-closing .bg-img{top:auto;height:530px;bottom:0}.layout-closing .text{left:76px;top:270px;width:870px;font:78px/1.02 IALOLyonDisplay,Georgia,serif;color:var(--black)}.layout-closing .support{left:76px;top:635px;width:780px;font:40px/1.12 IALOLyonText,Georgia,serif;color:var(--black)}.layout-closing .accent{left:76px;top:570px;width:76px}
 .v01 .bg-img{filter:saturate(.70) contrast(1.12) brightness(.78)}
 .v01 .veil{background:linear-gradient(90deg,rgba(0,0,0,.72),rgba(0,0,0,.38) 68%,rgba(0,0,0,.62)),linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.54))}
-.v01 .counter{left:76px;right:auto;background:transparent;border:1px solid rgba(238,233,224,.42);font-size:28px;color:var(--cream)}
-.v01 .layout-cover .text{top:310px;width:840px;font-family:IALOLyonDisplay,Georgia,serif;font-size:78px;line-height:1.02;text-transform:none;letter-spacing:-.02em}.v01 .layout-cover .accent{top:910px;width:58px;height:7px}
-.v01 .layout-pause .text,.v01 .layout-poetic .text,.v01 .layout-center .text,.v01 .layout-question .text{left:98px;width:820px;font-size:66px;line-height:1.04}.v01 .layout-pause .support{font-size:44px;top:620px}.v01 .layout-quote .card{background:rgba(26,26,26,.70);border:1px solid rgba(238,233,224,.28);color:var(--cream);left:98px;width:780px}.v01 .layout-quote .quote{color:var(--cream);font-size:54px}.v01 .layout-quote .bar{left:98px;width:8px}
-.v01 .layout-split .panel{background:rgba(26,26,26,.72);width:100%}.v01 .layout-split .text{width:780px;font-size:66px}.v01 .layout-split .support{width:760px;font-size:42px}.v01 .layout-reframe .card,.v01 .layout-distinction .mini{background:rgba(26,26,26,.72);border:1px solid rgba(238,233,224,.26);color:var(--cream)}.v01 .layout-reframe .text,.v01 .layout-reframe .support{color:var(--cream)}.v01 .layout-distinction .top{background:rgba(26,26,26,.72);border-bottom:1px solid rgba(238,233,224,.2)}.v01 .layout-distinction .text{color:var(--cream)}.v01.layout-closing{background:#111}.v01.layout-closing .bg-img{height:100%;top:0}.v01.layout-closing .text,.v01.layout-closing .support{color:var(--cream)}
 
 /* V02 minimal: fixed text coordinates + darker background for legibility */
 .v02 .bg-img{filter:saturate(.68) contrast(1.12) brightness(.55)}
@@ -183,11 +237,12 @@ body.render{width:var(--w);height:var(--h);overflow:hidden;}
 .contact{background:#EEE9E0;color:#1A1A1A;padding:36px;font-family:IALOGothamNarrow,Arial,sans-serif;}
 .contact h1{font:500 38px/1 IALOGothamNarrow,Arial,sans-serif;text-transform:uppercase;letter-spacing:.02em;margin:0 0 12px;}
 .contact p{font:500 22px/1.2 IALOGothamNarrow,Arial,sans-serif;margin:0 0 28px;color:#555;}
-.contact-grid{display:grid;grid-template-columns:repeat(5,270px);gap:34px 28px;align-items:start;}
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fill,270px);gap:34px 28px;align-items:start;max-width:1500px;}
 .thumb{width:270px;height:337.5px;object-fit:cover;box-shadow:0 10px 30px rgba(0,0,0,.18);background:#111;display:block;}
 .cap{font:500 16px/1 IALOGothamNarrow,Arial,sans-serif;margin-top:8px;color:#1A1A1A;text-transform:uppercase;}
-.master-grid{display:grid;grid-template-columns:repeat(10,172px);gap:14px;align-items:start;}
-.master-label{grid-column:1/-1;font:500 28px/1 IALOGothamNarrow,Arial,sans-serif;text-transform:uppercase;margin:24px 0 4px;color:#1A1A1A;}
+.master-section{margin:24px 0 34px;}
+.master-label{font:500 28px/1 IALOGothamNarrow,Arial,sans-serif;text-transform:uppercase;margin:0 0 12px;color:#1A1A1A;}
+.master-grid{display:grid;grid-template-columns:repeat(auto-fill,172px);gap:14px;max-width:1860px;}
 .master-thumb{width:172px;height:215px;object-fit:cover;box-shadow:0 6px 18px rgba(0,0,0,.16);background:#111;display:block;}
 `;
 
@@ -196,10 +251,10 @@ function v01SlideHtml(slide, version) {
   const logoClass = 'white';
   const counterClass = slide.layout === 'reframe' ? 'counter light' : 'counter';
   return `
-    <article class="slide ${version.className} layout-${slide.layout}" data-slide="${slide.n}" style="--pos:${esc(slide.pos)}">
+    <article class="slide ${version.className} layout-${esc(slide.layout)}" data-slide="${slide.n}" style="--pos:${esc(slide.pos)}">
       <img class="bg-img" src="${bgSrc}" alt="${esc(path.join(bgRoot, slide.bg))}" />
       <div class="veil"></div>
-      <div class="${counterClass}">${slide.n}/10</div>
+      <div class="${counterClass}">${slide.n}/${totalSlides}</div>
       ${slide.layout === 'quote' ? '<div class="bar"></div>' : ''}
       ${slide.layout === 'split' ? '<div class="panel"></div>' : ''}
       ${slide.layout === 'distinction' ? '<div class="top"></div><div class="mini"><div class="support">' + br(slide.supporting) + '</div></div>' : ''}
@@ -224,7 +279,7 @@ function v02SlideHtml(slide, version) {
       <img class="bg-img" src="${bgSrc}" alt="${esc(path.join(bgRoot, slide.bg))}" />
       <div class="veil"></div>
       <div class="accent"></div>
-      <div class="counter">${slide.n}/10</div>
+      <div class="counter">${slide.n}/${totalSlides}</div>
       <div class="${mainClass}">${br(slide.text)}</div>
       ${support}
       <img class="logo-img" src="${logoDataUri}" alt="IALO" />
@@ -249,19 +304,19 @@ function contactSheetHtml(version, versionDir) {
     const src = contactImageDataUri(abs);
     return `<div><img class="thumb" src="${src}" /><div class="cap">${String(slide.n).padStart(2, '0')} · ${esc(slide.role)} · ${esc(slide.bg)}</div></div>`;
   }).join('\n');
-  return `<!doctype html><html><head><meta charset="utf-8"><style>${fontCss}${baseCss}</style></head><body class="contact"><h1>${esc(version.label)}</h1><p>${esc(version.description)} · Real assets embedded · 1080×1350 PNGs</p><main class="contact-grid">${items}</main></body></html>`;
+  return `<!doctype html><html><head><meta charset="utf-8"><style>${fontCss}${baseCss}</style></head><body class="contact"><h1>${esc(version.label)}</h1><p>${esc(version.description)} · ${totalSlides} slides · Real assets embedded · 1080×1350 PNGs</p><main class="contact-grid">${items}</main></body></html>`;
 }
 
 function masterHtml() {
-  const rows = versions.map((version) => {
+  const sections = versions.map((version) => {
     const versionDir = path.join(outRoot, version.id);
     const thumbs = slideData.map((slide) => {
       const abs = path.join(versionDir, `slide_${String(slide.n).padStart(2, '0')}.png`);
       return `<img class="master-thumb" src="${contactImageDataUri(abs)}" />`;
     }).join('\n');
-    return `<div class="master-label">${esc(version.label)}</div>${thumbs}`;
+    return `<section class="master-section"><div class="master-label">${esc(version.label)}</div><div class="master-grid">${thumbs}</div></section>`;
   }).join('\n');
-  return `<!doctype html><html><head><meta charset="utf-8"><style>${fontCss}${baseCss}</style></head><body class="contact"><h1>IALO · approval pack · V01 locked + V02 minimal darker</h1><p>V01 se mantiene bloqueada. V02 usa el mismo sistema de fondos con texto fijo y mayor oscuridad.</p><main class="master-grid">${rows}</main></body></html>`;
+  return `<!doctype html><html><head><meta charset="utf-8"><style>${fontCss}${baseCss}</style></head><body class="contact"><h1>IALO · manual content approval pack · V01 + V02</h1><p>Fuente: ${esc(contentFile)} · ${totalSlides} slides variables · elegir una sola versión para publicar en Blotato.</p>${sections}</body></html>`;
 }
 
 async function waitForAssets(page) {
@@ -278,13 +333,17 @@ async function waitForAssets(page) {
 }
 
 const manifest = {
-  content_id: 'ialo_acceptance_inner_dialogue_approval_pack_v01_locked_v02_minimal_darker',
+  content_id: content.content_id,
+  content_origin: content.content_origin || 'manual_chat_cocreation',
+  source_content_file: contentFile,
   thesis_id: thesisId,
   thesis: thesis.label,
+  title: content.title || null,
+  slide_count: totalSlides,
   output_status: 'pending_human_approval',
   publication_target: 'blotato',
   publication_rule: 'Render both versions. Human chooses exactly one approved version. Only the approved version should be sent to Blotato.',
-  render_quality: 'v01_locked_v02_minimal_darker_embedded_data_uri',
+  render_quality: 'manual_variable_slides_v01_locked_v02_minimal_darker',
   logo: registry.logo,
   fonts: registry.fonts,
   versions: versions.map((version) => ({
@@ -295,14 +354,15 @@ const manifest = {
     contact_sheet: `${version.id}/contact_sheet.png`,
     approved_for_publication: false
   })),
-  slides: slideData.map(({ n, role, layout, bg, pos, text, supporting }) => ({
+  slides: slideData.map(({ n, originalNumber, role, layout, bg, pos, text, supporting }) => ({
     n,
+    original_number: originalNumber,
     role,
     layout,
     background: path.join(bgRoot, bg),
     position: pos,
     text,
-    supporting
+    supporting_text: supporting || null
   }))
 };
 fs.writeFileSync(path.join(outRoot, 'approval_manifest.json'), JSON.stringify(manifest, null, 2));
@@ -321,18 +381,28 @@ for (const version of versions) {
   }
   await page.close();
 
-  const contact = await browser.newPage({ viewport: { width: 1600, height: 1120 }, deviceScaleFactor: 1 });
+  const contact = await browser.newPage({ viewport: { width: 1800, height: 1400 }, deviceScaleFactor: 1 });
   await contact.setContent(contactSheetHtml(version, versionDir), { waitUntil: 'load' });
   await waitForAssets(contact);
   await contact.locator('body').screenshot({ path: path.join(versionDir, 'contact_sheet.png') });
   await contact.close();
 }
 
-const master = await browser.newPage({ viewport: { width: 1980, height: 760 }, deviceScaleFactor: 1 });
+const master = await browser.newPage({ viewport: { width: 1980, height: 1400 }, deviceScaleFactor: 1 });
 await master.setContent(masterHtml(), { waitUntil: 'load' });
 await waitForAssets(master);
 await master.locator('body').screenshot({ path: path.join(outRoot, 'approval_contact_sheet_all_versions.png') });
 await master.close();
 
 await browser.close();
-console.log(`Rendered V01 LOCKED + V02 MINIMAL DARKER approval pack to ${outRoot}`);
+
+const summary = {
+  content_id: content.content_id,
+  content_file: contentFile,
+  thesis_id: thesisId,
+  slide_count: totalSlides,
+  output_folder: 'dist/ialo_content_approval_pack',
+  artifact_expected: 'ialo_manual_content_approval_pack'
+};
+fs.writeFileSync(path.join(outRoot, 'render_summary.json'), JSON.stringify(summary, null, 2));
+console.log(`Rendered manual content approval pack to ${outRoot}`);
