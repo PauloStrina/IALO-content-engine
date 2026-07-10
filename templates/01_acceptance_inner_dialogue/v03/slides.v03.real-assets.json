@@ -1,0 +1,101 @@
+{
+  "template_id": "01_acceptance_inner_dialogue",
+  "visual_variant": "hybrid_main_real_assets",
+  "thesis": "Acepto lo que es",
+  "content_type": "problema_conexion",
+  "format": {
+    "width": 1080,
+    "height": 1350,
+    "ratio": "4:5"
+  },
+  "colors": {
+    "cream": "#EEE9E0",
+    "black": "#1A1A1A",
+    "orange": "#FF5000",
+    "violet": "#50235A"
+  },
+  "fonts": {
+    "title_cover": "assets/ialo/fonts/AnyConv.com__FuturaStd-CondensedExtraBd.woff",
+    "body": "assets/ialo/fonts/AnyConv.com__Lyon Text-Regular.woff",
+    "display": "assets/ialo/fonts/AnyConv.com__LyonDisplay-Regular.woff",
+    "detail": "assets/ialo/fonts/AnyConv.com__GothamNarrow-Medium.woff"
+  },
+  "logo": "assets/ialo/logos/ojo ialo png.png",
+  "slides": [
+    {
+      "number": 1,
+      "role": "cold_open",
+      "layout": "cover_futura",
+      "background": "assets/ialo/backgrounds/acceptance/1 - Acepto lo que es/Lluvia 1.jpg",
+      "text": "¿CUÁNTA ENERGÍA ESTÁS GASTANDO EN PELEAR CON LO QUE YA ES?"
+    },
+    {
+      "number": 2,
+      "role": "pause",
+      "layout": "pause_minimal",
+      "background": "assets/ialo/backgrounds/acceptance/1 - Acepto lo que es/Ventana 1.jpg",
+      "text": "A veces no duele solamente lo que pasa.",
+      "supporting_text": "Duele la pelea interna contra lo que pasa."
+    },
+    {
+      "number": 3,
+      "role": "resistance",
+      "layout": "quote_card",
+      "background": "assets/ialo/backgrounds/acceptance/1 - Acepto lo que es/Pieza 2.jpg",
+      "text": "“Esto no debería estar pasando.”\n\n“Yo ya tendría que estar en otro lugar.”\n\n“No debería sentir esto.”"
+    },
+    {
+      "number": 4,
+      "role": "cost",
+      "layout": "split_image_text",
+      "background": "assets/ialo/backgrounds/acceptance/1 - Acepto lo que es/Silla Libro 1.jpg",
+      "text": "Esa pelea interna también cansa.",
+      "supporting_text": "A veces la confundimos con acción. Pero muchas veces es resistencia usando otro nombre."
+    },
+    {
+      "number": 5,
+      "role": "invisible_cost",
+      "layout": "full_bleed_poetic",
+      "background": "assets/ialo/backgrounds/acceptance/1 - Acepto lo que es/Lluvia 2.jpg",
+      "text": "Lo que no podés mirar suele empezar a manejarte en silencio."
+    },
+    {
+      "number": 6,
+      "role": "reframe",
+      "layout": "reframe_card",
+      "background": "assets/ialo/backgrounds/acceptance/1 - Acepto lo que es/Pieza 1.jpg",
+      "text": "Aceptar no es rendirse.",
+      "supporting_text": "Es dejar de discutir con la realidad para poder responder mejor."
+    },
+    {
+      "number": 7,
+      "role": "distinction",
+      "layout": "distinction_clean",
+      "background": "assets/ialo/backgrounds/acceptance/1 - Acepto lo que es/Pieza 4.jpg",
+      "text": "No es resignación. Es presencia.",
+      "supporting_text": "Resignarse apaga. Aceptar ordena."
+    },
+    {
+      "number": 8,
+      "role": "integration",
+      "layout": "center_clear",
+      "background": "assets/ialo/backgrounds/acceptance/1 - Acepto lo que es/Silla Libro 2.jpg",
+      "text": "Porque lo que es, primero se mira. Después se transforma."
+    },
+    {
+      "number": 9,
+      "role": "question",
+      "layout": "question_elegant",
+      "background": "assets/ialo/backgrounds/acceptance/1 - Acepto lo que es/Ventana 1.jpg",
+      "text": "¿Qué estás resistiendo que, si pudieras mirar de frente, empezaría a transformarse?"
+    },
+    {
+      "number": 10,
+      "role": "closing",
+      "layout": "closing_minimal",
+      "background": "assets/ialo/backgrounds/acceptance/1 - Acepto lo que es/Lluvia 1.jpg",
+      "text": "Lo visible es consecuencia. Lo invisible es causa.",
+      "supporting_text": "Guardalo para volver a esta pregunta cuando vuelvas a pelear con lo que es."
+    }
+  ]
+}
