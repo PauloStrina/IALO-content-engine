@@ -42,10 +42,10 @@ jobs:
       - name: Zip approval pack
         run: |
           cd dist
-          zip -r ialo_acceptance_approval_pack_v01_v02_minimal.zip ialo_acceptance_approval_pack
+          zip -r ialo_acceptance_approval_pack_v01_locked_v02_minimal_darker.zip ialo_acceptance_approval_pack
 
       - name: Upload approval pack artifact
         uses: actions/upload-artifact@v4
         with:
-          name: ialo_acceptance_approval_pack_v01_v02_minimal
-          path: dist/ialo_acceptance_approval_pack_v01_v02_minimal.zip
+          name: ialo_acceptance_approval_pack_v01_locked_v02_minimal_darker
+          path: dist/ialo_acceptance_approval_pack_v01_locked_v02_minimal_darker.zip
