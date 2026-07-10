@@ -1,0 +1,69 @@
+{
+  "logos": {
+    "ialo_eye": "assets/ialo/logos/ojo ialo png.png"
+  },
+  "fonts": {
+    "futura_condensed_extra_bold": "assets/ialo/fonts/AnyConv.com__FuturaStd-CondensedExtraBd.woff",
+    "gotham_narrow_medium": "assets/ialo/fonts/AnyConv.com__GothamNarrow-Medium.woff",
+    "lyon_text_regular": "assets/ialo/fonts/AnyConv.com__Lyon Text-Regular.woff",
+    "lyon_display_regular": "assets/ialo/fonts/AnyConv.com__LyonDisplay-Regular.woff"
+  },
+  "backgrounds": {
+    "01_acceptance_inner_dialogue": {
+      "thesis": "Acepto lo que es",
+      "base_path": "assets/ialo/backgrounds/acceptance/1 - Acepto lo que es",
+      "files": [
+        "Lluvia 1.jpg",
+        "Lluvia 2.jpg",
+        "Pieza 1.jpg",
+        "Pieza 2.jpg",
+        "Pieza 3.jpg",
+        "Pieza 4.jpg",
+        "Silla Libro 1.jpg",
+        "Silla Libro 2.jpg",
+        "Ventana 1.jpg"
+      ]
+    },
+    "02_inner_change_outer_change": {
+      "thesis": "Cambio adentro, para cambiar afuera",
+      "base_path": "assets/ialo/backgrounds/acceptance/2 - Cambio adentro, para cambiar afuera",
+      "files": [
+        "Edificio 1.jpg",
+        "Edificio 2.jpg",
+        "Edificio 3.jpg",
+        "Edificio 4.jpg",
+        "Edificio 5.jpg",
+        "Edificio 6.jpg",
+        "Edificio 7.jpg",
+        "Edificio 8.jpg",
+        "Edificio 9.jpg"
+      ]
+    },
+    "03_invisible_culture": {
+      "thesis": "La cultura es el inconsciente colectivo",
+      "base_path": "assets/ialo/backgrounds/acceptance/3 - La cultura es el inconsciente colectivo",
+      "files": [
+        "Corpo 1.jpg",
+        "Corpo 2.jpg",
+        "Corpo 3.jpg",
+        "Corpo 4.jpg",
+        "Corpo 5.jpg",
+        "Corpo 6.jpg"
+      ]
+    },
+    "04_follow_your_enthusiasm": {
+      "thesis": "Seguí tu entusiasmo",
+      "base_path": "assets/ialo/backgrounds/acceptance/4 - Seguí tu entusiasmo",
+      "files": [
+        "Camino 1.jpg",
+        "Camino 2.jpg",
+        "Camino 3.jpg",
+        "Camino 4.jpg",
+        "Camino 5.jpg",
+        "Camino 6.jpg",
+        "Camino 7.jpg",
+        "Camino 8.jpg"
+      ]
+    }
+  }
+}
