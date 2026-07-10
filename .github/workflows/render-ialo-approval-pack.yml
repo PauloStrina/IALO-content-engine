@@ -1,0 +1,51 @@
+name: Render IALO Approval Pack
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'templates/ialo.assets.json'
+      - 'templates/01_acceptance_inner_dialogue/approval/**'
+      - 'assets/ialo/**'
+      - '.github/workflows/render-ialo-approval-pack.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: render-ialo-approval-pack-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Playwright
+        run: |
+          npm init -y
+          npm install playwright
+          npx playwright install --with-deps chromium
+
+      - name: Render all approval versions
+        run: node templates/01_acceptance_inner_dialogue/approval/render-approval-pack.mjs
+
+      - name: Zip approval pack
+        run: |
+          cd dist
+          zip -r ialo_acceptance_approval_pack.zip ialo_acceptance_approval_pack
+
+      - name: Upload approval pack artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ialo_acceptance_approval_pack
+          path: dist/ialo_acceptance_approval_pack.zip
