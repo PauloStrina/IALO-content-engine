@@ -2,12 +2,19 @@ name: Render IALO Approval Pack
 
 on:
   workflow_dispatch:
+    inputs:
+      content_file:
+        description: 'Ruta del JSON de contenido manual a renderizar'
+        required: false
+        default: 'content/examples/01_acceptance_inner_dialogue/problema_conexion.acceptance.json'
   push:
     branches:
       - main
     paths:
       - 'templates/ialo.assets.json'
+      - 'templates/content.schema.json'
       - 'templates/01_acceptance_inner_dialogue/approval/**'
+      - 'content/**'
       - 'assets/ialo/**'
       - '.github/workflows/render-ialo-approval-pack.yml'
 
@@ -21,6 +28,8 @@ concurrency:
 jobs:
   render:
     runs-on: ubuntu-latest
+    env:
+      CONTENT_FILE: ${{ github.event.inputs.content_file || 'content/examples/01_acceptance_inner_dialogue/problema_conexion.acceptance.json' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -36,16 +45,16 @@ jobs:
           npm install playwright sharp
           npx playwright install --with-deps chromium
 
-      - name: Render approval versions
+      - name: Render approval versions from manual content
         run: node templates/01_acceptance_inner_dialogue/approval/render-approval-pack.mjs
 
       - name: Zip approval pack
         run: |
           cd dist
-          zip -r ialo_acceptance_approval_pack_v01_locked_v02_minimal_darker.zip ialo_acceptance_approval_pack
+          zip -r ialo_manual_content_approval_pack.zip ialo_content_approval_pack
 
       - name: Upload approval pack artifact
         uses: actions/upload-artifact@v4
         with:
-          name: ialo_acceptance_approval_pack_v01_locked_v02_minimal_darker
-          path: dist/ialo_acceptance_approval_pack_v01_locked_v02_minimal_darker.zip
+          name: ialo_manual_content_approval_pack
+          path: dist/ialo_manual_content_approval_pack.zip
