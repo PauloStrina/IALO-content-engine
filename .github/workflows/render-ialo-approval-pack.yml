@@ -36,16 +36,16 @@ jobs:
           npm install playwright
           npx playwright install --with-deps chromium
 
-      - name: Render all approval versions
+      - name: Render all approval versions with real assets
         run: node templates/01_acceptance_inner_dialogue/approval/render-approval-pack.mjs
 
       - name: Zip approval pack
         run: |
           cd dist
-          zip -r ialo_acceptance_approval_pack.zip ialo_acceptance_approval_pack
+          zip -r ialo_acceptance_approval_pack_real_assets_v2.zip ialo_acceptance_approval_pack
 
       - name: Upload approval pack artifact
         uses: actions/upload-artifact@v4
         with:
-          name: ialo_acceptance_approval_pack
-          path: dist/ialo_acceptance_approval_pack.zip
+          name: ialo_acceptance_approval_pack_real_assets_v2
+          path: dist/ialo_acceptance_approval_pack_real_assets_v2.zip
