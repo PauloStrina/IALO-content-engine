@@ -1,0 +1,1 @@
+Trigger render on main after workflow was enabled on main.
