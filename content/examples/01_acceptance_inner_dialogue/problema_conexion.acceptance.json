@@ -1,0 +1,95 @@
+{
+  "content_id": "2026-07-w01-carousel-a-acceptance-problema-conexion",
+  "thesis_id": "01_acceptance_inner_dialogue",
+  "variant_id": "problema_conexion",
+  "format": "instagram_carousel",
+  "channel": "instagram",
+  "raw_idea": "Aceptar no es resignarse. Es dejar de pelear internamente con lo que ya está pasando para poder responder mejor.",
+  "objective": "Que el lector vea cuánta energía pierde resistiendo lo que es.",
+  "symbol": "la ventana / la lluvia / la silla vacía",
+  "emotion": "pausa, alivio, presencia",
+  "cta": "Guardalo para volver a esta pregunta cuando vuelvas a pelear con lo que es.",
+  "approval": {
+    "status": "pending_human_approval",
+    "approved_version": null,
+    "approved_by": null,
+    "approved_at": null
+  },
+  "slides": [
+    {
+      "number": 1,
+      "role": "cold_open",
+      "layout": "cover",
+      "background": "Lluvia 1.jpg",
+      "text": "¿CUÁNTA ENERGÍA\nESTÁS GASTANDO\nEN PELEAR\nCON LO QUE\nYA ES?"
+    },
+    {
+      "number": 2,
+      "role": "pause",
+      "layout": "pause",
+      "background": "Ventana 1.jpg",
+      "text": "A veces no duele solamente lo que pasa.",
+      "supporting_text": "Duele la pelea interna\ncontra lo que pasa."
+    },
+    {
+      "number": 3,
+      "role": "resistance",
+      "layout": "quote",
+      "background": "Pieza 2.jpg",
+      "text": "“Esto no debería estar pasando.”\n\n“Yo ya tendría que estar en otro lugar.”\n\n“No debería sentir esto.”"
+    },
+    {
+      "number": 4,
+      "role": "cost",
+      "layout": "split",
+      "background": "Silla Libro 1.jpg",
+      "text": "Esa pelea interna también cansa.",
+      "supporting_text": "A veces la confundimos con acción.\nPero muchas veces es resistencia usando otro nombre."
+    },
+    {
+      "number": 5,
+      "role": "invisible_cost",
+      "layout": "poetic",
+      "background": "Lluvia 2.jpg",
+      "text": "Lo que no podés mirar\nsuele empezar a manejarte\nen silencio."
+    },
+    {
+      "number": 6,
+      "role": "reframe",
+      "layout": "reframe",
+      "background": "Pieza 1.jpg",
+      "text": "Aceptar no es rendirse.",
+      "supporting_text": "Es dejar de discutir con la realidad\npara poder responder mejor."
+    },
+    {
+      "number": 7,
+      "role": "distinction",
+      "layout": "distinction",
+      "background": "Pieza 4.jpg",
+      "text": "No es resignación.\nEs presencia.",
+      "supporting_text": "Resignarse apaga.\nAceptar ordena."
+    },
+    {
+      "number": 8,
+      "role": "integration",
+      "layout": "center",
+      "background": "Silla Libro 2.jpg",
+      "text": "Porque lo que es,\nprimero se mira.\n\nDespués se transforma."
+    },
+    {
+      "number": 9,
+      "role": "question",
+      "layout": "question",
+      "background": "Ventana 1.jpg",
+      "text": "¿Qué estás resistiendo que, si pudieras mirar de frente, empezaría a transformarse?"
+    },
+    {
+      "number": 10,
+      "role": "closing",
+      "layout": "closing",
+      "background": "Lluvia 1.jpg",
+      "text": "Lo visible es consecuencia.\nLo invisible es causa.",
+      "supporting_text": "Guardalo para volver a esta pregunta cuando vuelvas a pelear con lo que es."
+    }
+  ]
+}
