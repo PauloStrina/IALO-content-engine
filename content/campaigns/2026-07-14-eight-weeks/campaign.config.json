@@ -1,7 +1,7 @@
 {
   "campaign_id": "2026-07-14-eight-weeks",
   "source_format": "chat_paste_normalized_to_json",
-  "status": "content_normalized_ready_for_v02_dry_run",
+  "status": "content_normalized_ready_for_v02_minimal_dry_run",
   "channel": "instagram",
   "format": "instagram_carousel",
   "timezone": "America/Argentina/Buenos_Aires",
@@ -16,18 +16,19 @@
   },
   "visual_system": {
     "template_family": "carousel",
-    "template_version": "v02_disruptive",
+    "template_version": "v02_minimal_constant_text",
     "background_strategy": "variable_by_week_and_slide",
     "rules": [
       "The two carousels in the same week share the same thesis background family.",
       "Slides use different photographs from the weekly family.",
       "Variant B starts from a different image offset than variant A.",
-      "Use the original photographs without a global translucent dark veil.",
-      "Legibility is created with solid editorial cards, bands, split panels, typography color and text shadow.",
-      "Crop, zoom, text position and layout vary between slides and variants.",
+      "Use a darker photographic treatment with one constant veil on every slide.",
+      "Keep the main text in one constant position on every non-cover slide.",
+      "Keep secondary text in one constant position on every non-cover slide.",
+      "Place the counter at the top left and the original IALO logo at the bottom left.",
+      "Do not use editorial cards, bands, split panels or strong layout changes.",
       "Preserve Lyon, Futura, the original IALO logo, cream, black and orange brand colors.",
-      "The first slide keeps left-aligned copy but centers the text block vertically.",
-      "The visual rhythm must feel disruptive and encourage horizontal scrolling without breaking brand consistency."
+      "The first slide keeps left-aligned copy and centers the complete text block vertically."
     ]
   },
   "approval_policy": {
