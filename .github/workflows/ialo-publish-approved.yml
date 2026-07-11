@@ -27,7 +27,7 @@ jobs:
       - name: Validate one-time approval token
         shell: bash
         run: |
-          test "$(cat content/campaigns/2026-07-14-eight-weeks/.publish-approved)" = "PROGRAMAR_16_2026_07_11_V02"
+          test "$(cat content/campaigns/2026-07-14-eight-weeks/.publish-approved)" = "PROGRAMAR_16_2026_07_11_V02_RETRY_1"
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -39,6 +39,41 @@ jobs:
 
       - name: Install Playwright Chromium
         run: npx playwright install --with-deps chromium
+
+      - name: Resolve Instagram account from Blotato
+        env:
+          BLOTATO_API_KEY: ${{ secrets.BLOTATO_API_KEY }}
+          BLOTATO_BASE_URL: https://backend.blotato.com/v2
+        shell: bash
+        run: |
+          curl --fail-with-body --silent --show-error \
+            -H "blotato-api-key: ${BLOTATO_API_KEY}" \
+            "${BLOTATO_BASE_URL}/users/me/accounts?platform=instagram" \
+            -o /tmp/blotato-instagram-accounts.json
+
+          node - <<'NODE'
+          const fs = require('fs');
+          const payload = JSON.parse(fs.readFileSync('/tmp/blotato-instagram-accounts.json', 'utf8'));
+          const items = Array.isArray(payload.items) ? payload.items : Array.isArray(payload) ? payload : [];
+          const instagram = items.filter((item) => String(item.platform || 'instagram').toLowerCase() === 'instagram');
+          const preferred = instagram.filter((item) => /invisible|ialo/i.test(`${item.fullname || ''} ${item.username || ''}`));
+          const selected = preferred.length === 1 ? preferred[0] : instagram.length === 1 ? instagram[0] : null;
+
+          if (!selected?.id) {
+            throw new Error(`Unable to resolve a unique Instagram account in Blotato. Instagram accounts found: ${instagram.length}; IALO matches: ${preferred.length}`);
+          }
+
+          console.log(`::add-mask::${selected.id}`);
+          const targets = {
+            instagram: {
+              accountId: String(selected.id),
+              platform: 'instagram',
+              targetType: 'instagram'
+            }
+          };
+          fs.appendFileSync(process.env.GITHUB_ENV, `BLOTATO_TARGETS_JSON=${JSON.stringify(targets)}\n`);
+          console.log('Resolved one Instagram account for publication.');
+          NODE
 
       - name: Render 16 carousels with V02 minimal
         run: npm run render:campaign
@@ -77,12 +112,22 @@ jobs:
         env:
           BLOTATO_API_KEY: ${{ secrets.BLOTATO_API_KEY }}
           BLOTATO_BASE_URL: https://backend.blotato.com/v2
-          BLOTATO_TARGETS_JSON: ${{ secrets.BLOTATO_TARGETS_JSON }}
           BLOTATO_UPLOAD_MEDIA: "false"
           BLOTATO_DELAY_SECONDS: "7"
           BLOTATO_MAX_ATTEMPTS: "3"
           BLOTATO_PAYLOAD_PATH: output/blotato-payload.json
           BLOTATO_RESPONSE_PATH: output/blotato-response.json
+
+      - name: Consume successful publish token
+        if: ${{ success() }}
+        shell: bash
+        run: |
+          printf '%s\n' 'CONSUMED_AFTER_SUCCESS' > content/campaigns/2026-07-14-eight-weeks/.publish-approved
+          git config user.name "ialo-content-engine"
+          git config user.email "actions@users.noreply.github.com"
+          git add content/campaigns/2026-07-14-eight-weeks/.publish-approved
+          git commit -m "[skip ci] Consume successful Blotato publish token"
+          git push origin HEAD:feature/word-16-carousel-campaign
 
       - name: Upload production response
         if: ${{ always() }}
