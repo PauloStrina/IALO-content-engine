@@ -1,0 +1,21 @@
+{
+  "content_id": "2026-w02-a-invisible-battle",
+  "week": 2,
+  "variant": "A",
+  "thesis_id": "01_acceptance_inner_dialogue",
+  "variant_id": "problema_batalla_invisible",
+  "title": "Esto no debería estar pasándome.",
+  "caption": "Hay un sufrimiento que viene de lo que pasa, y otro que viene de pelear contra lo que pasa. ¿Cuál de los dos pesa más hoy?",
+  "publish_at": "2026-07-21T18:00:00-03:00",
+  "approval": { "status": "pending_human_approval", "approved_by": null, "approved_at": null },
+  "slides": [
+    { "number": 1, "role": "cold_open", "text": "“Esto no debería estar pasándome.”" },
+    { "number": 2, "role": "body", "text": "Una frase que suele aparecer de noche,\ncuando repasás una y otra vez la misma escena,\ncomo si repetirla en la cabeza\npudiera cambiarla." },
+    { "number": 3, "role": "body", "text": "Ahí conviven dos sufrimientos distintos:\nel que viene de lo que pasó,\ny otro más silencioso,\nque viene de pelear contra lo que pasó." },
+    { "number": 4, "role": "body", "text": "Esa pelea tiene sus propias frases:\n“yo ya tendría que estar en otro lugar”,\n“no debería sentir esto”,\n“no debería tener miedo”." },
+    { "number": 5, "role": "body", "text": "Cada “no debería” gasta energía\nen una batalla que no se puede ganar,\nporque es contra algo\nque ya está pasando." },
+    { "number": 6, "role": "body", "text": "Y mientras tanto,\nla racha sigue existiendo\ny el miedo sigue existiendo.\nNegarlos no los apaga." },
+    { "number": 7, "role": "body", "text": "Quizás la pregunta no sea\ncómo hacer que desaparezcan,\nsino cómo convivir con eso\nsin quedar atrapado." },
+    { "number": 8, "role": "closing_question", "text": "¿Contra qué estás peleando hace tiempo?\n¿Y cuánta energía te está costando esa pelea?" }
+  ]
+}
