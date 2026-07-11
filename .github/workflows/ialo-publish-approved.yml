@@ -1,0 +1,96 @@
+name: IALO Publish Approved Campaign
+
+on:
+  pull_request:
+    types: [synchronize]
+    paths:
+      - "content/campaigns/2026-07-14-eight-weeks/.publish-approved"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ialo-approved-publish-2026-07-14
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: ${{ github.event.pull_request.head.ref == 'feature/word-16-carousel-campaign' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout approved branch
+        uses: actions/checkout@v4
+        with:
+          ref: feature/word-16-carousel-campaign
+
+      - name: Validate one-time approval token
+        shell: bash
+        run: |
+          test "$(cat content/campaigns/2026-07-14-eight-weeks/.publish-approved)" = "PROGRAMAR_16_2026_07_11_V02"
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Install Playwright Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Render 16 carousels with V02 minimal
+        run: npm run render:campaign
+        env:
+          CAMPAIGN_DIR: content/campaigns/2026-07-14-eight-weeks
+          CAMPAIGN_OUTPUT_DIR: public-assets/campaigns/2026-07-14-eight-weeks
+
+      - name: Generate contact sheets
+        run: npm run contact:campaign
+        env:
+          CAMPAIGN_ID: 2026-07-14-eight-weeks
+          CAMPAIGN_OUTPUT_DIR: public-assets/campaigns/2026-07-14-eight-weeks
+
+      - name: Build campaign manifest and Blotato payload
+        run: npm run build:campaign-payload
+        env:
+          CAMPAIGN_DIR: content/campaigns/2026-07-14-eight-weeks
+          CAMPAIGN_OUTPUT_DIR: public-assets/campaigns/2026-07-14-eight-weeks
+          PUBLIC_ASSET_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/published-assets
+          BLOTATO_PAYLOAD_PATH: output/blotato-payload.json
+          CAMPAIGN_MANIFEST_PATH: output/campaign-manifest.json
+
+      - name: Publish rendered assets
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: published-assets
+          publish_dir: ./public-assets
+          keep_files: true
+
+      - name: Wait for public asset URLs
+        run: sleep 15
+
+      - name: Schedule 16 carousels in Blotato
+        run: npm run publish:blotato
+        env:
+          BLOTATO_API_KEY: ${{ secrets.BLOTATO_API_KEY }}
+          BLOTATO_BASE_URL: https://backend.blotato.com/v2
+          BLOTATO_TARGETS_JSON: ${{ secrets.BLOTATO_TARGETS_JSON }}
+          BLOTATO_UPLOAD_MEDIA: "false"
+          BLOTATO_DELAY_SECONDS: "7"
+          BLOTATO_MAX_ATTEMPTS: "3"
+          BLOTATO_PAYLOAD_PATH: output/blotato-payload.json
+          BLOTATO_RESPONSE_PATH: output/blotato-response.json
+
+      - name: Upload production response
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: ialo-16-carousel-campaign-production-response
+          if-no-files-found: ignore
+          path: |
+            output/blotato-response.json
+            output/blotato-payload.json
+            output/campaign-manifest.json
