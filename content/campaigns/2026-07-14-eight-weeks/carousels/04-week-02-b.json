@@ -11,9 +11,9 @@
   "slides": [
     { "number": 1, "role": "cold_open", "text": "Aceptar no es rendirse." },
     { "number": 2, "role": "body", "text": "Se confunden seguido,\naunque apuntan a lugares opuestos.\nResignarse es abandonar la dirección.\nAceptar es dejar de gastar fuerza\nen lo que no podés cambiar,\npara tenerla disponible en lo que sí." },
-    { "number": 3, "role": "body", "text": "En ese movimiento suelen aparecer\ntres palabras viejas,\nmedio pasadas de moda:\nla paciencia, la perseverancia\ny la sabiduría." },
+    { "number": 3, "role": "body", "text": "En ese movimiento suelen aparecer\ntres palabras:\npaciencia, perseverancia\ny sabiduría." },
     { "number": 4, "role": "body", "text": "La paciencia\nes sostener la calma mientras algo madura.\nLa perseverancia\nes seguir cuando se pone difícil.\nY la sabiduría\nes la que permite distinguir entre las otras dos." },
     { "number": 5, "role": "body", "text": "Hay rachas en esta vida,\ny no todas se pueden acortar.\nLo que queda en tus manos\nes qué hacer con vos\nmientras la racha pasa." },
-    { "number": 6, "role": "closing_question", "text": "¿Qué situación estás resistiendo hoy?\n¿Depende de vos cambiarla,\no toca atravesarla?" }
+    { "number": 6, "role": "closing_question", "text": "¿Qué situación estás resistiendo hoy?\n¿Depende de vos cambiarla,\no aceptarla?" }
   ]
 }
