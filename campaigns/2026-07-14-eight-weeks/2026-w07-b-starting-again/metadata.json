@@ -1,0 +1,63 @@
+{
+  "content_id": "2026-w07-b-starting-again",
+  "week": 7,
+  "variant": "B",
+  "thesis_id": "02_inner_change_outer_change",
+  "variant_id": "problema_nuevo_escenario",
+  "title": "Empezar de nuevo",
+  "caption": "¿Qué parte nuestra entra con nosotros a cada lugar nuevo?",
+  "publish_at": "2026-08-27T18:00:00-03:00",
+  "approval": {
+    "status": "pending_human_approval",
+    "approved_by": null,
+    "approved_at": null
+  },
+  "slides": [
+    {
+      "number": 1,
+      "role": "cold_open",
+      "text": "¿Qué parte nuestra entra con nosotros a cada lugar nuevo?"
+    },
+    {
+      "number": 2,
+      "role": "body",
+      "text": "Cambiar de trabajo tiene algo de empezar de cero.\n\nOtro equipo, otras reglas, nuevas conversaciones. Durante un tiempo sentimos que nosotros también estamos empezando de nuevo."
+    },
+    {
+      "number": 3,
+      "role": "body",
+      "text": "Después aparece una escena conocida.\n\nVolvemos a quedarnos callados en una reunión y a pensar todo lo que podríamos haber dicho cuando ya estamos camino a casa."
+    },
+    {
+      "number": 4,
+      "role": "body",
+      "text": "La explicación más rápida es que tuvimos mala suerte dos veces.\n\nY puede ser. Aunque también puede haber algo que cambió menos que la oficina."
+    },
+    {
+      "number": 5,
+      "role": "body",
+      "text": "Imaginémonos revisando nuestros últimos cambios sin mirar únicamente lo que dejamos atrás."
+    },
+    {
+      "number": 6,
+      "role": "question",
+      "text": "¿Qué esperábamos que el nuevo lugar hiciera por nosotros?"
+    },
+    {
+      "number": 7,
+      "role": "question",
+      "text": "¿Qué cosas volvieron a aparecer, incluso con otras personas y reglas distintas?"
+    },
+    {
+      "number": 8,
+      "role": "body",
+      "text": "Cambiar de escenario puede ser una decisión enorme.\n\nIgual no siempre nos dice qué parte de la historia cambió y cuál sigue buscando otra escena."
+    },
+    {
+      "number": 9,
+      "role": "closing_question",
+      "text": "¿Qué parte tuya entra con vos a cada lugar nuevo?"
+    }
+  ],
+  "template": "v02_minimal_constant_text"
+}

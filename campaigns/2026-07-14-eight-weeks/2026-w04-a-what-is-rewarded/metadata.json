@@ -1,0 +1,58 @@
+{
+  "content_id": "2026-w04-a-what-is-rewarded",
+  "week": 4,
+  "variant": "A",
+  "thesis_id": "03_invisible_culture",
+  "variant_id": "problema_lo_que_se_calla",
+  "title": "¿Qué se premia en tu trabajo?",
+  "caption": "La cultura no vive en los valores escritos, vive en lo que la gente aprendió que conviene hacer. ¿Qué se aprende a callar en tu trabajo?",
+  "publish_at": "2026-08-04T18:00:00-03:00",
+  "approval": {
+    "status": "pending_human_approval",
+    "approved_by": null,
+    "approved_at": null
+  },
+  "slides": [
+    {
+      "number": 1,
+      "role": "cold_open",
+      "text": "¿Qué se premia en tu trabajo?"
+    },
+    {
+      "number": 2,
+      "role": "body",
+      "text": "En la reunión de los lunes,\nalguien está por decir\nlo que varios piensan hace semanas.\nMira alrededor, mide las caras,\ny al final se lo guarda."
+    },
+    {
+      "number": 3,
+      "role": "body",
+      "text": "Esa decisión silenciosa\ndice más de la cultura\nque cualquier valor escrito."
+    },
+    {
+      "number": 4,
+      "role": "body",
+      "text": "Porque la cultura no es\nlo que una organización declara.\nEs lo que las personas aprenden\nque conviene hacer para pertenecer."
+    },
+    {
+      "number": 5,
+      "role": "question",
+      "text": "¿Y dónde se aprendió eso de callarse?\nQuizás en aquella vez\nque alguien señaló un problema\ny terminó marcado como “el conflictivo”."
+    },
+    {
+      "number": 6,
+      "role": "body",
+      "text": "Nadie lo escribió en ningún documento,\npero todos tomaron nota."
+    },
+    {
+      "number": 7,
+      "role": "body",
+      "text": "Por eso puede decirse que la cultura\nes el inconsciente colectivo\nde una organización:\nnadie la ve, todos la perciben,\ny ordena el comportamiento en silencio."
+    },
+    {
+      "number": 8,
+      "role": "closing_question",
+      "text": "Entonces, ¿qué se premia de verdad en tu trabajo?"
+    }
+  ],
+  "template": "v02_minimal_constant_text"
+}

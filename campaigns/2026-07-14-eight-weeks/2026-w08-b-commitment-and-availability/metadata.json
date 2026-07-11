@@ -1,0 +1,63 @@
+{
+  "content_id": "2026-w08-b-commitment-and-availability",
+  "week": 8,
+  "variant": "B",
+  "thesis_id": "03_invisible_culture",
+  "variant_id": "problema_compromiso_disponibilidad",
+  "title": "Estar comprometidos",
+  "caption": "¿A qué hora termina realmente un trabajo?",
+  "publish_at": "2026-09-03T18:00:00-03:00",
+  "approval": {
+    "status": "pending_human_approval",
+    "approved_by": null,
+    "approved_at": null
+  },
+  "slides": [
+    {
+      "number": 1,
+      "role": "cold_open",
+      "text": "¿A qué hora termina realmente un trabajo?"
+    },
+    {
+      "number": 2,
+      "role": "body",
+      "text": "El contrato tiene un horario.\n\nLa cultura, no siempre."
+    },
+    {
+      "number": 3,
+      "role": "body",
+      "text": "Nadie nos obliga a contestar un mensaje a las once de la noche.\n\nPero vemos quién responde, quién recibe el agradecimiento y quién aparece como ejemplo de compromiso en la reunión siguiente."
+    },
+    {
+      "number": 4,
+      "role": "body",
+      "text": "Con el tiempo, estar comprometidos puede empezar a parecerse bastante a estar disponibles.\n\nAunque nadie haya decidido formalmente que esas dos cosas significan lo mismo."
+    },
+    {
+      "number": 5,
+      "role": "body",
+      "text": "Imaginémonos entrando a ese equipo sin conocer todavía sus costumbres."
+    },
+    {
+      "number": 6,
+      "role": "question",
+      "text": "¿Qué entenderíamos al mirar los mensajes fuera de horario?\n\n¿Qué aprenderíamos de las personas que son reconocidas y de las que empiezan a poner límites?"
+    },
+    {
+      "number": 7,
+      "role": "body",
+      "text": "Quizás nadie nos pediría directamente que estemos conectados.\n\nIgual quedaría bastante claro qué conducta tiene más valor."
+    },
+    {
+      "number": 8,
+      "role": "question",
+      "text": "Cuando una regla no aparece en ningún documento, pero organiza la forma de trabajar, ¿dónde vive?"
+    },
+    {
+      "number": 9,
+      "role": "closing_question",
+      "text": "Entonces, de nuevo:\n\n¿A qué hora termina realmente un trabajo?"
+    }
+  ],
+  "template": "v02_minimal_constant_text"
+}

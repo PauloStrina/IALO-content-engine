@@ -1,0 +1,63 @@
+{
+  "content_id": "2026-w03-b-mask",
+  "week": 3,
+  "variant": "B",
+  "thesis_id": "02_inner_change_outer_change",
+  "variant_id": "metodo_mascara",
+  "title": "¿Qué máscara te sirvió para sobrevivir, pero hoy ya no te identifica?",
+  "caption": "La máscara te protegió cuando hizo falta. ¿Hoy te sigue quedando bien?",
+  "publish_at": "2026-07-30T18:00:00-03:00",
+  "approval": {
+    "status": "pending_human_approval",
+    "approved_by": null,
+    "approved_at": null
+  },
+  "slides": [
+    {
+      "number": 1,
+      "role": "cold_open",
+      "text": "¿Qué máscara te sirvió para sobrevivir,\npero hoy ya no te identifica?"
+    },
+    {
+      "number": 2,
+      "role": "body",
+      "text": "Todos armamos alguna.\n\nPensá en la persona que dice que sí a todo:\nal pedido de último momento,\nal plan que no tiene ganas de ir,\nal favor que le pesa."
+    },
+    {
+      "number": 3,
+      "role": "body",
+      "text": "Dice que sí con una sonrisa\ny después queda masticando bronca,\npreguntándose por qué\nnunca puede decir que no."
+    },
+    {
+      "number": 4,
+      "role": "body",
+      "text": "Esa forma de responder\nno apareció de la nada.\nEn algún momento de su historia,\ncomplacer fue la manera\nde que no se enojen,\nde ser querido,\nde pertenecer."
+    },
+    {
+      "number": 5,
+      "role": "body",
+      "text": "Ahí la máscara cumplió su función:\nprotegió.\nEl tema es que las máscaras\nno se sacan solas\ncuando dejan de hacer falta."
+    },
+    {
+      "number": 6,
+      "role": "body",
+      "text": "Y un día esa persona ya creció,\nel contexto cambió,\npero la respuesta automática sigue igual,\ndecidiendo por ella."
+    },
+    {
+      "number": 7,
+      "role": "body",
+      "text": "Acá aparece algo importante:\ntu esencia no es tu historia."
+    },
+    {
+      "number": 8,
+      "role": "body",
+      "text": "Y cuando alguien logra ver\nel personaje que se le activa,\nel personaje pierde fuerza.\nAhí empieza a haber elección\ndonde antes había automatismo."
+    },
+    {
+      "number": 9,
+      "role": "closing_question",
+      "text": "¿Cuál es tu respuesta automática\nen los vínculos?\n¿A quién aprendiste a responderle así?"
+    }
+  ],
+  "template": "v02_minimal_constant_text"
+}

@@ -1,0 +1,63 @@
+{
+  "content_id": "2026-w05-a-useful-enthusiasm",
+  "week": 5,
+  "variant": "A",
+  "thesis_id": "04_follow_enthusiasm",
+  "variant_id": "problema_utilidad",
+  "title": "Que sirva para algo",
+  "caption": "¿Qué haríamos si no tuviéramos que convertir todo lo que nos entusiasma en algo útil?",
+  "publish_at": "2026-08-11T18:00:00-03:00",
+  "approval": {
+    "status": "pending_human_approval",
+    "approved_by": null,
+    "approved_at": null
+  },
+  "slides": [
+    {
+      "number": 1,
+      "role": "cold_open",
+      "text": "¿Qué haríamos si no tuviéramos que convertir todo lo que nos entusiasma en algo útil?"
+    },
+    {
+      "number": 2,
+      "role": "body",
+      "text": "Encontramos algo que nos interesa y bastante rápido aparece la pregunta sobre qué podríamos hacer con eso.\n\nSi puede convertirse en un proyecto, una profesión o algo que sume al currículum."
+    },
+    {
+      "number": 3,
+      "role": "body",
+      "text": "Hasta la curiosidad parece necesitar una justificación.\n\nSi no produce plata, crecimiento o alguna habilidad concreta, empezamos a sentir que quizás estamos perdiendo el tiempo."
+    },
+    {
+      "number": 4,
+      "role": "body",
+      "text": "También hacemos eso con los hobbies.\n\nLos medimos, los publicamos, buscamos mejorar y, en algún momento, aparece la posibilidad de convertirlos en un ingreso."
+    },
+    {
+      "number": 5,
+      "role": "body",
+      "text": "Imaginémonos diciendo en voz alta: “Lo hago porque me gusta”."
+    },
+    {
+      "number": 6,
+      "role": "body",
+      "text": "Sin agregar que puede servirnos para el trabajo, que estamos armando un proyecto o que algún día podría transformarse en algo más."
+    },
+    {
+      "number": 7,
+      "role": "question",
+      "text": "¿Nos alcanzaría esa respuesta?"
+    },
+    {
+      "number": 8,
+      "role": "body",
+      "text": "La incomodidad aparece cuando el entusiasmo no trae un plan.\n\nNos gusta, pero no sabemos qué lugar darle."
+    },
+    {
+      "number": 9,
+      "role": "closing_question",
+      "text": "Entonces volvamos al comienzo:\n\n¿Qué haríamos si no tuviéramos que convertir todo lo que nos entusiasma en algo útil?"
+    }
+  ],
+  "template": "v02_minimal_constant_text"
+}

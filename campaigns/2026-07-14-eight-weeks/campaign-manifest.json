@@ -1,0 +1,452 @@
+{
+  "campaign_id": "2026-07-14-eight-weeks",
+  "generated_at": "2026-07-11T19:15:57.323Z",
+  "timezone": "America/Argentina/Buenos_Aires",
+  "dry_run_required": true,
+  "human_review_required": true,
+  "posts": [
+    {
+      "id": "2026-w01-a-purpose",
+      "status": "pending_human_approval",
+      "week": 1,
+      "variant": "A",
+      "thesis_id": "04_follow_enthusiasm",
+      "scheduledAt": "2026-07-14T18:00:00-03:00",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "caption": "Antes de buscar una gran respuesta, mirar qué te entusiasma hoy. ¿Cuánto espacio le estás dando?",
+      "mediaUrls": [
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w01-a-purpose/slide-01.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w01-a-purpose/slide-02.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w01-a-purpose/slide-03.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w01-a-purpose/slide-04.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w01-a-purpose/slide-05.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w01-a-purpose/slide-06.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w01-a-purpose/slide-07.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w01-a-purpose/slide-08.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w01-a-purpose/slide-09.png"
+      ],
+      "metadata": {
+        "campaign_id": "2026-07-14-eight-weeks",
+        "title": "¿Y vos ya encontraste tu propósito?",
+        "variant_id": "problema",
+        "template": "v02_minimal_constant_text",
+        "source_file": "01-week-01-a.json"
+      }
+    },
+    {
+      "id": "2026-w01-b-compass",
+      "status": "pending_human_approval",
+      "week": 1,
+      "variant": "B",
+      "thesis_id": "04_follow_enthusiasm",
+      "scheduledAt": "2026-07-16T18:00:00-03:00",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "caption": "El cuerpo registra el entusiasmo antes que la cabeza. ¿Qué te hace perder la noción del tiempo?",
+      "mediaUrls": [
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w01-b-compass/slide-01.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w01-b-compass/slide-02.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w01-b-compass/slide-03.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w01-b-compass/slide-04.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w01-b-compass/slide-05.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w01-b-compass/slide-06.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w01-b-compass/slide-07.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w01-b-compass/slide-08.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w01-b-compass/slide-09.png"
+      ],
+      "metadata": {
+        "campaign_id": "2026-07-14-eight-weeks",
+        "title": "Tu entusiasmo es una brújula.",
+        "variant_id": "metodo_brujula",
+        "template": "v02_minimal_constant_text",
+        "source_file": "02-week-01-b.json"
+      }
+    },
+    {
+      "id": "2026-w02-a-invisible-battle",
+      "status": "pending_human_approval",
+      "week": 2,
+      "variant": "A",
+      "thesis_id": "01_acceptance_inner_dialogue",
+      "scheduledAt": "2026-07-21T18:00:00-03:00",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "caption": "Hay un sufrimiento que viene de lo que pasa, y otro que viene de pelear contra lo que pasa. ¿Cuál de los dos pesa más hoy?",
+      "mediaUrls": [
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w02-a-invisible-battle/slide-01.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w02-a-invisible-battle/slide-02.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w02-a-invisible-battle/slide-03.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w02-a-invisible-battle/slide-04.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w02-a-invisible-battle/slide-05.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w02-a-invisible-battle/slide-06.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w02-a-invisible-battle/slide-07.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w02-a-invisible-battle/slide-08.png"
+      ],
+      "metadata": {
+        "campaign_id": "2026-07-14-eight-weeks",
+        "title": "Esto no debería estar pasándome.",
+        "variant_id": "problema_batalla_invisible",
+        "template": "v02_minimal_constant_text",
+        "source_file": "03-week-02-a.json"
+      }
+    },
+    {
+      "id": "2026-w02-b-acceptance-not-surrender",
+      "status": "pending_human_approval",
+      "week": 2,
+      "variant": "B",
+      "thesis_id": "01_acceptance_inner_dialogue",
+      "scheduledAt": "2026-07-23T18:00:00-03:00",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "caption": "Paciencia para lo que madura, perseverancia para lo difícil, sabiduría para distinguir cuál toca. ¿Qué situación estás atravesando hoy?",
+      "mediaUrls": [
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w02-b-acceptance-not-surrender/slide-01.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w02-b-acceptance-not-surrender/slide-02.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w02-b-acceptance-not-surrender/slide-03.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w02-b-acceptance-not-surrender/slide-04.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w02-b-acceptance-not-surrender/slide-05.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w02-b-acceptance-not-surrender/slide-06.png"
+      ],
+      "metadata": {
+        "campaign_id": "2026-07-14-eight-weeks",
+        "title": "Aceptar no es rendirse.",
+        "variant_id": "metodo_aceptar_no_rendirse",
+        "template": "v02_minimal_constant_text",
+        "source_file": "04-week-02-b.json"
+      }
+    },
+    {
+      "id": "2026-w03-a-mirror",
+      "status": "pending_human_approval",
+      "week": 3,
+      "variant": "A",
+      "thesis_id": "02_inner_change_outer_change",
+      "scheduledAt": "2026-07-28T18:00:00-03:00",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "caption": "Cuando la escena cambia pero la dinámica se repite, algo está pidiendo ser mirado. ¿Qué se te repite?",
+      "mediaUrls": [
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w03-a-mirror/slide-01.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w03-a-mirror/slide-02.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w03-a-mirror/slide-03.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w03-a-mirror/slide-04.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w03-a-mirror/slide-05.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w03-a-mirror/slide-06.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w03-a-mirror/slide-07.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w03-a-mirror/slide-08.png"
+      ],
+      "metadata": {
+        "campaign_id": "2026-07-14-eight-weeks",
+        "title": "Trabajo nuevo. ¿Vida nueva?",
+        "variant_id": "problema_espejo",
+        "template": "v02_minimal_constant_text",
+        "source_file": "05-week-03-a.json"
+      }
+    },
+    {
+      "id": "2026-w03-b-mask",
+      "status": "pending_human_approval",
+      "week": 3,
+      "variant": "B",
+      "thesis_id": "02_inner_change_outer_change",
+      "scheduledAt": "2026-07-30T18:00:00-03:00",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "caption": "La máscara te protegió cuando hizo falta. ¿Hoy te sigue quedando bien?",
+      "mediaUrls": [
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w03-b-mask/slide-01.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w03-b-mask/slide-02.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w03-b-mask/slide-03.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w03-b-mask/slide-04.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w03-b-mask/slide-05.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w03-b-mask/slide-06.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w03-b-mask/slide-07.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w03-b-mask/slide-08.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w03-b-mask/slide-09.png"
+      ],
+      "metadata": {
+        "campaign_id": "2026-07-14-eight-weeks",
+        "title": "¿Qué máscara te sirvió para sobrevivir, pero hoy ya no te identifica?",
+        "variant_id": "metodo_mascara",
+        "template": "v02_minimal_constant_text",
+        "source_file": "06-week-03-b.json"
+      }
+    },
+    {
+      "id": "2026-w04-a-what-is-rewarded",
+      "status": "pending_human_approval",
+      "week": 4,
+      "variant": "A",
+      "thesis_id": "03_invisible_culture",
+      "scheduledAt": "2026-08-04T18:00:00-03:00",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "caption": "La cultura no vive en los valores escritos, vive en lo que la gente aprendió que conviene hacer. ¿Qué se aprende a callar en tu trabajo?",
+      "mediaUrls": [
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w04-a-what-is-rewarded/slide-01.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w04-a-what-is-rewarded/slide-02.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w04-a-what-is-rewarded/slide-03.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w04-a-what-is-rewarded/slide-04.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w04-a-what-is-rewarded/slide-05.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w04-a-what-is-rewarded/slide-06.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w04-a-what-is-rewarded/slide-07.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w04-a-what-is-rewarded/slide-08.png"
+      ],
+      "metadata": {
+        "campaign_id": "2026-07-14-eight-weeks",
+        "title": "¿Qué se premia en tu trabajo?",
+        "variant_id": "problema_lo_que_se_calla",
+        "template": "v02_minimal_constant_text",
+        "source_file": "07-week-04-a.json"
+      }
+    },
+    {
+      "id": "2026-w04-b-backstage",
+      "status": "pending_human_approval",
+      "week": 4,
+      "variant": "B",
+      "thesis_id": "03_invisible_culture",
+      "scheduledAt": "2026-08-06T18:00:00-03:00",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "caption": "El error y el ascenso: los dos momentos donde una cultura muestra lo que premia de verdad. ¿Qué muestran en tu equipo?",
+      "mediaUrls": [
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w04-b-backstage/slide-01.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w04-b-backstage/slide-02.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w04-b-backstage/slide-03.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w04-b-backstage/slide-04.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w04-b-backstage/slide-05.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w04-b-backstage/slide-06.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w04-b-backstage/slide-07.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w04-b-backstage/slide-08.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w04-b-backstage/slide-09.png"
+      ],
+      "metadata": {
+        "campaign_id": "2026-07-14-eight-weeks",
+        "title": "¿Querés conocer la cultura de una organización?",
+        "variant_id": "metodo_backstage",
+        "template": "v02_minimal_constant_text",
+        "source_file": "08-week-04-b.json"
+      }
+    },
+    {
+      "id": "2026-w05-a-useful-enthusiasm",
+      "status": "pending_human_approval",
+      "week": 5,
+      "variant": "A",
+      "thesis_id": "04_follow_enthusiasm",
+      "scheduledAt": "2026-08-11T18:00:00-03:00",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "caption": "¿Qué haríamos si no tuviéramos que convertir todo lo que nos entusiasma en algo útil?",
+      "mediaUrls": [
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w05-a-useful-enthusiasm/slide-01.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w05-a-useful-enthusiasm/slide-02.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w05-a-useful-enthusiasm/slide-03.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w05-a-useful-enthusiasm/slide-04.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w05-a-useful-enthusiasm/slide-05.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w05-a-useful-enthusiasm/slide-06.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w05-a-useful-enthusiasm/slide-07.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w05-a-useful-enthusiasm/slide-08.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w05-a-useful-enthusiasm/slide-09.png"
+      ],
+      "metadata": {
+        "campaign_id": "2026-07-14-eight-weeks",
+        "title": "Que sirva para algo",
+        "variant_id": "problema_utilidad",
+        "template": "v02_minimal_constant_text",
+        "source_file": "09-week-05-a.json"
+      }
+    },
+    {
+      "id": "2026-w05-b-beginners",
+      "status": "pending_human_approval",
+      "week": 5,
+      "variant": "B",
+      "thesis_id": "04_follow_enthusiasm",
+      "scheduledAt": "2026-08-13T18:00:00-03:00",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "caption": "¿En qué momento dejamos de disfrutar ser principiantes?",
+      "mediaUrls": [
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w05-b-beginners/slide-01.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w05-b-beginners/slide-02.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w05-b-beginners/slide-03.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w05-b-beginners/slide-04.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w05-b-beginners/slide-05.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w05-b-beginners/slide-06.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w05-b-beginners/slide-07.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w05-b-beginners/slide-08.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w05-b-beginners/slide-09.png"
+      ],
+      "metadata": {
+        "campaign_id": "2026-07-14-eight-weeks",
+        "title": "Ser principiantes",
+        "variant_id": "conexion_principiantes",
+        "template": "v02_minimal_constant_text",
+        "source_file": "10-week-05-b.json"
+      }
+    },
+    {
+      "id": "2026-w06-a-bad-streak",
+      "status": "pending_human_approval",
+      "week": 6,
+      "variant": "A",
+      "thesis_id": "01_acceptance_inner_dialogue",
+      "scheduledAt": "2026-08-18T18:00:00-03:00",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "caption": "¿Y si una mala racha no significara que estamos haciendo todo mal?",
+      "mediaUrls": [
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w06-a-bad-streak/slide-01.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w06-a-bad-streak/slide-02.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w06-a-bad-streak/slide-03.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w06-a-bad-streak/slide-04.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w06-a-bad-streak/slide-05.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w06-a-bad-streak/slide-06.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w06-a-bad-streak/slide-07.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w06-a-bad-streak/slide-08.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w06-a-bad-streak/slide-09.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w06-a-bad-streak/slide-10.png"
+      ],
+      "metadata": {
+        "campaign_id": "2026-07-14-eight-weeks",
+        "title": "Una mala racha",
+        "variant_id": "problema_mala_racha",
+        "template": "v02_minimal_constant_text",
+        "source_file": "11-week-06-a.json"
+      }
+    },
+    {
+      "id": "2026-w06-b-no-answer",
+      "status": "pending_human_approval",
+      "week": 6,
+      "variant": "B",
+      "thesis_id": "01_acceptance_inner_dialogue",
+      "scheduledAt": "2026-08-20T18:00:00-03:00",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "caption": "¿Por qué nos cuesta tanto no saber qué etapa estamos viviendo?",
+      "mediaUrls": [
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w06-b-no-answer/slide-01.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w06-b-no-answer/slide-02.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w06-b-no-answer/slide-03.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w06-b-no-answer/slide-04.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w06-b-no-answer/slide-05.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w06-b-no-answer/slide-06.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w06-b-no-answer/slide-07.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w06-b-no-answer/slide-08.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w06-b-no-answer/slide-09.png"
+      ],
+      "metadata": {
+        "campaign_id": "2026-07-14-eight-weeks",
+        "title": "No tener una respuesta",
+        "variant_id": "conexion_no_respuesta",
+        "template": "v02_minimal_constant_text",
+        "source_file": "12-week-06-b.json"
+      }
+    },
+    {
+      "id": "2026-w07-a-personality-or-habit",
+      "status": "pending_human_approval",
+      "week": 7,
+      "variant": "A",
+      "thesis_id": "02_inner_change_outer_change",
+      "scheduledAt": "2026-08-25T18:00:00-03:00",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "caption": "¿Cuánto de lo que llamamos personalidad es una costumbre?",
+      "mediaUrls": [
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w07-a-personality-or-habit/slide-01.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w07-a-personality-or-habit/slide-02.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w07-a-personality-or-habit/slide-03.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w07-a-personality-or-habit/slide-04.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w07-a-personality-or-habit/slide-05.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w07-a-personality-or-habit/slide-06.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w07-a-personality-or-habit/slide-07.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w07-a-personality-or-habit/slide-08.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w07-a-personality-or-habit/slide-09.png"
+      ],
+      "metadata": {
+        "campaign_id": "2026-07-14-eight-weeks",
+        "title": "Yo soy así",
+        "variant_id": "problema_identidad_costumbre",
+        "template": "v02_minimal_constant_text",
+        "source_file": "13-week-07-a.json"
+      }
+    },
+    {
+      "id": "2026-w07-b-starting-again",
+      "status": "pending_human_approval",
+      "week": 7,
+      "variant": "B",
+      "thesis_id": "02_inner_change_outer_change",
+      "scheduledAt": "2026-08-27T18:00:00-03:00",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "caption": "¿Qué parte nuestra entra con nosotros a cada lugar nuevo?",
+      "mediaUrls": [
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w07-b-starting-again/slide-01.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w07-b-starting-again/slide-02.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w07-b-starting-again/slide-03.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w07-b-starting-again/slide-04.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w07-b-starting-again/slide-05.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w07-b-starting-again/slide-06.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w07-b-starting-again/slide-07.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w07-b-starting-again/slide-08.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w07-b-starting-again/slide-09.png"
+      ],
+      "metadata": {
+        "campaign_id": "2026-07-14-eight-weeks",
+        "title": "Empezar de nuevo",
+        "variant_id": "problema_nuevo_escenario",
+        "template": "v02_minimal_constant_text",
+        "source_file": "14-week-07-b.json"
+      }
+    },
+    {
+      "id": "2026-w08-a-what-we-learn-to-silence",
+      "status": "pending_human_approval",
+      "week": 8,
+      "variant": "A",
+      "thesis_id": "03_invisible_culture",
+      "scheduledAt": "2026-09-01T18:00:00-03:00",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "caption": "¿Cómo aprendemos qué cosas conviene callar en una empresa?",
+      "mediaUrls": [
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w08-a-what-we-learn-to-silence/slide-01.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w08-a-what-we-learn-to-silence/slide-02.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w08-a-what-we-learn-to-silence/slide-03.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w08-a-what-we-learn-to-silence/slide-04.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w08-a-what-we-learn-to-silence/slide-05.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w08-a-what-we-learn-to-silence/slide-06.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w08-a-what-we-learn-to-silence/slide-07.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w08-a-what-we-learn-to-silence/slide-08.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w08-a-what-we-learn-to-silence/slide-09.png"
+      ],
+      "metadata": {
+        "campaign_id": "2026-07-14-eight-weeks",
+        "title": "Lo que aprendemos a callar",
+        "variant_id": "problema_reglas_no_escritas",
+        "template": "v02_minimal_constant_text",
+        "source_file": "15-week-08-a.json"
+      }
+    },
+    {
+      "id": "2026-w08-b-commitment-and-availability",
+      "status": "pending_human_approval",
+      "week": 8,
+      "variant": "B",
+      "thesis_id": "03_invisible_culture",
+      "scheduledAt": "2026-09-03T18:00:00-03:00",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "caption": "¿A qué hora termina realmente un trabajo?",
+      "mediaUrls": [
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w08-b-commitment-and-availability/slide-01.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w08-b-commitment-and-availability/slide-02.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w08-b-commitment-and-availability/slide-03.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w08-b-commitment-and-availability/slide-04.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w08-b-commitment-and-availability/slide-05.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w08-b-commitment-and-availability/slide-06.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w08-b-commitment-and-availability/slide-07.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w08-b-commitment-and-availability/slide-08.png",
+        "https://raw.githubusercontent.com/PauloStrina/IALO-content-engine/published-assets/campaigns/2026-07-14-eight-weeks/2026-w08-b-commitment-and-availability/slide-09.png"
+      ],
+      "metadata": {
+        "campaign_id": "2026-07-14-eight-weeks",
+        "title": "Estar comprometidos",
+        "variant_id": "problema_compromiso_disponibilidad",
+        "template": "v02_minimal_constant_text",
+        "source_file": "16-week-08-b.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "content_id": "2026-w01-b-compass",
+  "week": 1,
+  "variant": "B",
+  "thesis_id": "04_follow_enthusiasm",
+  "variant_id": "metodo_brujula",
+  "title": "Tu entusiasmo es una brújula.",
+  "caption": "El cuerpo registra el entusiasmo antes que la cabeza. ¿Qué te hace perder la noción del tiempo?",
+  "publish_at": "2026-07-16T18:00:00-03:00",
+  "approval": {
+    "status": "pending_human_approval",
+    "approved_by": null,
+    "approved_at": null
+  },
+  "slides": [
+    {
+      "number": 1,
+      "role": "cold_open",
+      "text": "Tu entusiasmo es una brújula."
+    },
+    {
+      "number": 2,
+      "role": "body",
+      "text": "Un mapa te muestra el recorrido completo\nantes de salir.\nUna brújula solo marca una dirección,\ny para empezar, con eso alcanza."
+    },
+    {
+      "number": 3,
+      "role": "body",
+      "text": "¿Cómo se escucha\nuna brújula interna?\nHay una señal\nque casi siempre pasa desapercibida."
+    },
+    {
+      "number": 4,
+      "role": "body",
+      "text": "Pensá en la última vez\nque se te pasó la hora haciendo algo.\nNo mirabas el reloj,\nno estabas rindiendo para nadie,\nsimplemente estabas ahí."
+    },
+    {
+      "number": 5,
+      "role": "body",
+      "text": "Esa sensación tiene información.\nEl cuerpo suele registrar el entusiasmo\nantes de que la cabeza\npueda ponerle nombre."
+    },
+    {
+      "number": 6,
+      "role": "question",
+      "text": "Y hay una pregunta\nque lo pone a prueba:\n¿probaste hacer eso mismo\nsin contárselo a nadie?"
+    },
+    {
+      "number": 7,
+      "role": "body",
+      "text": "Sin audiencia se nota enseguida\nla diferencia entre\nlo que te gusta hacer\ny lo que te gusta mostrar."
+    },
+    {
+      "number": 8,
+      "role": "body",
+      "text": "Seguir el entusiasmo no es dejar todo\nni vivir de impulsos.\nA veces es apenas una hora,\nen el medio de la semana,\nsin ningún objetivo."
+    },
+    {
+      "number": 9,
+      "role": "closing_question",
+      "text": "¿Qué actividad te hace perder\nla noción del tiempo?\n¿Cuándo fue la última vez\nque le dedicaste una hora?"
+    }
+  ],
+  "template": "v02_minimal_constant_text"
+}

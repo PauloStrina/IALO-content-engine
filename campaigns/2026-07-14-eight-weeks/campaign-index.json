@@ -1,0 +1,135 @@
+{
+  "campaign_id": "2026-07-14-eight-weeks",
+  "template": "v02_minimal_constant_text",
+  "rendered_at": "2026-07-11T19:15:49.241Z",
+  "items": [
+    {
+      "content_id": "2026-w01-a-purpose",
+      "week": 1,
+      "variant": "A",
+      "publish_at": "2026-07-14T18:00:00-03:00",
+      "slides": 9,
+      "template": "v02_minimal_constant_text"
+    },
+    {
+      "content_id": "2026-w01-b-compass",
+      "week": 1,
+      "variant": "B",
+      "publish_at": "2026-07-16T18:00:00-03:00",
+      "slides": 9,
+      "template": "v02_minimal_constant_text"
+    },
+    {
+      "content_id": "2026-w02-a-invisible-battle",
+      "week": 2,
+      "variant": "A",
+      "publish_at": "2026-07-21T18:00:00-03:00",
+      "slides": 8,
+      "template": "v02_minimal_constant_text"
+    },
+    {
+      "content_id": "2026-w02-b-acceptance-not-surrender",
+      "week": 2,
+      "variant": "B",
+      "publish_at": "2026-07-23T18:00:00-03:00",
+      "slides": 6,
+      "template": "v02_minimal_constant_text"
+    },
+    {
+      "content_id": "2026-w03-a-mirror",
+      "week": 3,
+      "variant": "A",
+      "publish_at": "2026-07-28T18:00:00-03:00",
+      "slides": 8,
+      "template": "v02_minimal_constant_text"
+    },
+    {
+      "content_id": "2026-w03-b-mask",
+      "week": 3,
+      "variant": "B",
+      "publish_at": "2026-07-30T18:00:00-03:00",
+      "slides": 9,
+      "template": "v02_minimal_constant_text"
+    },
+    {
+      "content_id": "2026-w04-a-what-is-rewarded",
+      "week": 4,
+      "variant": "A",
+      "publish_at": "2026-08-04T18:00:00-03:00",
+      "slides": 8,
+      "template": "v02_minimal_constant_text"
+    },
+    {
+      "content_id": "2026-w04-b-backstage",
+      "week": 4,
+      "variant": "B",
+      "publish_at": "2026-08-06T18:00:00-03:00",
+      "slides": 9,
+      "template": "v02_minimal_constant_text"
+    },
+    {
+      "content_id": "2026-w05-a-useful-enthusiasm",
+      "week": 5,
+      "variant": "A",
+      "publish_at": "2026-08-11T18:00:00-03:00",
+      "slides": 9,
+      "template": "v02_minimal_constant_text"
+    },
+    {
+      "content_id": "2026-w05-b-beginners",
+      "week": 5,
+      "variant": "B",
+      "publish_at": "2026-08-13T18:00:00-03:00",
+      "slides": 9,
+      "template": "v02_minimal_constant_text"
+    },
+    {
+      "content_id": "2026-w06-a-bad-streak",
+      "week": 6,
+      "variant": "A",
+      "publish_at": "2026-08-18T18:00:00-03:00",
+      "slides": 10,
+      "template": "v02_minimal_constant_text"
+    },
+    {
+      "content_id": "2026-w06-b-no-answer",
+      "week": 6,
+      "variant": "B",
+      "publish_at": "2026-08-20T18:00:00-03:00",
+      "slides": 9,
+      "template": "v02_minimal_constant_text"
+    },
+    {
+      "content_id": "2026-w07-a-personality-or-habit",
+      "week": 7,
+      "variant": "A",
+      "publish_at": "2026-08-25T18:00:00-03:00",
+      "slides": 9,
+      "template": "v02_minimal_constant_text"
+    },
+    {
+      "content_id": "2026-w07-b-starting-again",
+      "week": 7,
+      "variant": "B",
+      "publish_at": "2026-08-27T18:00:00-03:00",
+      "slides": 9,
+      "template": "v02_minimal_constant_text"
+    },
+    {
+      "content_id": "2026-w08-a-what-we-learn-to-silence",
+      "week": 8,
+      "variant": "A",
+      "publish_at": "2026-09-01T18:00:00-03:00",
+      "slides": 9,
+      "template": "v02_minimal_constant_text"
+    },
+    {
+      "content_id": "2026-w08-b-commitment-and-availability",
+      "week": 8,
+      "variant": "B",
+      "publish_at": "2026-09-03T18:00:00-03:00",
+      "slides": 9,
+      "template": "v02_minimal_constant_text"
+    }
+  ]
+}
