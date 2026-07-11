@@ -81,7 +81,7 @@ IALO 16 Carousel Campaign
 Al abrir o actualizar el pull request se ejecuta automáticamente un dry run y se genera el artifact:
 
 ```text
-ialo-16-carousel-campaign-approval
+ialo-16-carousel-campaign-v02-approval
 ```
 
 Para publicar realmente:
