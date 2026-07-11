@@ -1,6 +1,6 @@
 {
   "name": "ialo-content-engine",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -11,6 +11,8 @@
     "build:publish-manifest": "tsx src/scripts/build-publish-manifest.ts",
     "fix:publish-manifest": "tsx src/scripts/fix-publish-manifest.ts",
     "publish:blotato": "tsx src/scripts/publish-blotato.ts",
+    "render:campaign": "node src/scripts/render-carousel-campaign.mjs",
+    "build:campaign-payload": "node src/scripts/build-carousel-campaign-payload.mjs",
     "pipeline:local": "npm run generate:weekly-plan && npm run generate:carousel && npm run render:carousel && npm run render:weekly-assets && npm run build:publish-manifest && npm run fix:publish-manifest"
   },
   "dependencies": {
