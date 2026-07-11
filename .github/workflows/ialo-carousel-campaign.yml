@@ -9,6 +9,11 @@ on:
       - "src/scripts/build-carousel-campaign-payload.mjs"
       - "package.json"
       - ".github/workflows/ialo-carousel-campaign.yml"
+  push:
+    branches:
+      - feature/word-16-carousel-campaign
+    paths:
+      - "content/campaigns/2026-07-14-eight-weeks/.publish-approved"
   workflow_dispatch:
     inputs:
       dry_run:
@@ -26,6 +31,10 @@ on:
 
 permissions:
   contents: write
+
+concurrency:
+  group: ialo-16-carousel-campaign-production
+  cancel-in-progress: false
 
 jobs:
   campaign:
@@ -45,6 +54,12 @@ jobs:
 
       - name: Install Playwright Chromium
         run: npx playwright install --with-deps chromium
+
+      - name: Validate approved publish trigger
+        if: ${{ github.event_name == 'push' }}
+        shell: bash
+        run: |
+          test "$(cat content/campaigns/2026-07-14-eight-weeks/.publish-approved)" = "PROGRAMAR_16"
 
       - name: Render 16 carousels with V02 minimal
         run: npm run render:campaign
@@ -68,7 +83,7 @@ jobs:
           CAMPAIGN_MANIFEST_PATH: output/campaign-manifest.json
 
       - name: Publish rendered assets to public branch
-        if: ${{ github.event_name == 'workflow_dispatch' }}
+        if: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.dry_run == 'false') }}
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -95,11 +110,11 @@ jobs:
           fi
 
       - name: Wait for public raw URLs
-        if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run == 'false' }}
-        run: sleep 10
+        if: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.dry_run == 'false') }}
+        run: sleep 15
 
       - name: Schedule 16 carousels in Blotato
-        if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run == 'false' }}
+        if: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.dry_run == 'false') }}
         run: npm run publish:blotato
         env:
           BLOTATO_API_KEY: ${{ secrets.BLOTATO_API_KEY }}
@@ -112,7 +127,7 @@ jobs:
           BLOTATO_RESPONSE_PATH: output/blotato-response.json
 
       - name: Upload Blotato response
-        if: ${{ always() && github.event_name == 'workflow_dispatch' }}
+        if: ${{ always() && (github.event_name == 'push' || github.event_name == 'workflow_dispatch') }}
         uses: actions/upload-artifact@v4
         with:
           name: ialo-16-carousel-campaign-response
