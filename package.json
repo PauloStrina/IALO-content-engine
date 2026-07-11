@@ -12,6 +12,7 @@
     "fix:publish-manifest": "tsx src/scripts/fix-publish-manifest.ts",
     "publish:blotato": "tsx src/scripts/publish-blotato.ts",
     "render:campaign": "node src/scripts/render-carousel-campaign.mjs",
+    "contact:campaign": "node src/scripts/build-campaign-contact-sheets.mjs",
     "build:campaign-payload": "node src/scripts/build-carousel-campaign-payload.mjs",
     "pipeline:local": "npm run generate:weekly-plan && npm run generate:carousel && npm run render:carousel && npm run render:weekly-assets && npm run build:publish-manifest && npm run fix:publish-manifest"
   },
