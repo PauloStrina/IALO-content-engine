@@ -16,6 +16,6 @@
     { "number": 5, "role": "body", "text": "Cada “no debería” gasta energía\nen una batalla que no se puede ganar,\nporque es contra algo\nque ya está pasando." },
     { "number": 6, "role": "body", "text": "Y mientras tanto,\nla racha sigue existiendo\ny el miedo sigue existiendo.\nNegarlos no los apaga." },
     { "number": 7, "role": "body", "text": "Quizás la pregunta no sea\ncómo hacer que desaparezcan,\nsino cómo convivir con eso\nsin quedar atrapado." },
-    { "number": 8, "role": "closing_question", "text": "¿Contra qué estás peleando hace tiempo?\n¿Y cuánta energía te está costando esa pelea?" }
+    { "number": 8, "role": "closing_question", "text": "¿Contra qué estás peleando hace tiempo?\n¿Y cuánta energía te está costando?" }
   ]
 }
