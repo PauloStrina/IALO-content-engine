@@ -16,7 +16,7 @@
 - Semanas 3 y 7: `02_inner_change_outer_change`.
 - Semanas 4 y 8: `03_invisible_culture`.
 
-Cada semana usa una única familia de fondos. Los carruseles A y B comparten esa familia, pero varían la fotografía inicial, el orden de imágenes, el recorte, el zoom y la secuencia de layouts.
+Cada semana usa una única familia de fondos. Los carruseles A y B comparten esa familia, pero varían la fotografía inicial y el orden de imágenes.
 
 ## Fuente
 
@@ -30,20 +30,22 @@ Normalizaciones realizadas:
 - No se resumió ni reescribió el contenido editorial.
 - Se incorporaron las correcciones editoriales posteriores enviadas por el equipo para los carruseles 1B, 2A y 2B.
 
-## Sistema visual V02
+## Sistema visual V02 aprobado
 
-La campaña utiliza `v02_disruptive`.
+La campaña utiliza `v02_minimal_constant_text`.
 
 Reglas principales:
 
-- Fotografías originales, sin una capa oscura transparente aplicada sobre toda la imagen.
-- Legibilidad mediante placas editoriales sólidas, bandas, cortes, paneles, color tipográfico y sombras localizadas.
-- Variación de composición entre slides para evitar una secuencia visual monótona.
-- Lyon como tipografía editorial principal y Futura para microdetalles.
+- Fondo fotográfico real diferente por slide.
+- Tratamiento más oscuro y velo constante para asegurar legibilidad.
+- Texto principal siempre en la misma posición en los slides interiores.
+- Texto secundario siempre en la misma posición en los slides interiores.
+- Sin placas editoriales, bandas, cortes, paneles ni cambios fuertes de layout.
+- Lyon como tipografía editorial principal y Futura para el contador.
 - Paleta IALO: crema `#EEE9E0`, negro `#1A1A1A` y naranja `#FF5000`.
-- Logo IALO pequeño en el margen inferior izquierdo.
-- Contador en el margen superior derecho.
-- El texto del primer slide se mantiene alineado a la izquierda y centrado verticalmente.
+- Contador arriba a la izquierda.
+- Logo IALO pequeño abajo a la izquierda.
+- En el primer slide, el texto se mantiene alineado a la izquierda y el bloque completo se centra verticalmente.
 
 ## Render
 
