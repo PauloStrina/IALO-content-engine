@@ -1,6 +1,14 @@
 name: IALO 16 Carousel Campaign
 
 on:
+  pull_request:
+    paths:
+      - "content/campaigns/2026-07-14-eight-weeks/**"
+      - "src/scripts/render-carousel-campaign.mjs"
+      - "src/scripts/build-campaign-contact-sheets.mjs"
+      - "src/scripts/build-carousel-campaign-payload.mjs"
+      - "package.json"
+      - ".github/workflows/ialo-carousel-campaign.yml"
   workflow_dispatch:
     inputs:
       dry_run:
@@ -60,6 +68,7 @@ jobs:
           CAMPAIGN_MANIFEST_PATH: output/campaign-manifest.json
 
       - name: Publish rendered assets to public branch
+        if: ${{ github.event_name == 'workflow_dispatch' }}
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -77,7 +86,7 @@ jobs:
             output/blotato-payload.json
 
       - name: Validate explicit publishing confirmation
-        if: ${{ inputs.dry_run == 'false' }}
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run == 'false' }}
         shell: bash
         run: |
           if [ "${{ inputs.confirm_publish }}" != "PROGRAMAR_16" ]; then
@@ -86,11 +95,11 @@ jobs:
           fi
 
       - name: Wait for public raw URLs
-        if: ${{ inputs.dry_run == 'false' }}
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run == 'false' }}
         run: sleep 10
 
       - name: Schedule 16 carousels in Blotato
-        if: ${{ inputs.dry_run == 'false' }}
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run == 'false' }}
         run: npm run publish:blotato
         env:
           BLOTATO_API_KEY: ${{ secrets.BLOTATO_API_KEY }}
@@ -103,10 +112,11 @@ jobs:
           BLOTATO_RESPONSE_PATH: output/blotato-response.json
 
       - name: Upload Blotato response
-        if: always()
+        if: ${{ always() && github.event_name == 'workflow_dispatch' }}
         uses: actions/upload-artifact@v4
         with:
           name: ialo-16-carousel-campaign-response
+          if-no-files-found: ignore
           path: |
             output/blotato-response.json
             output/blotato-payload.json
