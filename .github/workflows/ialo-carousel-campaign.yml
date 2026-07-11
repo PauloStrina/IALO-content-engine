@@ -44,6 +44,12 @@ jobs:
           CAMPAIGN_DIR: content/campaigns/2026-07-14-eight-weeks
           CAMPAIGN_OUTPUT_DIR: public-assets/campaigns/2026-07-14-eight-weeks
 
+      - name: Generate contact sheets
+        run: npm run contact:campaign
+        env:
+          CAMPAIGN_ID: 2026-07-14-eight-weeks
+          CAMPAIGN_OUTPUT_DIR: public-assets/campaigns/2026-07-14-eight-weeks
+
       - name: Build campaign manifest and Blotato payload
         run: npm run build:campaign-payload
         env:
