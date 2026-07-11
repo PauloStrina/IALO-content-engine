@@ -1,0 +1,22 @@
+{
+  "content_id": "2026-w04-b-backstage",
+  "week": 4,
+  "variant": "B",
+  "thesis_id": "03_invisible_culture",
+  "variant_id": "metodo_backstage",
+  "title": "¿Querés conocer la cultura de una organización?",
+  "caption": "El error y el ascenso: los dos momentos donde una cultura muestra lo que premia de verdad. ¿Qué muestran en tu equipo?",
+  "publish_at": "2026-08-06T18:00:00-03:00",
+  "approval": { "status": "pending_human_approval", "approved_by": null, "approved_at": null },
+  "slides": [
+    { "number": 1, "role": "cold_open", "text": "¿Querés conocer la cultura\nde una organización?" },
+    { "number": 2, "role": "body", "text": "No leas sus valores.\nLos valores muestran el escenario.\nLa cultura vive en el backstage,\ny hay momentos donde se deja ver." },
+    { "number": 3, "role": "body", "text": "Un momento clave:\nqué pasa\ndespués de un error." },
+    { "number": 4, "role": "question", "text": "Alguien se equivoca en algo visible.\n¿La primera pregunta que aparece\nes qué falló en el proceso\no quién fue?" },
+    { "number": 5, "role": "body", "text": "La respuesta a esa pregunta\nle enseña a todo el equipo\nqué conviene hacer la próxima vez:\nlevantar la mano\no esconder el problema." },
+    { "number": 6, "role": "body", "text": "Los ascensos cuentan la otra mitad:\nquién crece en la organización\ny qué comportamientos\nlo llevaron hasta ahí.\nEso es lo que la cultura\npremia de verdad." },
+    { "number": 7, "role": "body", "text": "Un póster no cambia\nninguno de esos aprendizajes,\ny un workshop tampoco." },
+    { "number": 8, "role": "body", "text": "Lo que empieza a moverlos\nes que alguien se anime\na nombrar en voz alta\nlo que todos perciben." },
+    { "number": 9, "role": "closing_question", "text": "En tu equipo,\n¿qué pasa cuando alguien se equivoca?" }
+  ]
+}

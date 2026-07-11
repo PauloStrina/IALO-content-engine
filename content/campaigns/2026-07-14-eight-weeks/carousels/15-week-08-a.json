@@ -1,0 +1,22 @@
+{
+  "content_id": "2026-w08-a-what-we-learn-to-silence",
+  "week": 8,
+  "variant": "A",
+  "thesis_id": "03_invisible_culture",
+  "variant_id": "problema_reglas_no_escritas",
+  "title": "Lo que aprendemos a callar",
+  "caption": "¿Cómo aprendemos qué cosas conviene callar en una empresa?",
+  "publish_at": "2026-09-01T18:00:00-03:00",
+  "approval": { "status": "pending_human_approval", "approved_by": null, "approved_at": null },
+  "slides": [
+    { "number": 1, "role": "cold_open", "text": "¿Cómo aprendemos qué cosas conviene callar en una empresa?" },
+    { "number": 2, "role": "body", "text": "No aparece en la inducción.\n\nAhí solemos hablar de innovación, colaboración, confianza y de la importancia de que cada persona pueda dar su opinión." },
+    { "number": 3, "role": "body", "text": "Después empieza otra clase de aprendizaje.\n\nVemos qué ocurre cuando alguien cuestiona una decisión o menciona un problema que todos conocían, pero nadie había puesto sobre la mesa." },
+    { "number": 4, "role": "body", "text": "No hace falta que alguien diga “de esto no se habla”.\n\nAlcanza con ver la cara del jefe, el silencio que queda en la reunión o lo que le pasa después a la persona que levantó la mano." },
+    { "number": 5, "role": "body", "text": "Pensemos en alguien que entra hoy a esa organización y todavía no conoce ninguna de esas reglas." },
+    { "number": 6, "role": "body", "text": "Probablemente le alcanzarían algunas semanas para entender quién puede decir que no y qué temas quedan para la conversación de pasillo." },
+    { "number": 7, "role": "question", "text": "¿Qué estaría aprendiendo de nosotros sin que nadie se lo explique?" },
+    { "number": 8, "role": "body", "text": "Después de un tiempo, esa persona también sabría qué callar.\n\nY posiblemente tampoco recordaría quién se lo enseñó." },
+    { "number": 9, "role": "closing_question", "text": "Entonces volvamos a la pregunta:\n\n¿Cómo aprendemos qué cosas conviene callar en una empresa?" }
+  ]
+}

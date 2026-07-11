@@ -1,0 +1,108 @@
+{
+  "mode": "blotato-native-posts-api",
+  "apiBaseUrl": "https://backend.blotato.com/v2",
+  "uploadMediaFirst": false,
+  "runId": "2026-07-14-eight-weeks",
+  "source": "ialo-content-engine",
+  "generatedAt": "2026-07-11T19:16:32.980Z",
+  "sent": 0,
+  "failed": 16,
+  "results": [
+    {
+      "externalId": "2026-w01-a-purpose",
+      "platform": "instagram",
+      "status": "failed",
+      "error": "Missing Blotato target for platform 'instagram'. Set BLOTATO_TARGETS_JSON or BLOTATO_ACCOUNT_INSTAGRAM."
+    },
+    {
+      "externalId": "2026-w01-b-compass",
+      "platform": "instagram",
+      "status": "failed",
+      "error": "Missing Blotato target for platform 'instagram'. Set BLOTATO_TARGETS_JSON or BLOTATO_ACCOUNT_INSTAGRAM."
+    },
+    {
+      "externalId": "2026-w02-a-invisible-battle",
+      "platform": "instagram",
+      "status": "failed",
+      "error": "Missing Blotato target for platform 'instagram'. Set BLOTATO_TARGETS_JSON or BLOTATO_ACCOUNT_INSTAGRAM."
+    },
+    {
+      "externalId": "2026-w02-b-acceptance-not-surrender",
+      "platform": "instagram",
+      "status": "failed",
+      "error": "Missing Blotato target for platform 'instagram'. Set BLOTATO_TARGETS_JSON or BLOTATO_ACCOUNT_INSTAGRAM."
+    },
+    {
+      "externalId": "2026-w03-a-mirror",
+      "platform": "instagram",
+      "status": "failed",
+      "error": "Missing Blotato target for platform 'instagram'. Set BLOTATO_TARGETS_JSON or BLOTATO_ACCOUNT_INSTAGRAM."
+    },
+    {
+      "externalId": "2026-w03-b-mask",
+      "platform": "instagram",
+      "status": "failed",
+      "error": "Missing Blotato target for platform 'instagram'. Set BLOTATO_TARGETS_JSON or BLOTATO_ACCOUNT_INSTAGRAM."
+    },
+    {
+      "externalId": "2026-w04-a-what-is-rewarded",
+      "platform": "instagram",
+      "status": "failed",
+      "error": "Missing Blotato target for platform 'instagram'. Set BLOTATO_TARGETS_JSON or BLOTATO_ACCOUNT_INSTAGRAM."
+    },
+    {
+      "externalId": "2026-w04-b-backstage",
+      "platform": "instagram",
+      "status": "failed",
+      "error": "Missing Blotato target for platform 'instagram'. Set BLOTATO_TARGETS_JSON or BLOTATO_ACCOUNT_INSTAGRAM."
+    },
+    {
+      "externalId": "2026-w05-a-useful-enthusiasm",
+      "platform": "instagram",
+      "status": "failed",
+      "error": "Missing Blotato target for platform 'instagram'. Set BLOTATO_TARGETS_JSON or BLOTATO_ACCOUNT_INSTAGRAM."
+    },
+    {
+      "externalId": "2026-w05-b-beginners",
+      "platform": "instagram",
+      "status": "failed",
+      "error": "Missing Blotato target for platform 'instagram'. Set BLOTATO_TARGETS_JSON or BLOTATO_ACCOUNT_INSTAGRAM."
+    },
+    {
+      "externalId": "2026-w06-a-bad-streak",
+      "platform": "instagram",
+      "status": "failed",
+      "error": "Missing Blotato target for platform 'instagram'. Set BLOTATO_TARGETS_JSON or BLOTATO_ACCOUNT_INSTAGRAM."
+    },
+    {
+      "externalId": "2026-w06-b-no-answer",
+      "platform": "instagram",
+      "status": "failed",
+      "error": "Missing Blotato target for platform 'instagram'. Set BLOTATO_TARGETS_JSON or BLOTATO_ACCOUNT_INSTAGRAM."
+    },
+    {
+      "externalId": "2026-w07-a-personality-or-habit",
+      "platform": "instagram",
+      "status": "failed",
+      "error": "Missing Blotato target for platform 'instagram'. Set BLOTATO_TARGETS_JSON or BLOTATO_ACCOUNT_INSTAGRAM."
+    },
+    {
+      "externalId": "2026-w07-b-starting-again",
+      "platform": "instagram",
+      "status": "failed",
+      "error": "Missing Blotato target for platform 'instagram'. Set BLOTATO_TARGETS_JSON or BLOTATO_ACCOUNT_INSTAGRAM."
+    },
+    {
+      "externalId": "2026-w08-a-what-we-learn-to-silence",
+      "platform": "instagram",
+      "status": "failed",
+      "error": "Missing Blotato target for platform 'instagram'. Set BLOTATO_TARGETS_JSON or BLOTATO_ACCOUNT_INSTAGRAM."
+    },
+    {
+      "externalId": "2026-w08-b-commitment-and-availability",
+      "platform": "instagram",
+      "status": "failed",
+      "error": "Missing Blotato target for platform 'instagram'. Set BLOTATO_TARGETS_JSON or BLOTATO_ACCOUNT_INSTAGRAM."
+    }
+  ]
+}

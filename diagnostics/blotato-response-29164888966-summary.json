@@ -1,0 +1,8 @@
+{
+  "sent": 0,
+  "failed": 16,
+  "runId": "2026-07-14-eight-weeks",
+  "errors": [
+    "Missing Blotato target for platform 'instagram'. Set BLOTATO_TARGETS_JSON or BLOTATO_ACCOUNT_INSTAGRAM."
+  ]
+}

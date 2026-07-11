@@ -1,0 +1,22 @@
+{
+  "content_id": "2026-w05-b-beginners",
+  "week": 5,
+  "variant": "B",
+  "thesis_id": "04_follow_enthusiasm",
+  "variant_id": "conexion_principiantes",
+  "title": "Ser principiantes",
+  "caption": "¿En qué momento dejamos de disfrutar ser principiantes?",
+  "publish_at": "2026-08-13T18:00:00-03:00",
+  "approval": { "status": "pending_human_approval", "approved_by": null, "approved_at": null },
+  "slides": [
+    { "number": 1, "role": "cold_open", "text": "¿En qué momento dejamos de disfrutar ser principiantes?" },
+    { "number": 2, "role": "body", "text": "De grandes, empezar algo suele venir acompañado de una evaluación bastante rápida:\n\nSe me da o no se me da." },
+    { "number": 3, "role": "body", "text": "Si no somos buenos enseguida, aparece una vergüenza medio difícil de explicar.\n\nComo si hacer algo mal fuera una prueba de que llegamos tarde o de que eso no era para nosotros." },
+    { "number": 4, "role": "body", "text": "Así quedan afuera actividades que quizás nos hubieran acompañado durante años.\n\nNo porque no nos gustaran. Porque no pudimos mostrarnos torpes durante el tiempo suficiente." },
+    { "number": 5, "role": "body", "text": "Imaginémonos haciendo algo que no tengamos que mejorar, publicar ni convertir en parte de nuestra identidad." },
+    { "number": 6, "role": "question", "text": "¿Cuánto tiempo aguantaríamos haciéndolo mal?" },
+    { "number": 7, "role": "body", "text": "Al principio muchas cosas se sienten incómodas.\n\nTodavía no tenemos técnica, no sabemos qué mirar y necesitamos pensar movimientos que para otros ya son naturales." },
+    { "number": 8, "role": "body", "text": "Antes de descubrir si algo era para nosotros, muchas veces ya decidimos que nosotros no éramos para eso." },
+    { "number": 9, "role": "closing_question", "text": "Entonces, de nuevo:\n\n¿En qué momento dejamos de disfrutar ser principiantes?" }
+  ]
+}

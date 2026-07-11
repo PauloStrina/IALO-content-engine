@@ -1,0 +1,23 @@
+{
+  "content_id": "2026-w06-a-bad-streak",
+  "week": 6,
+  "variant": "A",
+  "thesis_id": "01_acceptance_inner_dialogue",
+  "variant_id": "problema_mala_racha",
+  "title": "Una mala racha",
+  "caption": "¿Y si una mala racha no significara que estamos haciendo todo mal?",
+  "publish_at": "2026-08-18T18:00:00-03:00",
+  "approval": { "status": "pending_human_approval", "approved_by": null, "approved_at": null },
+  "slides": [
+    { "number": 1, "role": "cold_open", "text": "¿Y si una mala racha no significara que estamos haciendo todo mal?" },
+    { "number": 2, "role": "body", "text": "Vivimos bastante pendientes de si estamos avanzando.\n\nMedimos el trabajo, el entrenamiento, el descanso, los hábitos, la plata, el ánimo. Cuando algo mejora, sentimos que vamos bien. Cuando se frena, enseguida buscamos qué estamos haciendo mal." },
+    { "number": 3, "role": "body", "text": "Por eso una mala semana rara vez queda en una mala semana.\n\nPuede convertirse bastante rápido en una duda sobre el trabajo que elegimos, la relación que tenemos o la persona que somos." },
+    { "number": 4, "role": "body", "text": "Incluso cuando estamos pasando un momento difícil aparece otra exigencia: entenderlo rápido, encontrarle un sentido y salir fortalecidos.\n\nNo alcanza con atravesarlo. También tenemos que demostrar que estamos aprendiendo algo." },
+    { "number": 5, "role": "body", "text": "Imaginémonos una vida en la que una mala semana no necesitara una explicación inmediata." },
+    { "number": 6, "role": "body", "text": "No habría que decidir enseguida si estamos cansados del trabajo, si perdimos el rumbo o si hay que cambiar algo importante.\n\nPodría ser, por un rato, solamente una semana difícil." },
+    { "number": 7, "role": "question", "text": "¿Eso nos daría alivio o nos pondría todavía más incómodos?" },
+    { "number": 8, "role": "body", "text": "Porque a veces no solo queremos que el mal momento termine.\n\nTambién queremos saber qué significa." },
+    { "number": 9, "role": "body", "text": "Y cuando no aparece una respuesta, es tentador completar el espacio con la explicación más rápida:\n\nel problema somos nosotros." },
+    { "number": 10, "role": "closing_question", "text": "Entonces volvamos al principio:\n\n¿Y si una mala racha no significara que estamos haciendo todo mal?" }
+  ]
+}

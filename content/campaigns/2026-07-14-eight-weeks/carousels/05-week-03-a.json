@@ -1,0 +1,21 @@
+{
+  "content_id": "2026-w03-a-mirror",
+  "week": 3,
+  "variant": "A",
+  "thesis_id": "02_inner_change_outer_change",
+  "variant_id": "problema_espejo",
+  "title": "Trabajo nuevo. ¿Vida nueva?",
+  "caption": "Cuando la escena cambia pero la dinámica se repite, algo está pidiendo ser mirado. ¿Qué se te repite?",
+  "publish_at": "2026-07-28T18:00:00-03:00",
+  "approval": { "status": "pending_human_approval", "approved_by": null, "approved_at": null },
+  "slides": [
+    { "number": 1, "role": "cold_open", "text": "Trabajo nuevo. ¿Vida nueva?" },
+    { "number": 2, "role": "body", "text": "Distinta oficina, distinto jefe,\ndistinta gente.\nY sin embargo, vuelve la misma sensación:\nque tu trabajo no se ve,\nque otros avanzan y vos no." },
+    { "number": 3, "role": "body", "text": "Cuando la escena cambia\npero la dinámica se repite,\naparecen las frases:\n“yo soy así”,\n“siempre me pasa lo mismo”." },
+    { "number": 4, "role": "body", "text": "Pero hay otra forma de mirarlo.\nQuizás eso que se repite afuera\nestá mostrando un patrón\nque todavía no fue observado adentro." },
+    { "number": 5, "role": "body", "text": "El afuera funciona como un espejo.\nNo para culparnos por lo que pasa,\nsino para mostrarnos algo\nque desde adentro no se ve." },
+    { "number": 6, "role": "question", "text": "Funciona incluso con las personas.\nEso que te molesta tanto de tu compañero,\n¿probaste buscarlo adentro tuyo?" },
+    { "number": 7, "role": "body", "text": "No todo lo que se repite es destino.\nA veces es un patrón\npidiendo ser visto." },
+    { "number": 8, "role": "closing_question", "text": "¿Qué situación se te repitió\nen distintos lugares?\n¿Qué tienen en común, además de vos?" }
+  ]
+}

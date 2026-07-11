@@ -1,0 +1,22 @@
+{
+  "content_id": "2026-w07-a-personality-or-habit",
+  "week": 7,
+  "variant": "A",
+  "thesis_id": "02_inner_change_outer_change",
+  "variant_id": "problema_identidad_costumbre",
+  "title": "Yo soy así",
+  "caption": "¿Cuánto de lo que llamamos personalidad es una costumbre?",
+  "publish_at": "2026-08-25T18:00:00-03:00",
+  "approval": { "status": "pending_human_approval", "approved_by": null, "approved_at": null },
+  "slides": [
+    { "number": 1, "role": "cold_open", "text": "¿Cuánto de lo que llamamos personalidad es una costumbre?" },
+    { "number": 2, "role": "body", "text": "Decimos “yo soy así” y la conversación termina bastante rápido.\n\nNo hablamos en una reunión porque somos callados. No pedimos ayuda porque siempre nos manejamos solos." },
+    { "number": 3, "role": "body", "text": "La frase convierte una forma de reaccionar en una explicación completa.\n\nYa no es algo que hicimos. Es algo que somos." },
+    { "number": 4, "role": "body", "text": "Y cuando algo forma parte de nuestra identidad, ponerlo en duda se siente extraño.\n\nComo si cambiar una manera de actuar significara dejar de ser nosotros." },
+    { "number": 5, "role": "body", "text": "Imaginémonos que algunas de esas cosas no hubieran empezado como personalidad." },
+    { "number": 6, "role": "body", "text": "Quizás fueron maneras de movernos por ciertos lugares. Cosas que aprendimos a hacer porque en algún momento hacían todo más fácil o nos evitaban un problema." },
+    { "number": 7, "role": "question", "text": "¿Qué nos pasaría si una parte de lo que creemos fijo tuviera una historia?" },
+    { "number": 8, "role": "body", "text": "No sabríamos todavía qué hacer con eso.\n\nPero “siempre fui así” dejaría de explicar tanto." },
+    { "number": 9, "role": "closing_question", "text": "Entonces, de nuevo:\n\n¿Cuánto de lo que llamamos personalidad es una costumbre?" }
+  ]
+}

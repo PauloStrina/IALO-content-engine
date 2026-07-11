@@ -1,0 +1,19 @@
+{
+  "content_id": "2026-w02-b-acceptance-not-surrender",
+  "week": 2,
+  "variant": "B",
+  "thesis_id": "01_acceptance_inner_dialogue",
+  "variant_id": "metodo_aceptar_no_rendirse",
+  "title": "Aceptar no es rendirse.",
+  "caption": "Paciencia para lo que madura, perseverancia para lo difícil, sabiduría para distinguir cuál toca. ¿Qué situación estás atravesando hoy?",
+  "publish_at": "2026-07-23T18:00:00-03:00",
+  "approval": { "status": "pending_human_approval", "approved_by": null, "approved_at": null },
+  "slides": [
+    { "number": 1, "role": "cold_open", "text": "Aceptar no es rendirse." },
+    { "number": 2, "role": "body", "text": "Se confunden seguido,\naunque apuntan a lugares opuestos.\nResignarse es abandonar la dirección.\nAceptar es dejar de gastar fuerza\nen lo que no podés cambiar,\npara tenerla disponible en lo que sí." },
+    { "number": 3, "role": "body", "text": "En ese movimiento suelen aparecer\ntres palabras:\npaciencia, perseverancia\ny sabiduría." },
+    { "number": 4, "role": "body", "text": "La paciencia\nes sostener la calma mientras algo madura.\nLa perseverancia\nes seguir cuando se pone difícil.\nY la sabiduría\nes la que permite distinguir entre las otras dos." },
+    { "number": 5, "role": "body", "text": "Hay rachas en esta vida,\ny no todas se pueden acortar.\nLo que queda en tus manos\nes qué hacer con vos\nmientras la racha pasa." },
+    { "number": 6, "role": "closing_question", "text": "¿Qué situación estás resistiendo hoy?\n¿Depende de vos cambiarla,\no aceptarla?" }
+  ]
+}

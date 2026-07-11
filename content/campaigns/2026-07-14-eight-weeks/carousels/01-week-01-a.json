@@ -1,0 +1,22 @@
+{
+  "content_id": "2026-w01-a-purpose",
+  "week": 1,
+  "variant": "A",
+  "thesis_id": "04_follow_enthusiasm",
+  "variant_id": "problema",
+  "title": "¿Y vos ya encontraste tu propósito?",
+  "caption": "Antes de buscar una gran respuesta, mirar qué te entusiasma hoy. ¿Cuánto espacio le estás dando?",
+  "publish_at": "2026-07-14T18:00:00-03:00",
+  "approval": { "status": "pending_human_approval", "approved_by": null, "approved_at": null },
+  "slides": [
+    { "number": 1, "role": "cold_open", "text": "¿Y vos ya encontraste tu propósito?" },
+    { "number": 2, "role": "body", "text": "Una pregunta que está muy de moda.\nComo si hiciera falta una misión enorme,\nclara y bien definida\npara ordenar la vida." },
+    { "number": 3, "role": "body", "text": "Mientras tanto, en el scroll parece que todos\nya encontraron lo suyo:\nel que renunció para emprender,\nla que se fue a vivir al sur,\nel que dice que hace lo que ama." },
+    { "number": 4, "role": "body", "text": "Y adentro aparecen frases como\n“tengo que encontrar mi propósito”\no “no puedo seguir esto\nporque no sé a dónde me lleva”." },
+    { "number": 5, "role": "body", "text": "Pero, ¿hace falta empezar\npor una respuesta tan grande?\nHay una señal más cercana:\nel entusiasmo." },
+    { "number": 6, "role": "body", "text": "Pensá en ese tema que te atrapa\ncada vez que aparece.\nEl que buscás de noche en videos y podcasts,\nel que metés en cualquier conversación\naunque nadie te lo haya preguntado." },
+    { "number": 7, "role": "body", "text": "Eso es entusiasmo.\nNo necesita convertirse en trabajo\nni en un gran proyecto.\nEs una pista de lo que es genuinamente tuyo." },
+    { "number": 8, "role": "body", "text": "No te da certezas\nni te muestra el mapa completo,\npero muchas veces muestra dirección." },
+    { "number": 9, "role": "closing_question", "text": "¿Qué cosas te entusiasman?\n¿Y cuánto espacio tienen en tu vida?" }
+  ]
+}
