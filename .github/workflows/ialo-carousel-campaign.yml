@@ -46,7 +46,7 @@ jobs:
       - name: Install Playwright Chromium
         run: npx playwright install --with-deps chromium
 
-      - name: Render 16 carousels with V02
+      - name: Render 16 carousels with V02 minimal
         run: npm run render:campaign
         env:
           CAMPAIGN_DIR: content/campaigns/2026-07-14-eight-weeks
