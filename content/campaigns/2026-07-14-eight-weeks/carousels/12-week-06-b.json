@@ -1,0 +1,22 @@
+{
+  "content_id": "2026-w06-b-no-answer",
+  "week": 6,
+  "variant": "B",
+  "thesis_id": "01_acceptance_inner_dialogue",
+  "variant_id": "conexion_no_respuesta",
+  "title": "No tener una respuesta",
+  "caption": "¿Por qué nos cuesta tanto no saber qué etapa estamos viviendo?",
+  "publish_at": "2026-08-20T18:00:00-03:00",
+  "approval": { "status": "pending_human_approval", "approved_by": null, "approved_at": null },
+  "slides": [
+    { "number": 1, "role": "cold_open", "text": "¿Por qué nos cuesta tanto no saber qué etapa estamos viviendo?" },
+    { "number": 2, "role": "body", "text": "Nos gusta ponerle nombre a lo que nos pasa.\n\nDecir que estamos en una crisis, en una transición o frente a un cambio importante hace que todo parezca un poco más ordenado." },
+    { "number": 3, "role": "body", "text": "Cuando encontramos una explicación, también aparece la sensación de que podemos hacer algo.\n\nTomar una decisión. Armar un plan. Empezar de nuevo." },
+    { "number": 4, "role": "body", "text": "Pero hay meses que no se dejan ordenar tan rápido.\n\nSeguimos trabajando, viendo a la misma gente y haciendo planes. Desde afuera no ocurrió una gran ruptura. Por dentro tampoco apareció una respuesta." },
+    { "number": 5, "role": "body", "text": "Imaginémonos atravesando un tiempo que todavía no tiene nombre." },
+    { "number": 6, "role": "body", "text": "Un tiempo en el que no sabemos si queremos cambiar de dirección o si necesitamos llegar un poco más lejos para entender dónde estamos." },
+    { "number": 7, "role": "question", "text": "¿Cuánto nos inquietaría que no hubiera nada que resolver todavía?" },
+    { "number": 8, "role": "body", "text": "A veces una respuesta equivocada resulta más tranquilizadora que una pregunta abierta.\n\nPor lo menos nos permite movernos." },
+    { "number": 9, "role": "closing_question", "text": "Entonces volvamos a preguntarnos:\n\n¿Por qué nos cuesta tanto no saber qué etapa estamos viviendo?" }
+  ]
+}
